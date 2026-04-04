@@ -1,0 +1,1048 @@
+Auto-Transcript Start Time:  20:37:28, 03 Apr 2026 India Standard Time 
+Current Directory: "C:\Users\ShubhamR\Downloads\SS_PerfectExpanded"
+
+              Welcome to ANSYS Fluent 2025 R2.04
+
+              Copyright 1987-2025 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Oct  7 2025 15:34:38 EDT  Build Id: 10205  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-GSSGRQ1" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n3    DESKTOP-GSSGRQ1  4/16  Windows-x64  10456  AMD Ryzen 7 6800H with Radeon Graphics  
+n2    DESKTOP-GSSGRQ1  3/16  Windows-x64  10188  AMD Ryzen 7 6800H with Radeon Graphics  
+n1    DESKTOP-GSSGRQ1  2/16  Windows-x64  11696  AMD Ryzen 7 6800H with Radeon Graphics  
+n0*   DESKTOP-GSSGRQ1  1/16  Windows-x64  17764  AMD Ryzen 7 6800H with Radeon Graphics  
+host  DESKTOP-GSSGRQ1        Windows-x64  16628  AMD Ryzen 7 6800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\ShubhamR\\Downloads\\SS_PerfectExpanded\\cleanup-fluent-DESKTOP-GSSGRQ1-16628.bat
+
+Graphics driver currently in use: dx11
+
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+
+C:\\Users\\ShubhamR\\Downloads\\SS_PerfectExpanded>"D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/Discovery/Discovery.exe"  --hidden --exit-after-script --run-script "C:\\Users\\ShubhamR\\AppData\\Local\\Temp/DSCOToFMDConverterScript1775228900.2611174128.py" 
+License.Initialize not called. Using default location
+Examining ID 
+LastOSVersion is Microsoft Windows NT 10.0.26200.0
+Current OSVersion is Microsoft Windows NT 10.0.26200.0
+Discovery SpaceClaim Framework debug: No
+Discovery SpaceClaim Framework build number: SpaceClaim_Developer_Build_252_release-25.2_20251103.3 
+Product: Discovery
+Checkout list:
+disco_level3
+disco_level2
+disco_level1
+Using server, client name is DISCOVERY
+Sharing Context Present? True
+Feature name is disco_level1
+Discovery startup: Initial Disco level: 1
+Discovery startup: License ID pulled:  disco_level1
+Discovery startup: Final Disco level: 1
+Algoryx license is False
+Additive Prep license is False
+SCDM: Academic is False, logo is False, Student is False, Teaching is False, Limited is False, Discovery is True
+License check Passed
+Embedding.Initialize license check: True
+ModelerStarter TryGetInstalledHoopsFolder 1: Looking in install: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252
+ModelerStarter TryGetInstalledHoopsFolder 2: Found in install: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\commonfiles\\CAD\\TechSoft3D\\HoopsExchange2025.7.0\\winx64
+ModelerStarter Hoops 2: Found in install: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\commonfiles\\CAD\\TechSoft3D\\HoopsExchange2025.7.0\\winx64
+Modeler = Parasolid
+ANSYS Stride 1.19.3.12
+ModelerStarter Hoops 4: hoopsFolder=D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\commonfiles\\CAD\\TechSoft3D\\HoopsExchange2025.7.0\\winx64
+Found valid pSchema folder: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery
+HOOPS Version: 25.7.0
+HOOPS Folder: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\commonfiles\\CAD\\TechSoft3D\\HoopsExchange2025.7.0\\winx64
+SCDM Translator directory is set to:D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\commonfiles\\CAD\\bin
+Starting Stride at 20:38
+Parasolid version 36.1.227
+Environment variable: PATH = D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Stride;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\vki\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\KINetics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\fsi\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\commonfiles\\fluids\\lib\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin\\bin;D:\\Non-System Softwares\\Tesseract;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\jar\\engine.jar;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;D:\\Non-System Softwares\\Mathworks R2025B\\runtime\\win64;D:\\Non-System Softwares\\Mathworks R2025B\\bin;D:\\Non-System Softwares\\MathWorks Software 2\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;D:\\Non-System Softwares\\Git\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;D:\\Non-System Softwares\\Microsoft VS Code\\java JDK;C:\\Users\\ShubhamR\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Non-System Softwares\\Microsoft VS Code\\bin;C:\\Program Files\\MPICH2\\bin;D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\bin;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\engine.jar;D:\\Non-System Softwares\\MathWorks Software\\bin;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\Tesseract;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;C:\\Users\\ShubhamR\\AppData\\Roaming\\npm;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;C:\\Users\\ShubhamR\\AppData\\Local\\Python\\bin
+gx: init GraphicsSceneContext: os: 10.0.26200
+ UserInteractive: True
+ ChassisSKUNumber: Chassis SKU
+ HypervisorPresent: True
+ Manufacturer: LENOVO
+ Model: 82SB
+ NumberOfProcessors: 1
+ SystemFamily: IdeaPad Gaming 3 15ARH7
+ SystemSKUNumber: LENOVO_MT_82SB_BU_idea_FM_IdeaPad Gaming 3 15ARH7
+ SystemType: x64-based PC
+gx: try create device
+gx: CreateWindow
+gx: device created (glVendor: NVIDIA Corporation, glRenderer: NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2, glVersion: 4.6.0 NVIDIA 537.70)
+3DConnexion: SiInitialize failed (16)
+Intializing the Ansys Environment (Assembly Resolver)...
+Intializing the ANSYS Environment (Assembly Resolver)...
+Initializing Ansys Environment ...
+SpaceClaimInstance.Initialize() has not been called
+**Update: 2.96999999997993E-05
+Started(UniversalTime): 03-Apr-2026 15:08:21
+User: ShubhamR
+Computer: DESKTOP-GSSGRQ1
+CLR version: 4.0.30319.42000
+OS Culture: en-IN
+SpaceClaim Culture: en-IN
+ Microsoft Windows NT 10.0.26200.0
+ Virtual memory 134217727Mb
+ Physical memory 15557Mb
+ 64-bit
+Processor: AMD Ryzen 7 6800H with Radeon Graphics         
+Description: AMD64 Family 25 Model 68 Stepping 1
+Manufacturer: AuthenticAMD
+Processor count: 16
+GPU 1: AMD RadeonT 680M
+ Device id: PCI\\VEN_1002&DEV_1681&SUBSYS_3AF817AA&REV_C8\\4&23FBA460&0&0041
+ Driver version: 32.0.11038.9002
+ Driver date: October, 2024
+GPU 2: NVIDIA GeForce RTX 3050 Laptop GPU
+ Device id: PCI\\VEN_10DE&DEV_25A2&SUBSYS_3AF817AA&REV_A1\\4&916989F&0&0009
+ Driver version: 31.0.15.3770
+ Driver date: October, 2023
+Renderer: OpenGL (GPU 2)
+Antialiasing: 3
+Program Version: 2025.2.51200.7555
+License: ANSYS-01055371
+BuildNumber: SpaceClaim_Developer_Build_252_release-25.2_20251103.3 
+KeyShot installed: No
+KeyShot License: KeyShot not licensed
+KeyShot Animation: No
+KeyShot VR: No
+AddInManager: Looking for addins(1): D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery
+AddInManager: Looking for addins(2): D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns
+AddInManager: Loading add-in from D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\Additive\\AdditiveDED.manifest.xml:
+  name = Additive DED
+  description = Geometry preprocessing add-in for additive manufacturing DED simulations.
+  assembly = AdditiveDED.dll
+  typeName = AdditiveDED.AdditiveDED
+  host = SameAppDomain
+  assemblyPath = D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\Additive\\AdditiveDED.dll
+  enabled = False
+  enableKeyword = 
+  allowOnDemandLoad = False
+  internal = False
+  allowEmbedded = True
+  lastError = 
+AddInManager: Loading add-in from D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\DiscoveryConnectorService\\Ans.Discovery.Connector.xml:
+  name = Ansys-Discovery Connector
+  description = Ansys Transfer Integration.
+  assembly = Ans.Discovery.Connector.dll
+  typeName = Ansys.Discovery.Connector.DiscoveryAddIn
+  host = SameAppDomain
+  assemblyPath = D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\DiscoveryConnectorService\\Ans.Discovery.Connector.dll
+  enabled = True
+  enableKeyword = 
+  allowOnDemandLoad = False
+  internal = False
+  allowEmbedded = True
+  lastError = 
+AddInManager: Loading add-in from D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\DiscoveryConnectorService\\AnsysDiscoPlugin.xml:
+  name = Ansys Discovery 2025 R2 Integration
+  description = CAD plug-in for Ansys Discovery 2025 R2
+  assembly = AnsysDiscoPlugin.dll
+  typeName = AnsysDiscoPlugin.PluginAddin
+  host = SameAppDomain
+  assemblyPath = D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\DiscoveryConnectorService\\AnsysDiscoPlugin.dll
+  enabled = True
+  enableKeyword = 
+  allowOnDemandLoad = False
+  internal = False
+  allowEmbedded = True
+  lastError = 
+AddInManager: Loading add-in from D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\ElectronicsDatabaseAddin\\ElectronicsDatabaseAddIn.Manifest.xml:
+  name = Electronics Database
+  description = Electronics Database add-in, written in C#, using API V252.
+  assembly = ElectronicsDatabaseAddIn.dll
+  typeName = ElectronicsDatabaseAddIn.EDBAddIn
+  host = SameAppDomain
+  assemblyPath = D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\ElectronicsDatabaseAddin\\ElectronicsDatabaseAddIn.dll
+  enabled = True
+  enableKeyword = 
+  allowOnDemandLoad = False
+  internal = False
+  allowEmbedded = True
+  lastError = 
+AddInManager: Loading add-in from D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\STK\\StkModelAddIn.manifest.xml:
+  name = StkModelAddIn
+  description = Add-in for Discovery to edit models for use in STK
+  assembly = StkModelAddIn.dll
+  typeName = AGI.StkModelAddIn.StkModelAddIn
+  host = SameAppDomain
+  assemblyPath = D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\STK\\StkModelAddIn.dll
+  enabled = False
+  enableKeyword = 
+  allowOnDemandLoad = False
+  internal = False
+  allowEmbedded = True
+  lastError = 
+AddInManager: Looking for addins(3): Registry
+AddInManager: Looking for addins(4): C:\\ProgramData\\Discovery\\AddIns
+API license query for feature SCDM
+2026-04-03 20:38:28,112 - INFO - Install directory found as: "D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Electronics\\win64"
+2026-04-03 20:38:28,135 - INFO - Working directory set to "C:\\Users\\ShubhamR\\AppData\\Local\\Temp"
+AddInManager: Skipping ICommandExtensibility.Initialize for AdditiveDED.dll IsEnabled=False IsConnected=False
+AddInManager: Calling ICommandExtensibility.Initialize for Ans.Discovery.Connector.dll
+Start Connector Service
+AssemblyResolve (Ansys 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en-IN, PublicKeyToken=null
+... Loading (AMM2): D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+... Didn't load: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+AssemblyResolve (ANSYS 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en-IN, PublicKeyToken=null
+AssemblyResolve (ANSYS 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en-IN, PublicKeyToken=null
+... Didn't load: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+AssemblyResolve (Ansys 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en-IN, PublicKeyToken=null
+... Loading (AMM2): D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+... Didn't load: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+AssemblyResolve (ANSYS 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en-IN, PublicKeyToken=null
+AssemblyResolve (ANSYS 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en-IN, PublicKeyToken=null
+... Didn't load: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+AssemblyResolve (Ansys 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en, PublicKeyToken=null
+... Loading (AMM2): D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+... Didn't load: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+AssemblyResolve (ANSYS 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en, PublicKeyToken=null
+AssemblyResolve (ANSYS 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en, PublicKeyToken=null
+... Didn't load: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+AssemblyResolve (Ansys 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en, PublicKeyToken=null
+... Loading (AMM2): D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+... Didn't load: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+AssemblyResolve (ANSYS 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en, PublicKeyToken=null
+AssemblyResolve (ANSYS 252): Ans.Discovery.Connector.resources, Version=25.2.0.0, Culture=en, PublicKeyToken=null
+... Didn't load: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64\\Ans.Discovery.Connector.resources.dll
+API license query for feature SCDM
+AddInManager: Calling ICommandExtensibility.Initialize for AnsysDiscoPlugin.dll
+AddInManager: Calling ICommandExtensibility.Initialize for ElectronicsDatabaseAddIn.dll
+AddInManager: Skipping ICommandExtensibility.Initialize for StkModelAddIn.dll IsEnabled=False IsConnected=False
+AddInManager: Skipping AddIn.OnInitialized for AdditiveDED.dll IsEnabled=False IsConnected=False
+AddInManager: Calling AddIn.OnInitialized for Ans.Discovery.Connector.dll
+AddInManager: Calling AddIn.OnInitialized for AnsysDiscoPlugin.dll
+AddInManager: Calling AddIn.OnInitialized for ElectronicsDatabaseAddIn.dll
+AddInManager: Skipping AddIn.OnInitialized for StkModelAddIn.dll IsEnabled=False IsConnected=False
+****ViewEmbedding.Initialize: 5.7223009
+Unable to apply overlay strings: UICommand 'AdvSkModeToggle' not found.
+Unable to apply overlay strings: UICommand 'SpecialResultsSetBcFrictionlessSupport' not found.
+Unable to apply overlay strings: UICommand 'AdvSkHideConstraintTips' not found.
+Unable to apply overlay strings: UICommand 'sampleBodyCheckBoxItem' not found.
+Unable to apply overlay strings: UICommand 'TrimInverse' not found.
+Unable to apply overlay strings: UICommand 'SpecialResultsSetBcMassFlow' not found.
+Unable to apply overlay strings: UICommand 'SpecialResultsSetBcMoment' not found.
+Unable to apply overlay strings: UICommand 'RelaxToolMaximumPoints' not found.
+Unable to apply overlay strings: UICommand 'AmiMatchControlTool' not found.
+Unable to apply overlay strings: UICommand 'samplePercentageCheckBoxItem' not found.
+Unable to apply overlay strings: UICommand 'sampleLengthCheckBoxItem' not found.
+Unable to apply overlay strings: UICommand 'AdvSkHideConstraintTips' not found.
+Unable to apply overlay strings: UICommand 'ToolGuideInflationToolSelectFaces' not found.
+Unable to apply overlay strings: UICommand 'colorCheckBoxItem' not found.
+Unable to apply overlay strings: UICommand 'BlkMergeBlockVerticesPropagate' not found.
+Unable to apply overlay strings: UICommand 'arrowCheckBoxItem' not found.
+Unable to apply overlay strings: UICommand 'AdvSkNewSuperSketch' not found.
+Unable to apply overlay strings: UICommand 'CaeExtendToolGuideSelectText' not found.
+Unable to apply overlay strings: UICommand 'RelaxToolMinimumDistance' not found.
+Unable to apply overlay strings: UICommand 'AdvSkActivateSuperSketch' not found.
+Disco.Security: Discovery level: 1
+Apollo Initialization Time: 0.687 seconds
+Apollo Logging Level: VerboseLevel1
+Launch process: 
+	D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\artemis\\bin\\Win64\\Ansys.Artemis.Server.exe
+Starting Process: 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\artemis\\bin\\Win64\\Ansys.Artemis.Server.exe', in 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\artemis\\bin\\Win64'
+Environment: 
+	[EFC_4868_1262719628, 1]
+	[QT_D3DCREATE_MULTITHREADED, 1]
+	[NETGENDIR, C:\\Users\\ShubhamR\\OneDrive\\Desktop\\Netgen-5.0_x64\\bin]
+	[SPACECLAIMINSTALLDIR, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery]
+	[PYTHONNOUSERSITE, 1]
+	[FLUENT_ARGS_REMOTE, 3ddp -meshing -r25.2.0 -tm4 -t4 -nm -license=enterprise ]
+	[PUBLIC, C:\\Users\\Public]
+	[ANSYS_LICENSING_WORKFLOW_SESSION, <DATA><ID>918604d8eed54830a795b6edddb50387</ID></DATA>]
+	[ANS_DEFAULT_OVERRIDE, 1]
+	[PROCESSOR_REVISION, 4401]
+	[PROCESSOR_IDENTIFIER, AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD]
+	[FLUENT_ADDONS, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons]
+	[SEEMPATH, .;.;.;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\lib;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\client\\lib;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\lib;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\lib\\tgrid;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\tgrid\\lib;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\lib;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\client\\lib;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\lib;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\lib\\tgrid;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\tgrid\\lib]
+	[FLUENT_INTEL_MPI_VERSION, 2021]
+	[ProgramData, C:\\ProgramData]
+	[SystemRoot, C:\\WINDOWS]
+	[FLUENT_WAIT, yes]
+	[MSMPI_BENCHMARKS, C:\\Program Files\\Microsoft MPI\\Benchmarks\\]
+	[OneDrive, C:\\Users\\ShubhamR\\OneDrive]
+	[FLUENT_INC_ORG, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent]
+	[CommonProgramFiles, C:\\Program Files\\Common Files]
+	[RELEASE_MINOR, 2]
+	[Path, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Electronics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\tp\\hdf5\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\aisol\\bin\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Stride;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\vki\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\KINetics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\fsi\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\commonfiles\\fluids\\lib\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin\\bin;D:\\Non-System Softwares\\Tesseract;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\jar\\engine.jar;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;D:\\Non-System Softwares\\Mathworks R2025B\\runtime\\win64;D:\\Non-System Softwares\\Mathworks R2025B\\bin;D:\\Non-System Softwares\\MathWorks Software 2\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;D:\\Non-System Softwares\\Git\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;D:\\Non-System Softwares\\Microsoft VS Code\\java JDK;C:\\Users\\ShubhamR\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Non-System Softwares\\Microsoft VS Code\\bin;C:\\Program Files\\MPICH2\\bin;D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\bin;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\engine.jar;D:\\Non-System Softwares\\MathWorks Software\\bin;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\Tesseract;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;C:\\Users\\ShubhamR\\AppData\\Roaming\\npm;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;C:\\Users\\ShubhamR\\AppData\\Local\\Python\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\tp\\qt\\5.15.18\\winx64\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64]
+	[MESHING_MODE, 1]
+	[ProgramFiles, C:\\Program Files]
+	[CADOE_LIBDIR252, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\CommonFiles\\Language\\en-us]
+	[FLUENT_INC_LOCAL_RESERVED, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent]
+	[CADOE_LIBDIR251, D:\\Non-System Softwares\\ansys 2025\\ANSYS Inc\\ANSYS Student\\v251\\CommonFiles\\Language\\en-us]
+	[PARA_NPROCS, 4]
+	[ANSYS_GRAPHICS_ENABLE_OGL_INACTIVE_BUFFER_AUTO_EVICT, 5]
+	[LAMMPS_POTENTIALS, D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\Potentials]
+	[USERNAME, ShubhamR]
+	[QT_AUTO_SCREEN_SCALE_FACTOR, 1]
+	[EFC_4868_1592913036, 1]
+	[DISCO_SAMPLES_PATH, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\samples]
+	[CommonProgramW6432, C:\\Program Files\\Common Files]
+	[PATHEXT, .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC]
+	[FLUENT_INC, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent]
+	[NVIDIAWHITELISTED, 0x01]
+	[FLUENT_LOCAL_SHARED_MEMORY, 1]
+	[OS, Windows_NT]
+	[ANSYSINSTALL, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252]
+	[PASS_IN_RELEASE, 25.2.0]
+	[FLUENT_PROD, fluent]
+	[PARA_MESH_NPROCS, 4]
+	[ANSYS_GRAPHICS_OGL_BUFFER_FREE_STORE_BYTES_OVERRIDE, 134217728]
+	[windir, C:\\WINDOWS]
+	[CADOE_LIBDIR242, D:\\Non-System Softwares\\Ansys Student Software\\ANSYS Inc\\ANSYS Student\\v242\\CommonFiles\\Language\\en-us]
+	[DriverData, C:\\Windows\\System32\\Drivers\\DriverData]
+	[RANDFILE, C:\\Users\\ShubhamR\\AppData\\Local\\Temp\\.ansys\\\\.ansys.rnd]
+	[cmakepath, C:\\Program Files\\CMake\\bin]
+	[CommonProgramFiles(x86), C:\\Program Files (x86)\\Common Files]
+	[LOGONSERVER, \\\\DESKTOP-GSSGRQ1]
+	[FLUENT_AFFINITY, 1]
+	[SESSIONNAME, Console]
+	[USERDOMAIN_ROAMINGPROFILE, DESKTOP-GSSGRQ1]
+	[HOME, C:\\Users\\ShubhamR]
+	[USERPROFILE, C:\\Users\\ShubhamR]
+	[FLUENT_ARCH, win64]
+	[HOOPS_PICTURE, dx11/win]
+	[FLUENT_FROM_SHORTCUT, 1]
+	[FPS_BROWSER_USER_PROFILE_STRING, Default]
+	[HOMEDRIVE, C:]
+	[ANSYS251_DIR, D:\\Non-System Softwares\\ansys 2025\\ANSYS Inc\\ANSYS Student\\v251\\ANSYS]
+	[FLUENT_PROD_DIR, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0]
+	[FLUENT_WAVELIB, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave]
+	[FLUENT_GTIHOME, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\gtpower]
+	[EFC_4868_2775293581, 1]
+	[SoS_debug_exe, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\optiSLang\\sos\\sos_console.exe]
+	[VBOX_MSI_INSTALL_PATH, C:\\Program Files\\Ubuntu Linux OS\\]
+	[RELEASE_REVISION, 0]
+	[APPDATA, C:\\Users\\ShubhamR\\AppData\\Roaming]
+	[JAVA_HOME, C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin]
+	[LAMMPS_PLUGIN_PATH, D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\plugins]
+	[FLUENT_REVISION, 0]
+	[NUMBER_OF_PROCESSORS, 16]
+	[DirectoryService:DataPath, C:\\Users\\ShubhamR\\AppData\\Local\\Temp/Discovery\\20260403.2038.11020\\Refine\\Project]
+	[ARTEMIS_LOG_DIRECTORY, C:\\Users\\ShubhamR\\AppData\\Local\\Temp/Discovery\\20260403.2038.11020\\Logs]
+	[DISCO_TUTORIALS_PATH, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\tutorials\\project_files]
+	[PROCESSOR_ARCHITECTURE, AMD64]
+	[AWP_ROOT252, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252]
+	[PYTHONHOME, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python]
+	[TMP, C:\\Users\\ShubhamR\\AppData\\Local\\Temp]
+	[GOOGLE_APPLICATION_CREDENTIALS, C:\\Users\\ShubhamR\\Downloads\\trial-project-461617-c7f576d8332e.json]
+	[SoS_exe, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\optiSLang\\sos\\sos.exe]
+	[DirectoryService:DeleteTempOnDispose, true]
+	[HOOPS_TEXT_FONT, name=(MS Serif-GDI-RASTER-10-4-400-0,sans serif,roman,Helvetica.pfa,AvantGarde.pfa),size tolerance=10%]
+	[SoS_install_dir, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\optiSLang\\sos\\]
+	[PROCESSOR_LEVEL, 25]
+	[MSMPI_BIN, C:\\Program Files\\Microsoft MPI\\Bin\\]
+	[EFC_4868_3789132940, 1]
+	[P_SCHEMA, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Schema]
+	[FPS_BROWSER_APP_PROFILE_STRING, Internet Explorer]
+	[FL_PARA_DEFAULT_MODE, 0]
+	[FL_LAUNCHER_FLUENT_COMMAND, fluent.exe 3ddp -meshing -r25.2.0 -tm4 -t4     -nm       -license=enterprise   ]
+	[ANSYS252_DIR, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\ANSYS]
+	[AWP_ROOT251, D:\\Non-System Softwares\\ansys 2025\\ANSYS Inc\\ANSYS Student\\v251]
+	[PSModulePath, C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules]
+	[TEMP, C:\\Users\\ShubhamR\\AppData\\Local\\Temp/Discovery\\20260403.2038.11020\\Refine]
+	[FLUENT_INC_NON_UNC, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent]
+	[ComSpec, C:\\WINDOWS\\system32\\cmd.exe]
+	[DirectoryService:TempPath, C:\\Users\\ShubhamR\\AppData\\Local\\Temp/Discovery\\20260403.2038.11020\\Refine\\Temp]
+	[FLUENT_HELP, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\nthelp\\main.hlp]
+	[NETGEN_USER_DIR, C:\\Users\\ShubhamR\\AppData\\Roaming\\Netgen-5.0]
+	[ANSYS242_DIR, D:\\Non-System Softwares\\Ansys Student Software\\ANSYS Inc\\ANSYS Student\\v242\\ANSYS]
+	[AWP_ROOT242, D:\\Non-System Softwares\\Ansys Student Software\\ANSYS Inc\\ANSYS Student\\v242]
+	[LAMMPSHOME, D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024]
+	[FLUENT_STARTED_FROM_LAUNCHER, 1]
+	[EFC_4868_2283032206, 1]
+	[RELEASE_MAJOR, 25]
+	[SHIM_MCCOMPAT, 0x810000001]
+	[ALLUSERSPROFILE, C:\\ProgramData]
+	[PROMPT, $P$G]
+	[AWP_LOCALE251, en-us]
+	[FLUENT_CORTEX_PID, 4128]
+	[ANSYS_LICENSING_CONTEXT_DATA, <ANSYS_LICENSING_CONTEXT_DATA><DATA>PE9LRVlfU0laRT4KMTI4CjwvT0tFWV9TSVpFPgo8RU5DX1NJWkU-CjEzNgo8L0VOQ19TSVpFPgo8SVZfU0laRT4KOAo8L0lWX1NJWkU-CjxNU0dfU0laRT4KMTM1CjwvTVNHX1NJWkU-CjxNU0c-Cm9ZRV9fdXZpX0RsalBkZ3A3TmFsdXc0VG02d3lCbElyb1JadWJuNVJJdkxOLWJMdEtOUFNxUHJNbERvdHhDdF81SWY0RHpyaGk0ODZua3VVODVMZG96YldBQVlNdWZWVkdmLUtUNElWLWMzXy1VOUM0d3B1NkdrMlBPTVhhcW1zaEJwdm5QY2MyWVd1N1NKWkRtakIzNlF6MFlEckc2cXRCMU5OSElkWnlreldnVloyWlloLXN1Ul9FVWtpQklENUp2dUNpTUVpaE5PMmw5TFY5b3l4RGcxcUZpN0dZdzN6TTVMQlcwbWhMUHJWeUVPbGpMYnk4cjZVQ2tyQ2EyWE84R2pjUlBYVXRuLVdtZmJ1UmN5cHpGclR4aFNwYTN5Y202YzFjQ29JQTJOcWdYaVBvSG5EWXNfdFpHM1NCbGtQR1NGdWNlS2RuRlp1Tjc3N2V2T3dwOXJPeFBMSWZxOG8xc1JEYVpMX2MzVQo8L01TRz4K</DATA></ANSYS_LICENSING_CONTEXT_DATA>]
+	[urls, http://localhost:50918]
+	[COMPUTERNAME, DESKTOP-GSSGRQ1]
+	[LOCALAPPDATA, C:\\Users\\ShubhamR\\AppData\\Local]
+	[USERDOMAIN, DESKTOP-GSSGRQ1]
+	[SystemDrive, C:]
+	[HOMEPATH, \\Users\\ShubhamR]
+	[FL_HOOPS_DRIVER, 3ddriver]
+	[LSTC_LICENSE, Ansys]
+	[HDF5_USE_FILE_LOCKING, FALSE]
+	[ProgramFiles(x86), C:\\Program Files (x86)]
+	[ProgramW6432, C:\\Program Files]
+	[FLUENT_HOST_IP, DESKTOP-GSSGRQ1:127.0.0.1]
+	[USER_LOCAL, u:]
+	[FLUENT_AAS, 0]
+	[MSI2LMP_LIBRARY, D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\frc_files]
+	[ANSYS_OADIR, D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Electronics\\win64\\common\\oa]
+Could not find registry key for granta selector/edupack application: Could not find registry area for Granta Selector
+Could not find registry key for granta selector/edupack application: Could not find registry area for Granta Selector
+====> Id: 0:25, CreatedType: StudyEntity
+====> Id: 0:27, CreatedType: ParametersEntity
+Total time for tracker update: .0001 s
+====> Id: 0:29, CreatedType: MaterialEntity
+====> Id: 0:31, CreatedType: SimulationEntity
+====> Id: 0:33, CreatedType: PhysicsRegionEntity
+====> Id: 0:36, CreatedType: MaterialAssignmentEntity
+====> Id: 0:39, CreatedType: OptimizationOptionEntity
+====> Id: 0:42, CreatedType: OptimizationProtectedDepthEntity
+====> Id: 0:45, CreatedType: GlobalFidelitySettingsEntity
+====> Id: 0:47, CreatedType: ModalSettingsEntity
+====> Id: 0:51, CreatedType: PsdSettingsEntity
+====> Id: 0:54, CreatedType: ModalSettingsEntity
+====> Id: 0:57, CreatedType: PhysicsParametersEntity
+Total time for tracker update:  s
+====> Id: 0:60, CreatedType: ParameterStudyEntity
+====> Id: 0:62, CreatedType: DefinedVariationEntity
+====> Id: 0:67, CreatedType: ResultsEntity
+ ==== Rebuilding Condition Annotation Mappings ==== 
+ ==== Rebuilding Monitor Annotation Mappings ==== 
+**Update: 2.35000000010643E-05
+ ==== Rebuilding Condition Annotation Mappings ==== 
+ ==== Rebuilding Monitor Annotation Mappings ==== 
+Automation: Starting for Simulation 1 and command: Create Simulation
+PhysicsTypeService: Pre-set expected physics type to None for Simulation 1
+Automation: Updating facets for Simulation 1
+Automation: Detecting contacts (not blocking) for Simulation 1 and command: Create Simulation
+Automation: Updating physics for Simulation 1 and command: Create Simulation
+Automation: Updating base physics (synchronous) for Simulation 1 took 6 ms
+Automation: Updating contacts and interfaces (not blocking) for Simulation 1
+Automation: Getting contacts and interfaces update commands for Simulation 1 took 0 ms
+Automation: Complete for Simulation 1 and command: Create Simulation in 17ms
+Automation: No more pending task in queue.
+Graphite bootstrapped.
+WARNING: The following assembly resolve locations could not be found, please check your installation:
+	D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\tp\\hdf5\\1.10.5\\winx64
+-- [preloaded-assembly] C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.exe
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System\\v4.0_4.0.0.0__b77a5c561934e089\\System.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Core\\v4.0_4.0.0.0__b77a5c561934e089\\System.Core.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Core.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Application.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Prism.Unity.Wpf.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Prism.Wpf.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\PresentationFramework\\v4.0_4.0.0.0__31bf3856ad364e35\\PresentationFramework.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\WindowsBase\\v4.0_4.0.0.0__31bf3856ad364e35\\WindowsBase.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_64\\PresentationCore\\v4.0_4.0.0.0__31bf3856ad364e35\\PresentationCore.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.CoreUI.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Configuration\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Configuration.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Xml\\v4.0_4.0.0.0__b77a5c561934e089\\System.Xml.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Xaml\\v4.0_4.0.0.0__b77a5c561934e089\\System.Xaml.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.Images.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\CommandLine.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Newtonsoft.Json.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Drawing\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Drawing.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Xml.Linq\\v4.0_4.0.0.0__b77a5c561934e089\\System.Xml.Linq.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\System.Text.Json.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\System.Memory.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\System.Runtime.CompilerServices.Unsafe.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\System.Buffers.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.ValueTuple\\v4.0_4.0.0.0__cc7b13ffcd2ddd51\\System.ValueTuple.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\System.Text.Encodings.Web.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Microsoft.Bcl.AsyncInterfaces.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\System.Threading.Tasks.Extensions.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\System.Numerics.Vectors.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Foundation.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Settings.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Windows.Forms\\v4.0_4.0.0.0__b77a5c561934e089\\System.Windows.Forms.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Numeric.dll
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SCtemp.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Shell.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\CommonServiceLocator.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\log4net.dll
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Core.Common.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Prism.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Security.dll
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Unity.Container.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Unity.Abstractions.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Mediator.MediatorProvider.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Geometry.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Core.Collaboration.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.CloudSync.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Physics.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.ResultsStore.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Business.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.SpaceClaimUI.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Variations.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Meshing.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.MediatorContracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Common.Extensions.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.Controls.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Journal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\User Model.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Nom.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SessionCore.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Unity.Interception.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Core.Issues.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\UI Foundation.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Core.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Avi.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Modeler.dll
+-- [preloaded-assembly] C:\\WINDOWS\\assembly\\GAC_MSIL\\Microsoft.Office.Interop.PowerPoint\\15.0.0.0__71e9bce111e9429c\\Microsoft.Office.Interop.PowerPoint.dll
+-- [preloaded-assembly] C:\\WINDOWS\\assembly\\GAC_MSIL\\office\\15.0.0.0__71e9bce111e9429c\\office.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\GraphicsScene.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Gxi.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Geometry.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\CAENominal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Presentation.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\DirectShow.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Graphics.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Tool.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Custom.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Core.Context.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Core.Graphics.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\GraphicsCore.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\GraphicsWindow.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Microsoft.Dynamic.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\UnitsNet.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Sketch.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.MngdEngrData.MaterialIntf.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.MngdEngrData.MaterialMatMLReader.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.MngdEngrData.MaterialMDSReader.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.MngdEngrData.MaterialJsonReaderWriter.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Stored Selection.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Commands.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\MIServiceLayerClientInterface.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\DesignWindow.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\LanguageExt.Core.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\netstandard\\v4.0_2.0.0.0__cc7b13ffcd2ddd51\\netstandard.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.ViewModels.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.ViewModels.Contracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Business.Contracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Prism.Container.Extensions.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\MediatR.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\MediatR.Courier.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AutoMapper.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Physics.Contracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\MediatR.Contracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Facade.Tools.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Facade.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.SpaceClaimFramework.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Cloud.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Optislang.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Collaboration.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Net.Http\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Net.Http.dll
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Microsoft.Extensions.Logging.Abstractions.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Services.Core.Common.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.Styles.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.Guides.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.Extensions.dll
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.Views.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Charts.Wpf.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\PresentationFramework.Aero2\\v4.0_4.0.0.0__31bf3856ad364e35\\PresentationFramework.Aero2.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Common.Resources.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Common.Themes.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Runtime.Serialization\\v4.0_4.0.0.0__b77a5c561934e089\\System.Runtime.Serialization.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Numerics\\v4.0_4.0.0.0__b77a5c561934e089\\System.Numerics.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Apip.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_64\\System.Data\\v4.0_4.0.0.0__b77a5c561934e089\\System.Data.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.MngdEngrData.MaterialReaderWriterHelper.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.MngdEngrData.MaterialImpl.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Granta.MaterialsInterop.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Mediator.V23.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Mediator.V232.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Mediator.V241.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Mediator.V242.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Mediator.V251.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Mediator.V252.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Mediator.V261.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V23.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V232.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V241.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V242.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V251.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V252.UserInterface.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V261.UserInterface.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V23\\SpaceClaim.Api.V23.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V23.Internal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Annotation.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AmiNominal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AnsysInterfaces.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Drawing.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V232\\SpaceClaim.Api.V232.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V232.Internal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V241\\SpaceClaim.Api.V241.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V241.Internal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V242.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V242.Internal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V251\\SpaceClaim.Api.V251.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V251.Internal.dll
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ans.HDF5.Interop.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Mediator.ApiInitializer.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V252.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V252\\SpaceClaim.Api.V252.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V252.Internal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V261.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V261.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V261.Internal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Facade.Scene.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\FacetedGeometry.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\DevComponents.DotNetBar2.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Core.Design.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Translator.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Application.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Wpf.ViewModels.Immersive.dll
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Core.Units.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpecialResultsFoundation.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Tools.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Win32.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SRNominal.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\VisualizationTool.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Parasolid.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\TranslatorUtilities.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\StrideWrapper.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SubDivWrapper.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Polygonica.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\FMKernel_SCP.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\GraphicsDevice.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Gxf.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\3DConnexion.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Management\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Management.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\D11.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ogl.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ICSharpCode.SharpZipLib.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AnsysModelManager.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AnsysModelingInterfaces.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AnsysSessionModelManager.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.ModelManager.Contracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Common.Interop.252.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Structure.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.HistoryTracking.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ScriptingFoundation.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Connect.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Mesh.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\InterpreterContracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Properties.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Runtime.Remoting\\v4.0_4.0.0.0__b77a5c561934e089\\System.Runtime.Remoting.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\DiscoveryConnectorService\\Ans.Discovery.Connector.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\DiscoveryConnectorService\\Discovery.Connector.Service.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Grpc.Core.Api.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\DiscoveryConnectorService\\AnsysDiscoPlugin.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Base.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ans.ComponentSystem.Interop.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\ElectronicsDatabaseAddin\\ElectronicsDatabaseAddIn.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\ElectronicsDatabaseAddin\\Ansys.Ansoft.EdbBuilderUtils.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Electronics\\win64\\Ansys.Ansoft.Edb.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Grpc.Core.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Google.Protobuf.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AddIns\\DiscoveryConnectorService\\Ansys.WNUA.Interceptors.Framework.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\UIObjects.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Facade.Queries.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\CASL.UIStringLocalization.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.UIModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.ExtensibleUserInterfaceModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.PhysicsModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.DesignModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.PartFinderModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.AssistantModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.VariationsModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.CollaborationModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.ReportingModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.ScriptCustomizationModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.AnalysisModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.ExploreModule.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ScriptEditorContracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Unity.RegistrationByConvention.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.InfernoUI.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Apollo.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Apollo.Engine.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Apollo.SolutionDefinition.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Live.TopologyOptimization.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Live.Post.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.PInvoke.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Live.HardwareInformation.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\System.Diagnostics.DiagnosticSource.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Apollo.EngineeringDataMaterials.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Contracts.Data.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Simulation.Contracts.Data.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Post.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Scriban.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.OptislangUI.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Microsoft.Xaml.Behaviors.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Optislang.Contracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Microsoft.Identity.Client.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Microsoft.IdentityModel.Abstractions.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Collaboration.Contracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Collaboration.OnScale.Contracts.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Services.Core.Clients.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Collaboration.Api.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Simulation.Client.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Simulation.Contracts.Services.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Simulation.Client.Http.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Simulation.Client.Mqtt.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Contracts.Services.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Hosting.Http.Client.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Serialization.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Reflection.Emit\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Reflection.Emit.dll
+-- [preloaded-assembly] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Reflection.Emit.ILGeneration\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Reflection.Emit.ILGeneration.dll
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] 'dynamic-assembly'
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Facade.Commands.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Inference.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\de\\Disco.Physics.resources.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\fr\\Disco.Physics.resources.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ja\\Disco.Physics.resources.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\zh-Hans\\Disco.Physics.resources.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\zh-Hant\\Disco.Physics.resources.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Microsoft.IdentityModel.Tokens.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\AnsysWpf.FeatureTrackViewModels.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.Core.Extensibility.dll
+-- [preloaded-assembly] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ans.Graphite.Bootstrap.Cs.dll
+Plugin loaded successfully from :D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\X17Core
+[20:38:29.241676] [Thread 16224]: [INFO] Initializing ApolloPost...
+[20:38:29.421225] [Thread 16224]: [INFO] Compiled opaque graphics pipelines: 0.172650s
+[20:38:29.449727] [Thread 16224]: [INFO] Compiled gfx compute pipelines: 0.028324s
+[20:38:29.643512] [Thread 16224]: [INFO] Compiled post compute pipelines: 0.193599s
+[20:38:29.653900] [Thread 16224]: [INFO] Compiled transparent graphics pipelines: 0.009529s
+[20:38:29.674636] [Thread 16224]: [INFO] Successfully initialized ApolloPost
+cudaDevAttrMemoryPoolsSupported: true
+cudaDevAttrMemoryPoolsSupported: true
+[1	][dbglog][16224] Database service started on port 50921
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V241.UserInterface.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V242.UserInterface.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Discovery.Api.V251.UserInterface.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\TypeDerivationContracts.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\IronPythonScriptingContext.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\IronPythonActiproModuleManager.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\PythonDerivationContracts.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ScriptingContextContracts.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\IronPythonInterpreter.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\IronPythonTypeDerivationEngine.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ActiproSoftware.Text.Addons.Python.Wpf.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ActiproSoftware.Text.Wpf.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\IronPython.dll
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\Microsoft.CSharp\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\Microsoft.CSharp.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V23.Scripting.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Microsoft.Scripting.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V232.Scripting.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V241.Scripting.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ActiproSoftware.SyntaxEditor.Addons.Python.Wpf.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V242.Scripting.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ActiproSoftware.Text.LLParser.Wpf.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V251.Scripting.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\IronPython.Modules.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ActiproSoftware.SyntaxEditor.Wpf.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V252.Scripting.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ActiproSoftware.Shared.Wpf.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\SpaceClaim.Api.V261.Scripting.dll
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Dynamic\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Dynamic.dll
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Hatching.dll
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\DCMSketch.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Hosting.Mqtt.Client.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\MQTTnet.dll
+Load script object types took 0.39 seconds
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.ComponentModel.Composition\\v4.0_4.0.0.0__b77a5c561934e089\\System.ComponentModel.Composition.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.Effects.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Artemis.Client.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.Views.Controls.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Ansys.Toolkit.Wpf.Views.Styles.dll
+-- [assembly-loaded] 'dynamic-assembly'
+Loading bend tables...
+   Loaded bend table D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Library\\Bends\\Sample-BendRadius.csv
+   Loaded bend table D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Library\\Bends\\Sample.csv
+   Loaded bend table D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Library\\Bends\\test-bend-deduction-t1-v40--t3-v20-30-40.csv
+   Loaded bend table D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Library\\Bends\\test-bend-deduction-t2-no-v.csv
+   Loaded bend table D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Library\\Bends\\test-bend-deduction-t2-v40.csv
+...Finished loading bend tables.
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\GraphicsComposition.dll
+Initialize Discovery: 0
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\PresentationFramework-SystemCore\\v4.0_4.0.0.0__b77a5c561934e089\\PresentationFramework-SystemCore.dll
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\PresentationFramework-SystemXml\\v4.0_4.0.0.0__b77a5c561934e089\\PresentationFramework-SystemXml.dll
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\PresentationFramework-SystemData\\v4.0_4.0.0.0__b77a5c561934e089\\PresentationFramework-SystemData.dll
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\PresentationFramework-SystemXmlLinq\\v4.0_4.0.0.0__b77a5c561934e089\\PresentationFramework-SystemXmlLinq.dll
+Loading guided help definitions from file: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\Overlayhelp_Global.xml
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\File Storage.dll
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Windows.Controls.Ribbon\\v4.0_4.0.0.0__b77a5c561934e089\\System.Windows.Controls.Ribbon.dll
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\UIAutomationTypes\\v4.0_4.0.0.0__31bf3856ad364e35\\UIAutomationTypes.dll
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\UIAutomationProvider\\v4.0_4.0.0.0__31bf3856ad364e35\\UIAutomationProvider.dll
+-- [assembly-loaded] 'dynamic-assembly'
+Saving settings at 20:38:37
+gx: SetTessellationQuality: level:5 (set max edge length: False), changed: True, full tess: False 
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\WindowsFormsIntegration\\v4.0_4.0.0.0__31bf3856ad364e35\\WindowsFormsIntegration.dll
+gx: CreateWindow
+gx: adapters: 1
+gx: D3D9Ex default adapter: NVIDIA GeForce RTX 3050 Laptop GPU -> \\\\.\\DISPLAY1
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\LiveCharts.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\LiveCharts.Wpf.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Rasterizer.dll
+-- [assembly-loaded] 'dynamic-assembly'
+OverlayHelpResources: Loading topics file 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\Overlayhelp_Global.xml'
+Loading guided help definitions from file: D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\Overlayhelp_Global.xml
+-- [assembly-loaded] 'dynamic-assembly'
+OverlayHelpResources: Loading topics file 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\overlayhelp\\Overlayhelp_RibbonTabDesign.xml'
+-- [assembly-loaded] 'dynamic-assembly'
+OverlayHelpResources: Loading topics file 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\overlayhelp\\Overlayhelp_RibbonTabDisplay.xml'
+-- [assembly-loaded] 'dynamic-assembly'
+OverlayHelpResources: Loading topics file 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\overlayhelp\\Overlayhelp_RibbonTabFacets.xml'
+-- [assembly-loaded] 'dynamic-assembly'
+OverlayHelpResources: Loading topics file 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\overlayhelp\\Overlayhelp_RibbonTabMeasure.xml'
+-- [assembly-loaded] 'dynamic-assembly'
+OverlayHelpResources: Loading topics file 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\overlayhelp\\Overlayhelp_RibbonTabPrepare.xml'
+-- [assembly-loaded] 'dynamic-assembly'
+OverlayHelpResources: Loading topics file 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\overlayhelp\\Overlayhelp_RibbonTabRepair.xml'
+-- [assembly-loaded] 'dynamic-assembly'
+OverlayHelpResources: Loading topics file 'D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\overlay\\overlayhelp\\Overlayhelp_RibbonTabSimulation.xml'
+-- [assembly-loaded] 'dynamic-assembly'
+OverlayHelpResources: Loading Control Guides
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.IO.Compression.FileSystem\\v4.0_4.0.0.0__b77a5c561934e089\\System.IO.Compression.FileSystem.dll
+[         1]  > [] _diagnostics@466
+PATH:
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Electronics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\tp\\hdf5\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\aisol\\bin\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Stride;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\vki\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\KINetics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\fsi\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\commonfiles\\fluids\\lib\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin\\bin;D:\\Non-System Softwares\\Tesseract;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\jar\\engine.jar;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;D:\\Non-System Softwares\\Mathworks R2025B\\runtime\\win64;D:\\Non-System Softwares\\Mathworks R2025B\\bin;D:\\Non-System Softwares\\MathWorks Software 2\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;D:\\Non-System Softwares\\Git\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;D:\\Non-System Softwares\\Microsoft VS Code\\java JDK;C:\\Users\\ShubhamR\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Non-System Softwares\\Microsoft VS Code\\bin;C:\\Program Files\\MPICH2\\bin;D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\bin;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\engine.jar;D:\\Non-System Softwares\\MathWorks Software\\bin;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\Tesseract;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;C:\\Users\\ShubhamR\\AppData\\Roaming\\npm;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;C:\\Users\\ShubhamR\\AppData\\Local\\Python\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\tp\\qt\\5.15.18\\winx64\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Framework\\bin\\Win64
+Starting load of C:\\Users\\ShubhamR\\Downloads\\SS_PerfectExpanded\\SS_PerfectlyExpanded.dsco at time 18.3260235
+03-04-2026 20:37:0420:38:40: start load C:\\Users\\ShubhamR\\Downloads\\SS_PerfectExpanded\\SS_PerfectlyExpanded.dsco
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\BlockModeler.dll
+-- [assembly-loaded] C:\\WINDOWS\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Security\\v4.0_4.0.0.0__b03f5f7f11d50a3a\\System.Security.dll
+Saving settings at 20:38:41
+gx: SetTessellationQuality: level:5 (set max edge length: False), changed: False, full tess: False 
+**Update: 1.46000000000868E-05
+ExtendedSelectionTool
+ExtendedSelectionTool
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ScriptEditorViewModels.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\Disco.SerializationContracts.dll
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+20:38:42: ended load C:\\Users\\ShubhamR\\Downloads\\SS_PerfectExpanded\\SS_PerfectlyExpanded.dsco
+OpenDesign: in 1.384 s.
+Elapsed time for internalize was 0.0276735 seconds
+[         1]    > [] Load@127
+[         1]    < [] Load@127 : 4 msec
+[         1]  < [] _diagnostics@466 : 1601 msec
+ ==== Rebuilding Condition Annotation Mappings ==== 
+ ==== Rebuilding Monitor Annotation Mappings ==== 
+Total time for getting changes: .0023 s
+ ==== Rebuilding Condition Annotation Mappings ==== 
+ ==== Rebuilding Monitor Annotation Mappings ==== 
+Checking CCM for C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd
+Checking CCM for C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\QIF.dll
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\ValidationFileInformation.dll
+SCDM Translator directory is set to:D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\commonfiles\\CAD\\bin
+-- [assembly-loaded] D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\Discovery\\StrideTranslator.dll
+Input Filename = C:\\Users\\ShubhamR\\AppData\\Local\\Temp\\tmp4cdcdebd-c75b-4a93-a6c3-688ab1c974e3\\SS_PerfectlyExpanded.xml
+Output Filename = C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd
+FMD Filename = C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd
+FMD File Save Version = Ansys SpaceClaim R25.2 (2025.2.0.11033)
+Surface Tolerance = 0.00075
+Normal Tolerance = 8
+Max Aspect Ratio = 0
+Max Edge Length = 0
+Use Multi-threaded Faceter = True
+
+Parasolid 36.01.227
+Command line args  -inputFile "C:\\Users\\ShubhamR\\AppData\\Local\\Temp\\tmp4cdcdebd-c75b-4a93-a6c3-688ab1c974e3\\SS_PerfectlyExpanded.xml" -outputFile "C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd" -surfaceTolerance 0.00075 -normalTolerance 8 -maxAspectRatio 0 -maxEdgeLength 0 -useMultithreadedFaceter True -fmdFile "C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd" -fmdFileSaveVersion "Ansys SpaceClaim R25.2 (2025.2.0.11033)" -heartbeat  5 -event  SpaceClaimTranslatorExitEvent_20260403_203842_1102011
+Running FMConverter.exe ...
+using FM-1.5.0-06858c Release Mar 28 2025 20:00:02
+Loading EBOM file ...
+    configured Parasolid facet options:
+        SurfaceDeviation = '0.00075'
+        SurfaceAngleDeviation = '8'
+    
+    configured Parasolid using multithreaded faceter: True
+    restored 1 entity from Parasolid file 'C:\\Users\\ShubhamR\\AppData\\Local\\Temp\\tmp4cdcdebd-c75b-4a93-a6c3-688ab1c974e3/27f60d42-e133-4c27-a248-9bfb26cc6211_2_1.x_b'
+    using length unit [METER]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0007039 [s]
+    faceting entities done in 8.35e-05 [s]
+    processing Parasolid body 50 done in 0.003338 [s]
+    converting entities done in 0.0034162 [s]
+Loading EBOM file done in  0.0509375 [s]
+    ======== SS_PerfectlyExpanded ========
+    Object summary:
+        Transform: 1
+        Attribute: 21
+        Entity   : 63
+    Entity summary:
+        Group       : 5
+        AssemblyNode: 1
+        Component   : 1
+        Body        : 1
+        Lump        : 1
+        Shell       : 1
+        Face        : 1
+        Loop        : 1
+        Coedge      : 10
+        Edge        : 10
+        Vertex      : 10
+        Surface     : 1
+        Curve       : 10
+        Point       : 10
+    Surface summary:
+        PlaneSurface: 1
+    Curve summary:
+        LineCurve: 10
+    Point summary:
+        CartesianPoint: 10
+    Bodies:
+        'Surface'
+    Assembly hierarchy:
+        'SS_PerfectlyExpanded' [T] (-> 1 body)
+    Groups:
+        'inlet'
+        'outlet'
+        'domain_walls'
+        'nozzle_walls'
+        'fluid'
+    Attributes:
+        'Name'                   : 'SS_PerfectlyExpanded'
+        'LengthUnit'             : 'METER'
+        'ATTRIB_XACIS_PNAME'     : SS_PerfectlyExpanded-2
+        'ATTRIB_MONIKER'         : 27f60d42-e133-4c27-a248-9bfb26cc6211:2
+        'PHX_DIFFUSECOLOR_RGBA'  : (128, 128, 255, 255)
+        'PHX_DOC_FILEPATH'       : 27f60d42-e133-4c27-a248-9bfb26cc6211_2_1.x_b
+        'ATTRIB_XPARASOLID_PNAME': 27f60d42-e133-4c27-a248-9bfb26cc6211:332_1
+        'ATTRIB_XPARASOLID_PNAME': 27f60d42-e133-4c27-a248-9bfb26cc6211:353_1
+        [... 13 more ...]
+    Transforms:
+        Transform
+            Key = (0,5)
+            Type = Matrix4x4
+            Matrix4x4 = (1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    Meshes:
+        Mesh 1:
+            Mesh entity summary:
+                Node3D   : 10
+                Line2    : 10
+                Triangle3: 8
+            Mesh entity collections: 11
+
+Saving FMD file ...
+    saving data to 'C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd' ...
+Saving FMD file done in  0.006442 [s]
+Running FMConverter.exe done.
+Translated  -inputFile "C:\\Users\\ShubhamR\\AppData\\Local\\Temp\\tmp4cdcdebd-c75b-4a93-a6c3-688ab1c974e3\\SS_PerfectlyExpanded.xml" -outputFile "C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd" -surfaceTolerance 0.00075 -normalTolerance 8 -maxAspectRatio 0 -maxEdgeLength 0 -useMultithreadedFaceter True -fmdFile "C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd" -fmdFileSaveVersion "Ansys SpaceClaim R25.2 (2025.2.0.11033)"  in 0.157 s.
+
+Total time for checking volume regeneration .0001s
+Total time for tracker update:  s
+-- [assembly-loaded] 'dynamic-assembly'
+-- [assembly-loaded] 'dynamic-assembly'
+Clearing all sharing contexts
+Refine dispose started.
+Shutting down Refine. Before.
+Shutting down Refine. After. Success: True. Time: 477ms
+Shutting down Refine. Disposed
+Shutting down Refine. Start clearing temporary files.
+Shutting down Refine. Finished clearing temporary files.
+Refine dispose complete.
+Next version update check available at 10-11-2026 13:10:52
+Shutdown Connector Service
+Shutdown Helper Service
+Saving settings at 20:38:50
+Ending Stride at 20:38
+gx: try destroy device
+gx: device destroyed
+[20:38:49.252773] [Thread 16224]: [INFO] Destroying ApolloPost...
+[20:38:49.254934] [Thread 16224]: [INFO] Destroyed ApolloPost
+    loading data from 'C:/Users/ShubhamR/Downloads/SS_PerfectExpanded/SS_PerfectlyExpanded.fmd' ...
+    configured Parasolid facet options:
+        SurfaceDeviation = '0.0005 METER'
+        SurfaceAngleDeviation = '4 deg'
+        RelativeMaxEdgeWidthFactor = '0.02'
+    
+    configured Parasolid using multithreaded faceter: True
+    using length unit [METER]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0335776 [s]
+    faceting entities done in 0.0001208 [s]
+    processing 19 zones ...
+Initializing geometry association data using 1 thread(s)!
+Writing C:\Users\ShubhamR\Downloads\SS_PerfectExpanded\FM_DESKTOP-GSSGRQ1_4128\initial.pmdat
+
+---------------- Import consisting of 1 meshing part(s), complete. 
+ 
+Writing C:\Users\ShubhamR\Downloads\SS_PerfectExpanded\FM_DESKTOP-GSSGRQ1_4128\TaskObject7.pmdat
+Computing size field ...
+size field computation is done in 0 sec.
+
+done.
+Generating surface mesh on 1 faces of ss_perfectlyexpanded part ...
+surface mesh done in 0 sec.
+
+---------------- A surface mesh was added to SS_PerfectlyExpanded
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+      80                           fluid                fluid    38803    38803        0
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+                    fluid                     0           0.65788031      38803
+
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for SS_PerfectlyExpanded in  0.01 minutes
+
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+Writing "C:\Users\ShubhamR\Downloads\SS_PerfectExpanded\SS_PerfectlyExpanded_2d.msh.h5" ...
+writing 1 node zones
+writing 5 face zones 
+writing 1 cell zones 
+done.
+---------------- A 2D mesh was written to C:\Users\ShubhamR\Downloads\SS_PerfectExpanded\SS_PerfectlyExpanded_2d.msh.h5
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  20:39:52, 03 Apr 2026 India Standard Time 
+Total Transcript Time: 2 Minute 24 Second.
