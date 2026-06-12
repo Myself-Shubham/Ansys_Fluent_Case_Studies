@@ -1,0 +1,119 @@
+Auto-Transcript Start Time:  14:46:22, 12 Jun 2026 India Standard Time 
+Current Directory: "C:\Users\ShubhamR\Downloads\DOF"
+
+              Welcome to ANSYS Fluent 2025 R2.04
+
+              Copyright 1987-2025 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Oct  7 2025 15:34:38 EDT  Build Id: 10205  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-GSSGRQ1" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n3    DESKTOP-GSSGRQ1  4/16  Windows-x64  10272  AMD Ryzen 7 6800H with Radeon Graphics  
+n2    DESKTOP-GSSGRQ1  3/16  Windows-x64  2324   AMD Ryzen 7 6800H with Radeon Graphics  
+n1    DESKTOP-GSSGRQ1  2/16  Windows-x64  16312  AMD Ryzen 7 6800H with Radeon Graphics  
+n0*   DESKTOP-GSSGRQ1  1/16  Windows-x64  12752  AMD Ryzen 7 6800H with Radeon Graphics  
+host  DESKTOP-GSSGRQ1        Windows-x64  5940   AMD Ryzen 7 6800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\ShubhamR\\Downloads\\DOF\\cleanup-fluent-DESKTOP-GSSGRQ1-5940.bat
+
+Graphics driver currently in use: dx11
+
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+
+C:\\Users\\ShubhamR\\Downloads\\DOF>set PATH=D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/CAD/Siemens/Parasolid36.1.227/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/Stride/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/scdm/Addins/Ansys 25.2;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/Framework/bin/Win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/hdf5/1.12.2/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/zlib/1.2.13/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/IntelCompiler/2023.1.0/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\vki\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\KINetics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\fsi\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\commonfiles\\fluids\\lib\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin\\bin;D:\\Non-System Softwares\\Tesseract;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\jar\\engine.jar;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;D:\\Non-System Softwares\\Mathworks R2025B\\runtime\\win64;D:\\Non-System Softwares\\Mathworks R2025B\\bin;D:\\Non-System Softwares\\MathWorks Software 2\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;D:\\Non-System Softwares\\Git\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;D:\\Non-System Softwares\\Microsoft VS Code\\java JDK;C:\\Users\\ShubhamR\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Non-System Softwares\\Microsoft VS Code\\bin;C:\\Program Files\\MPICH2\\bin;D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\bin;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\engine.jar;D:\\Non-System Softwares\\MathWorks Software\\bin;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\Tesseract;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;C:\\Users\\ShubhamR\\AppData\\Roaming\\npm;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;C:\\Users\\ShubhamR\\AppData\\Local\\Python\\bin; 
+
+C:\\Users\\ShubhamR\\Downloads\\DOF>"D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB" "C:\\Users\\ShubhamR\\AppData\\Local\\Temp/options1781256860.8161939916.xml" 
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB started, #arguments = 1
+Version 1.5.0 Release build Jun 13 2025 13:49:06 from HEAD d63e3725fbb28bc93fad03e05c755892a55f4d1c
+    using plugIn session 'Discovery[16040]' ...
+    attaching PartMgr assembly from 'C:\\Users\\ShubhamR\\Downloads\\DOF\\dof_shapes.scdocx' ...
+    using length unit m
+    saving data to 'C:/Users/ShubhamR/Downloads/DOF/dof_shapes.fmd' ...
+
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB succeeded in 46.1912 [s]
+using plugIn session Discovery[16040]    loading data from 'C:/Users/ShubhamR/Downloads/DOF/dof_shapes.fmd' ...
+    configured Parasolid facet options:
+        SurfaceDeviation = '0.0005 m'
+        SurfaceAngleDeviation = '4 deg'
+        RelativeMaxEdgeWidthFactor = '0.02'
+    
+    configured Parasolid using multithreaded faceter: True
+    using length unit [m]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0610438 [s]
+    faceting entities done in 0.0001466 [s]
+    processing 27 zones ...
+Initializing geometry association data using 1 thread(s)!
+Writing C:\Users\ShubhamR\Downloads\DOF\FM_DESKTOP-GSSGRQ1_9916\initial.pmdat
+
+---------------- Import consisting of 1 meshing part(s), complete. 
+ 
+Writing C:\Users\ShubhamR\Downloads\DOF\FM_DESKTOP-GSSGRQ1_9916\TaskObject7.pmdat
+Computing size field ...
+size field computation is done in 0 sec.
+
+done.
+Generating surface mesh on 4 faces of dof_shapes part ...
+surface mesh done in 0 sec.
+
+---------------- A surface mesh was added to dof_shapes
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+     103                          circle                solid      248      248        0
+      97                           fluid                fluid    22516    22516        0
+     115                          square                solid      238      238        0
+     109                        triangle                solid      112      112        0
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+                   circle                     0           0.67024939        248
+                    fluid                     0           0.67280548      22516
+                   square                     0           0.68394739        238
+                 triangle                     0           0.89225247        112
+
+          Overall Summary cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+                                              0           0.67024939      23114
+Total Number of Cell Zones : 4
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for dof_shapes in  0.03 minutes
+
+Writing "C:\Users\ShubhamR\Downloads\DOF\dof_shapes_2d.msh.h5" ...
+writing 1 node zones
+writing 8 face zones 
+writing 4 cell zones 
+done.
+---------------- A 2D mesh was written to C:\Users\ShubhamR\Downloads\DOF\dof_shapes_2d.msh.h5
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  15:08:57, 12 Jun 2026 India Standard Time 
+Total Transcript Time: 22 Minute 34 Second.
