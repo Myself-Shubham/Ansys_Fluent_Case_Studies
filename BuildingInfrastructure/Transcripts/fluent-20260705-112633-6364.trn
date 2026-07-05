@@ -1,0 +1,234 @@
+Auto-Transcript Start Time:  11:26:33, 05 Jul 2026 India Standard Time 
+Current Directory: "C:\Users\ShubhamR\Downloads\InfrSimulation"
+
+              Welcome to ANSYS Fluent 2025 R2.04
+
+              Copyright 1987-2025 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Jun 16 2025 10:46:43 EDT  Build Id: 10204  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+######################################################################
+            WARNING: License for fluent will expire in 26 days.
+            Please contact your distributor for renewal.
+######################################################################
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-GSSGRQ1" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n3    DESKTOP-GSSGRQ1  4/16  Windows-x64  22588  AMD Ryzen 7 6800H with Radeon Graphics  
+n2    DESKTOP-GSSGRQ1  3/16  Windows-x64  21244  AMD Ryzen 7 6800H with Radeon Graphics  
+n1    DESKTOP-GSSGRQ1  2/16  Windows-x64  22496  AMD Ryzen 7 6800H with Radeon Graphics  
+n0*   DESKTOP-GSSGRQ1  1/16  Windows-x64  2204   AMD Ryzen 7 6800H with Radeon Graphics  
+host  DESKTOP-GSSGRQ1        Windows-x64  9576   AMD Ryzen 7 6800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\ShubhamR\\Downloads\\InfrSimulation\\cleanup-fluent-DESKTOP-GSSGRQ1-9576.bat
+
+Graphics driver currently in use: dx11
+
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "Infra_2d.msh.h5") "CFF Mesh Files (*.msh.h5 )")
+Fast-loading "D:\Non-System Softwares\Ansys R2 2025\ANSYS Inc\ANSYS Student\v252\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+Multicore SMT processors detected. Processor affinity set!
+
+Reading from DESKTOP-GSSGRQ1:"C:/Users/ShubhamR/Downloads/InfrSimulation/Infra_2d.msh.h5" in NODE0 mode ...
+  Reading mesh ...
+       41210 cells,     1 cell zone  ...
+          41210 triangular cells,  zone id: 2264
+       62455 faces,     6 face zones ...
+             47 2D wall faces,  zone id: 1096
+             47 2D wall faces,  zone id: 1098
+            280 2D wall faces,  zone id: 1099
+           1280 2D wall faces,  zone id: 1129
+            316 2D wall faces,  zone id: 1163
+          60485 2D interior faces,  zone id: 2266
+       21242 nodes,     1 node zone  ...
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts....,
+		faces....,
+		nodes....,
+		cells....,
+        bandwidth reduction using Reverse Cuthill-McKee: 7014/132 = 53.1364
+Info: The mesh contains elements that are invalid or of poor quality.
+
+      A different numerical scheme will be applied to these elements,
+      which may affect the quality of the solution. It is recommended
+      that you consider removing the invalid and poor quality elements
+      in the mesh.
+
+      For more information on the invalid and poor quality elements,
+      please use the following TUI commands:
+
+      /mesh/check
+      /mesh/repair-improve/report-poor-elements.
+WARNING: 21500 cells with non-positive volume detected.
+     materials,
+     interface,
+     domains,
+     zones,
+	outlet-shadow
+	inlet-shadow
+	walls-shadow
+	part-internal-shadow
+	surface
+	interior:surface
+	outlet
+	inlet
+	walls
+	part-boundary
+	part-internal
+Warning: Flow boundary zone (inlet) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (outlet) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (inlet-shadow) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (outlet-shadow) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+     parallel,
+Warning: Flow boundary zone (inlet) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (outlet) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (inlet-shadow) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (outlet-shadow) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (inlet) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (outlet) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (inlet-shadow) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Warning: Flow boundary zone (outlet-shadow) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+
+Done.
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "ToolBar*Pointer*translate")
+(cx-use-window-id 51)
+(dolly-camera 40.8158 1.47773 0)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet-shadow (velocity-inlet, id=3)"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*TypeSubMenu*wall")
+
+Warning: Flow boundary zone (inlet-shadow) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton1(OK)")
+
+Warning: Flow boundary zone (inlet-shadow) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(dolly-camera -3.0097 4.26965 0)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=1098)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=1098)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=1098)"))
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table9*ExpressionEntry1(Velocity Magnitude)" '("5" . 0))
+(cx-gui-do cx-activate-item "Velocity Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table9*ExpressionEntry1(Velocity Magnitude)")
+(cx-gui-do cx-enable-apply-button "Velocity Inlet")
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table9*ExpressionEntry1(Velocity Magnitude)" '("5" . 0))
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton1(OK)")
+
+Warning: Flow boundary zone (inlet) is adjacent to a solid zone (surface). 
+ This problem MUST be fixed before 
+         solution can proceed!
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Solid|surface (solid, id=2264)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Solid|surface (solid, id=2264)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Solid|surface (solid, id=2264)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))
+/exit y
+(cx-gui-do cx-activate-item "Question*OK")
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  11:29:53, 05 Jul 2026 India Standard Time 
+Total Transcript Time: 3 Minute 20 Second.

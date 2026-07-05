@@ -1,0 +1,398 @@
+Auto-Transcript Start Time:  10:38:42, 05 Jul 2026 India Standard Time 
+Current Directory: "C:\Users\ShubhamR\Downloads\InfrSimulation"
+
+              Welcome to ANSYS Fluent 2025 R2.04
+
+              Copyright 1987-2025 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Oct  7 2025 15:34:38 EDT  Build Id: 10205  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+######################################################################
+            WARNING: License for tgrid will expire in 26 days.
+            Please contact your distributor for renewal.
+######################################################################
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-GSSGRQ1" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n3    DESKTOP-GSSGRQ1  4/16  Windows-x64  9904   AMD Ryzen 7 6800H with Radeon Graphics  
+n2    DESKTOP-GSSGRQ1  3/16  Windows-x64  19000  AMD Ryzen 7 6800H with Radeon Graphics  
+n1    DESKTOP-GSSGRQ1  2/16  Windows-x64  12540  AMD Ryzen 7 6800H with Radeon Graphics  
+n0*   DESKTOP-GSSGRQ1  1/16  Windows-x64  12032  AMD Ryzen 7 6800H with Radeon Graphics  
+host  DESKTOP-GSSGRQ1        Windows-x64  22164  AMD Ryzen 7 6800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\ShubhamR\\Downloads\\InfrSimulation\\cleanup-fluent-DESKTOP-GSSGRQ1-22164.bat
+
+Graphics driver currently in use: dx11
+
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>set PATH=D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/CAD/Siemens/Parasolid36.1.227/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/Stride/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/scdm/Addins/Ansys 25.2;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/Framework/bin/Win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/hdf5/1.12.2/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/zlib/1.2.13/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/IntelCompiler/2023.1.0/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\vki\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\KINetics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\fsi\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\commonfiles\\fluids\\lib\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin\\bin;D:\\Non-System Softwares\\Tesseract;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\jar\\engine.jar;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;D:\\Non-System Softwares\\Mathworks R2025B\\runtime\\win64;D:\\Non-System Softwares\\Mathworks R2025B\\bin;D:\\Non-System Softwares\\MathWorks Software 2\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;D:\\Non-System Softwares\\Git\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;D:\\Non-System Softwares\\Microsoft VS Code\\java JDK;C:\\Users\\ShubhamR\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Non-System Softwares\\Microsoft VS Code\\bin;C:\\Program Files\\MPICH2\\bin;D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\bin;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\engine.jar;D:\\Non-System Softwares\\MathWorks Software\\bin;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\Tesseract;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;C:\\Users\\ShubhamR\\AppData\\Roaming\\npm;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;C:\\Users\\ShubhamR\\AppData\\Local\\Python\\bin; 
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>"D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB" "C:\\Users\\ShubhamR\\AppData\\Local\\Temp/options1783228179.5518032120.xml" 
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB started, #arguments = 1
+Version 1.5.0 Release build Jun 13 2025 13:49:06 from HEAD d63e3725fbb28bc93fad03e05c755892a55f4d1c
+    using plugIn session 'Discovery[17120]' ...
+    attaching PartMgr assembly from 'C:\\Users\\ShubhamR\\Downloads\\InfrSimulation\\Infra.dsco' ...
+    using length unit m
+    saving data to 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.fmd' ...
+
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB succeeded in 38.8773 [s]
+using plugIn session Discovery[17120]    loading data from 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.fmd' ...
+    configured Parasolid facet options:
+        SurfaceDeviation = '0.00075 m'
+        SurfaceAngleDeviation = '8 deg'
+        RelativeMaxEdgeWidthFactor = '0.02'
+    
+    configured Parasolid using multithreaded faceter: True
+    using length unit [m]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0480812 [s]
+    faceting entities done in 0.0002304 [s]
+    processing 19 zones ...
+Initializing geometry association data using 1 thread(s)!
+Writing C:\Users\ShubhamR\Downloads\InfrSimulation\FM_DESKTOP-GSSGRQ1_2120\initial.pmdat
+
+---------------- Import consisting of 1 meshing part(s), complete. 
+ 
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>set PATH=D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/CAD/Siemens/Parasolid36.1.227/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/Stride/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/scdm/Addins/Ansys 25.2;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/Framework/bin/Win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/hdf5/1.12.2/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/zlib/1.2.13/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/IntelCompiler/2023.1.0/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\vki\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\KINetics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\fsi\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\commonfiles\\fluids\\lib\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin\\bin;D:\\Non-System Softwares\\Tesseract;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\jar\\engine.jar;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;D:\\Non-System Softwares\\Mathworks R2025B\\runtime\\win64;D:\\Non-System Softwares\\Mathworks R2025B\\bin;D:\\Non-System Softwares\\MathWorks Software 2\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;D:\\Non-System Softwares\\Git\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;D:\\Non-System Softwares\\Microsoft VS Code\\java JDK;C:\\Users\\ShubhamR\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Non-System Softwares\\Microsoft VS Code\\bin;C:\\Program Files\\MPICH2\\bin;D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\bin;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\engine.jar;D:\\Non-System Softwares\\MathWorks Software\\bin;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\Tesseract;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;C:\\Users\\ShubhamR\\AppData\\Roaming\\npm;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;C:\\Users\\ShubhamR\\AppData\\Local\\Python\\bin; 
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>"D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB" "C:\\Users\\ShubhamR\\AppData\\Local\\Temp/options1783229731.0810152120.xml" 
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB started, #arguments = 1
+Version 1.5.0 Release build Jun 13 2025 13:49:06 from HEAD d63e3725fbb28bc93fad03e05c755892a55f4d1c
+    using plugIn session 'Discovery[23332]' ...
+    attaching PartMgr assembly from 'C:\\Users\\ShubhamR\\Downloads\\InfrSimulation\\Infra.2.dsco' ...
+    using length unit m
+    saving data to 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.2.fmd' ...
+
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB succeeded in 39.8351 [s]
+using plugIn session Discovery[23332]    loading data from 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.2.fmd' ...
+    configured Parasolid facet options:
+        SurfaceDeviation = '0.00075 m'
+        SurfaceAngleDeviation = '8 deg'
+        RelativeMaxEdgeWidthFactor = '0.02'
+    
+    configured Parasolid using multithreaded faceter: True
+    using length unit [m]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0428021 [s]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0053441 [s]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0055067 [s]
+    faceting entities done in 0.0001192 [s]
+    processing 394 zones ...
+Initializing geometry association data using 1 thread(s)!
+Writing C:\Users\ShubhamR\Downloads\InfrSimulation\FM_DESKTOP-GSSGRQ1_2120\initial.pmdat
+
+---------------- Import consisting of 3 meshing part(s), complete. 
+ 
+
+Error: More than one meshing part is identified. Perform share Topology in geometry and try again.
+Error Object: #f
+
+Error: More than one meshing part is identified. Perform share Topology in geometry and try again.
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask: More than one meshing part is identified. Perform share Topology in geometry and try again.
+Error Object: ()
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>set PATH=D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/CAD/Siemens/Parasolid36.1.227/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/Stride/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/scdm/Addins/Ansys 25.2;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/Framework/bin/Win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/hdf5/1.12.2/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/zlib/1.2.13/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/IntelCompiler/2023.1.0/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\vki\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\KINetics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\fsi\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\commonfiles\\fluids\\lib\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin\\bin;D:\\Non-System Softwares\\Tesseract;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\jar\\engine.jar;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;D:\\Non-System Softwares\\Mathworks R2025B\\runtime\\win64;D:\\Non-System Softwares\\Mathworks R2025B\\bin;D:\\Non-System Softwares\\MathWorks Software 2\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;D:\\Non-System Softwares\\Git\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;D:\\Non-System Softwares\\Microsoft VS Code\\java JDK;C:\\Users\\ShubhamR\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Non-System Softwares\\Microsoft VS Code\\bin;C:\\Program Files\\MPICH2\\bin;D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\bin;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\engine.jar;D:\\Non-System Softwares\\MathWorks Software\\bin;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\Tesseract;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;C:\\Users\\ShubhamR\\AppData\\Roaming\\npm;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;C:\\Users\\ShubhamR\\AppData\\Local\\Python\\bin; 
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>"D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB" "C:\\Users\\ShubhamR\\AppData\\Local\\Temp/options1783229852.7434822120.xml" 
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB started, #arguments = 1
+Version 1.5.0 Release build Jun 13 2025 13:49:06 from HEAD d63e3725fbb28bc93fad03e05c755892a55f4d1c
+    using plugIn session 'Discovery[25224]' ...
+    attaching PartMgr assembly from 'C:\\Users\\ShubhamR\\Downloads\\InfrSimulation\\Infra.2.dsco' ...
+    using length unit m
+    saving data to 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.2.fmd' ...
+
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB succeeded in 33.2774 [s]
+using plugIn session Discovery[25224]    loading data from 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.2.fmd' ...
+    configured Parasolid facet options:
+        SurfaceDeviation = '0.00075 m'
+        SurfaceAngleDeviation = '8 deg'
+        RelativeMaxEdgeWidthFactor = '0.02'
+    
+    configured Parasolid using multithreaded faceter: True
+    using length unit [m]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0293872 [s]
+    faceting entities done in 0.0001432 [s]
+    processing 383 zones ...
+Initializing geometry association data using 1 thread(s)!
+Writing C:\Users\ShubhamR\Downloads\InfrSimulation\FM_DESKTOP-GSSGRQ1_2120\initial.pmdat
+
+---------------- Import consisting of 1 meshing part(s), complete. 
+ 
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>set PATH=D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/CAD/Siemens/Parasolid36.1.227/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/Stride/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/scdm/Addins/Ansys 25.2;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/Framework/bin/Win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/hdf5/1.12.2/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/zlib/1.2.13/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/IntelCompiler/2023.1.0/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\vki\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\KINetics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\fsi\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\commonfiles\\fluids\\lib\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin\\bin;D:\\Non-System Softwares\\Tesseract;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\jar\\engine.jar;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;D:\\Non-System Softwares\\Mathworks R2025B\\runtime\\win64;D:\\Non-System Softwares\\Mathworks R2025B\\bin;D:\\Non-System Softwares\\MathWorks Software 2\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;D:\\Non-System Softwares\\Git\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;D:\\Non-System Softwares\\Microsoft VS Code\\java JDK;C:\\Users\\ShubhamR\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Non-System Softwares\\Microsoft VS Code\\bin;C:\\Program Files\\MPICH2\\bin;D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\bin;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\engine.jar;D:\\Non-System Softwares\\MathWorks Software\\bin;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\Tesseract;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;C:\\Users\\ShubhamR\\AppData\\Roaming\\npm;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;C:\\Users\\ShubhamR\\AppData\\Local\\Python\\bin; 
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>"D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB" "C:\\Users\\ShubhamR\\AppData\\Local\\Temp/options1783229979.2486522120.xml" 
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB started, #arguments = 1
+Version 1.5.0 Release build Jun 13 2025 13:49:06 from HEAD d63e3725fbb28bc93fad03e05c755892a55f4d1c
+    using plugIn session 'Discovery[6988]' ...
+    attaching PartMgr assembly from 'C:\\Users\\ShubhamR\\Downloads\\InfrSimulation\\Infra.2.dsco' ...
+    using length unit m
+    saving data to 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.2.fmd' ...
+
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB succeeded in 37.2762 [s]
+using plugIn session Discovery[6988]    loading data from 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.2.fmd' ...
+    configured Parasolid facet options:
+        SurfaceDeviation = '0.00075 m'
+        SurfaceAngleDeviation = '8 deg'
+        RelativeMaxEdgeWidthFactor = '0.02'
+    
+    configured Parasolid using multithreaded faceter: True
+    using length unit [m]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0291689 [s]
+    faceting entities done in 0.0001942 [s]
+    processing 316 zones ...
+Initializing geometry association data using 1 thread(s)!
+Writing C:\Users\ShubhamR\Downloads\InfrSimulation\FM_DESKTOP-GSSGRQ1_2120\initial.pmdat
+
+---------------- Import consisting of 1 meshing part(s), complete. 
+ 
+
+Error: Cannot set flow boundary type "velocity-inlet" for label (inlet) shared by a solid zone.
+Error Object: #f
+
+Error: Cannot set flow boundary type "velocity-inlet" for label (inlet) shared by a solid zone.
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask: Cannot set flow boundary type "velocity-inlet" for label (inlet) shared by a solid zone.
+Error Object: ()
+(cx-gui-do cx-activate-item "Error*OK")
+Writing C:\Users\ShubhamR\Downloads\InfrSimulation\FM_DESKTOP-GSSGRQ1_2120\TaskObject7.pmdat
+Computing size field ...
+size field computation is done in 0 sec.
+
+done.
+Generating surface mesh on 23 faces of infra part ...
+surface mesh done in 0 sec.
+
+---------------- A surface mesh was added to Infra
+Generating surface mesh on 2 faces of infra part ...
+surface mesh done in 1 sec.
+
+---------------- A surface mesh was added to Infra
+
+Translated zones (2620 2619 2618 2617 2616 2615 2614 2613 2612 2611 2610 2609 2608 2607 2606 2605 2604 2603 2602 2601 2600 2599 2598 2597 2596) with offsets (0 0 0.79945706).
+Found overlapping faces sharing edge bn34818-bn34819 (-30.077870 80.443925 0.799457).
+Error at Node 0: Fix the overlaps along multi-connections at (-30.077870 80.443925 0.799457) and try again.
+
+Error: An error occured during task update
+
+Number of computed regions mismatch...
+
+Error Object: #f
+
+Error: An error occured during task update
+
+Number of computed regions mismatch...
+
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask: An error occured during task update
+
+Number of computed regions mismatch...
+
+Error Object: ()
+
+Error: An error or interrupt occurred in the previous operation.
+       Details have been printed to the text console transcript.
+Error Object: #f
+(cx-gui-do cx-activate-item "Error*OK")
+(cx-use-window-id 51)
+selected 3 zone(s).
+zone id: 2587, name: infra.4, type: wall, count: 13630
+zone id: 2593, name: infra.9, type: wall, count: 14529
+zone id: 1705, name: outlet, type: boundary-edge, count: 16
+(cx-gui-do cx-activate-item "ToolBar*Pointer*rotate")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 5)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-set-list-selections "Display Grid*Frame1*Frame3(Faces)*Table1*Frame4*List1(Face Zones)" '( 0))
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame4*List1(Face Zones)")
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame4*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Display Grid*Frame1*Frame3(Faces)*Table1*Frame4*List1(Face Zones)" '( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359))
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame4*List1(Face Zones)")
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-359.105 -11.2092 -232.29) '(0 0 0) '(-0.0240646 -0.000412703 0.0158504) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(2.9875 -4.10789 4.93333) '(0 0 0) '(-0.0264388 -0.0124378 0.135806) 0 0)
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton2(Cancel)")
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>set PATH=D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/CAD/Siemens/Parasolid36.1.227/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/commonfiles/Stride/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/scdm/Addins/Ansys 25.2;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/Framework/bin/Win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/hdf5/1.12.2/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/zlib/1.2.13/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/tp/IntelCompiler/2023.1.0/winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\wave\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\vki\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\KINetics\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\fsi\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\commonfiles\\CPython\\3_10\\winx64\\Release\\python;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\..\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64;;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\addons\\afd\\win64\\3ddp_host;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\mpi_wrapper\\win64\\stub;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64\\opengl;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\multiport\\win64\\net\\shared;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\fluent25.2.0\\cortex\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\lib\\win64\\Qt\\bin;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelCompiler\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\IntelMKL\\2023.1.0\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\tp\\Omniverse\\Connect;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\..\\commonfiles\\fluids\\lib\\winx64;D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252\\fluent\\ntbin\\win64;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;C:\\Program Files\\OpenLogic\\jdk-17.0.14.7-hotspot\\bin\\bin;D:\\Non-System Softwares\\Tesseract;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\jar\\engine.jar;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;D:\\Non-System Softwares\\Mathworks R2025B\\runtime\\win64;D:\\Non-System Softwares\\Mathworks R2025B\\bin;D:\\Non-System Softwares\\MathWorks Software 2\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;D:\\Non-System Softwares\\Git\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;D:\\Non-System Softwares\\Microsoft VS Code\\java JDK;C:\\Users\\ShubhamR\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Non-System Softwares\\Microsoft VS Code\\bin;C:\\Program Files\\MPICH2\\bin;D:\\Non-System Softwares\\LAMMPS Software\\LAMMPS 64-bit 19Nov2024\\bin;D:\\Non-System Softwares\\MathWorks Software\\extern\\engines\\python\\java\\engine.jar;D:\\Non-System Softwares\\MathWorks Software\\bin;D:\\Non-System Softwares\\MathWorks Software\\bin\\win64;D:\\Non-System Softwares\\MathWorks Software\\extern\\bin\\win64;D:\\Non-System Softwares\\Tesseract;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffprobe.exe;C:\\Users\\ShubhamR\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe;C:\\Users\\ShubhamR\\AppData\\Roaming\\npm;C:\\Users\\ShubhamR\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts;C:\\Users\\ShubhamR\\AppData\\Local\\Python\\bin; 
+
+C:\\Users\\ShubhamR\\Downloads\\InfrSimulation>"D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB" "C:\\Users\\ShubhamR\\AppData\\Local\\Temp/options1783230545.5310572120.xml" 
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB started, #arguments = 1
+Version 1.5.0 Release build Jun 13 2025 13:49:06 from HEAD d63e3725fbb28bc93fad03e05c755892a55f4d1c
+    using plugIn session 'Discovery[23392]' ...
+    attaching PartMgr assembly from 'C:\\Users\\ShubhamR\\Downloads\\InfrSimulation\\Infra.2.dsco' ...
+    using length unit m
+    saving data to 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.2.fmd' ...
+
+D:\\Non-System Softwares\\Ansys R2 2025\\ANSYS Inc\\ANSYS Student\\v252/aisol/bin/winx64/FMTransmogrifier_WB succeeded in 38.8988 [s]
+using plugIn session Discovery[23392]    loading data from 'C:/Users/ShubhamR/Downloads/InfrSimulation/Infra.2.fmd' ...
+    configured Parasolid facet options:
+        SurfaceDeviation = '0.00075 m'
+        SurfaceAngleDeviation = '8 deg'
+        RelativeMaxEdgeWidthFactor = '0.02'
+    
+    configured Parasolid using multithreaded faceter: True
+    using length unit [m]
+    running parasolid multi thread faceter...
+    faceting bodyList (number of 1 bodies) done in 0.0145337 [s]
+    faceting entities done in 0.0001134 [s]
+    processing 316 zones ...
+Initializing geometry association data using 1 thread(s)!
+Writing C:\Users\ShubhamR\Downloads\InfrSimulation\FM_DESKTOP-GSSGRQ1_2120\initial.pmdat
+
+---------------- Import consisting of 1 meshing part(s), complete. 
+ 
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-326.841 142.807 -227.209) '(0 0 0) '(0.184233 -0.10503 -0.406316) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(2.56384 -3.74991 5.77288) '(0 0 0) '(-0.232514 0.034395 0.0403053) 0 0)
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+Writing C:\Users\ShubhamR\Downloads\InfrSimulation\FM_DESKTOP-GSSGRQ1_2120\TaskObject7.pmdat
+Computing size field ...
+size field computation is done in 0 sec.
+
+done.
+Generating surface mesh on 23 faces of infra part ...
+surface mesh done in 0 sec.
+
+---------------- A surface mesh was added to Infra
+Generating surface mesh on 2 faces of infra part ...
+surface mesh done in 0 sec.
+
+---------------- A surface mesh was added to Infra
+
+Translated zones (2620 2619 2618 2617 2616 2615 2614 2613 2612 2611 2610 2609 2608 2607 2606 2605 2604 2603 2602 2601 2600 2599 2598 2597 2596) with offsets (0 0 0.31781725).
+Found overlapping faces sharing edge bn48009-bn48010 (-45.397341 80.443925 0.317817).
+Error at Node 0: Fix the overlaps along multi-connections at (-45.397341 80.443925 0.317817) and try again.
+
+Error: An error occured during task update
+
+Number of computed regions mismatch...
+
+Error Object: #f
+
+Error: An error occured during task update
+
+Number of computed regions mismatch...
+
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask: An error occured during task update
+
+Number of computed regions mismatch...
+
+Error Object: ()
+
+Error: An error or interrupt occurred in the previous operation.
+       Details have been printed to the text console transcript.
+Error Object: #f
+(cx-gui-do cx-activate-item "Error*OK")
+Reading C:\Users\ShubhamR\Downloads\InfrSimulation\FM_DESKTOP-GSSGRQ1_2120\TaskObject7.pmdat
+generating pointers...done.
+extracting boundary entities...
+ 4038 boundary nodes.
+ 6869 boundary faces.
+ 25 boundary face zones.
+done.
+Initializing geometry association data using 12 thread(s)!
+ Read 42395 vertices
+
+Error: Cannot set flow boundary type "velocity-inlet" for label (inlet) shared by a solid zone.
+Error Object: #f
+
+Error: Cannot set flow boundary type "velocity-inlet" for label (inlet) shared by a solid zone.
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask: Cannot set flow boundary type "velocity-inlet" for label (inlet) shared by a solid zone.
+Error Object: ()
+(cx-gui-do cx-activate-item "Error*OK")
+Writing C:\Users\ShubhamR\Downloads\InfrSimulation\FM_DESKTOP-GSSGRQ1_2120\TaskObject7.pmdat
+Computing size field ...
+size field computation is done in 0 sec.
+
+done.
+Generating surface mesh on 25 faces of infra part ...
+surface mesh done in 0 sec.
+
+---------------- A surface mesh was added to Infra
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+    2264                         surface                solid    41210    41210        0
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+                  surface                     0            0.1487096      41210
+
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for Infra in  0.03 minutes
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-318.688 59.9555 -412.106) '(0 0 0) '(0.233789 -0.0546157 -0.227158) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(63.4767 -8.81114 145.32) '(0 0 0) '(-0.251567 0.045082 0.0904912) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(35.4185 -9.22357 13.552) '(0 0 0) '(-0.0166773 0.00771385 0.0869651) 0 0)
+Writing "C:\Users\ShubhamR\Downloads\InfrSimulation\Infra_2d.msh.h5" ...
+writing 1 node zones
+writing 6 face zones 
+writing 1 cell zones 
+done.
+---------------- A 2D mesh was written to C:\Users\ShubhamR\Downloads\InfrSimulation\Infra_2d.msh.h5
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  11:25:59, 05 Jul 2026 India Standard Time 
+Total Transcript Time: 47 Minute 16 Second.
