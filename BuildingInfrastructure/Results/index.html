@@ -1,0 +1,3027 @@
+﻿<!DOCTYPE html>
+<html data-bs-theme="light" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - ADR</title>
+    
+    
+    
+    <link rel="shortcut icon" href="./media/favicon.ico"/>
+
+    
+    <link rel="stylesheet" type="text/css" href="./media/fontawesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/solid.min.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="./media/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/bootstrap-select.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/bootstrap-tagsinput.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/bootstrap-callout.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/jquery.loading.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/noty.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/site.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/dark-site.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/adr-web-components.css"/>
+
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          jax: ["input/TeX","input/MathML","input/AsciiMath"],
+          extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js"],
+          TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+          tex2jax: { inlineMath:[['$','$'],["\\(","\\)"]], displayMath:[['$$','$$'],["\\[","\\]"]], processEscapes:true, processEnvironments:true},
+          asciimath2jax: { delimiters:[['`','`']] },
+        
+        });
+    </script>
+    <script src="./media/MathJax.js"></script>
+    <script src="./media/jquery.min.js"></script>
+    <script src="./media/datatables.min.js"></script>
+    <script src="./media/bootstrap-tagsinput.js"></script>
+
+    
+        
+            
+                <script src="./ansys252/nexus/utils/js-unzip.js"></script>
+            
+            
+                <script src="./ansys252/nexus/utils/js-inflate.js"></script>
+            
+            
+                <script src="./ansys252/nexus/viewer-loader.js"></script>
+            
+        
+    
+    
+    <script>$(document).ready(function () {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    });</script>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="./media/bootstrap-slider.min.css"/>
+    
+        
+        <script src="./media/plotly.min.js"></script>
+    
+    <script src="./media/geotiff.js"></script>
+    <script src="./media/geotiff_nexus.js"></script>
+
+    
+    
+</head>
+
+
+
+    <body style="padding: 0;">
+
+
+
+
+    <main class="body-content m-1">
+
+
+
+    <adr-report-root>
+        <section id="report_root" class="adr-container w-100 m-0 p-0">
+            
+            <div  nexus_template="8c35c342-7873-11f1-bfbe-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <br><section class="adr-container" id="8c35c342-7873-11f1-bfbe-83bb7ab7bf33" >
+
+            <div  nexus_template="988aa45d-7873-11f1-84a9-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="panel">
+        <br>
+                <adr-panel id="988aa45d-7873-11f1-84a9-83bb7ab7bf33_50" data-panel-type='default panel' data-guid=988aa45d-7873-11f1-84a9-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            
+                            <section id="988aa45d-7873-11f1-84a9-83bb7ab7bf33_50_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+            <div  nexus_template="990d8d87-7873-11f1-b712-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <br><section class="adr-container" id="990d8d87-7873-11f1-b712-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_88af26b97e204bd1a83e7d700b89b7ca" data-item-type="image"  
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/8d71ec4b-7873-11f1-b05d-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="9996ca14-7873-11f1-bab1-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <br><section class="adr-container" id="9996ca14-7873-11f1-bab1-83bb7ab7bf33" >
+
+                <adr-data-item id="data_item_6ba2e2fa85104abcaedc36d1c79efe8a" data-item-type="html"  
+                    >
+                    <template shadowrootmode="open">
+                        <section class="adr-data-item-container">
+                            <slot></slot>
+                        </section>
+                    </template>
+                    <h1 style='text-align:center;'>Ansys Fluent Simulation Report</h1>
+
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="9b1b3f68-7873-11f1-9ddf-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="basic">
+        <br><section class="adr-container" id="9b1b3f68-7873-11f1-9ddf-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_7309ad485b0a41aab05e94e85f75af10" data-item-type="table"  
+                        container="row" 
+                                        data-render-type='None' data-webgl='false'
+                                    >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <table id="table_7309ad485b0a41aab05e94e85f75af10" class="table table-hover table-bordered nowrap table-sm table-fit-head table-fit-body display" >
+ <br>
+ <thead style="visibility: collapse;">
+  <tr>
+   <th></th>
+   <th></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr data-id="1">
+   <th>Analyst</th>
+   <td  data-order="ShubhamR">ShubhamR</td>
+  </tr>
+  <tr data-id="2">
+   <th>Date</th>
+   <td  data-order="7/5/2026 06:45 PM">7/5/2026 06:45 PM</td>
+  </tr>
+ </tbody>
+</table>
+<script>
+    function setWidth(uuid) {
+    let tableSelector = `#table_${uuid}`;
+    // let width = $(tableSelector).css('width');
+    $(tableSelector).parents('.dt-scroll').css('width', '100%');
+}
+
+$(document).ready(function () {
+    // String parse from server side will contain single quote which is not parsable using JSON method
+    // thus replace the single quotes with double quotes
+    let options = JSON.parse('{"columnDefs":[{"className":"text-center","targets":0,"cellType":"th"},{"className":"text-center","targets":1,"cellType":"td"}],"info":false,"orderClasses":false,"searching":false,"ordering":false,"order":[],"scrollX":true,"paging":false,"deferRender":false}'.replace(/'/g, '"'));
+    let table = $('#table_7309ad485b0a41aab05e94e85f75af10').DataTable(options);
+
+    // dictionary for data row's unique id & data-tag look up (generated from ~django\data\models.py)
+    const rows_id_dict = {
+        
+            // String parse from server side will contain single quote which is not parsable using JSON method
+            // thus replace the single quotes with double quotes
+            "7309ad485b0a41aab05e94e85f75af10" : JSON.parse("[{'1': ''}, {'2': ''}]".replace(/'/g, '"'))
+        
+    };
+
+    const const_data_7309ad485b0a41aab05e94e85f75af10 = table.rows().data();
+    const row_tags_7309ad485b0a41aab05e94e85f75af10 = $.map(table.rows().nodes(), (item, key) => {
+        let tags = $(item).data('tags');
+
+        // Transforms the data-tag string to an array separating by space
+        let split = [(tags !== undefined ? tags.split(' ') : [''])];
+        return split.map((tags) => {
+            return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+        });
+    });
+    const column_tags_7309ad485b0a41aab05e94e85f75af10 = $('#table_7309ad485b0a41aab05e94e85f75af10_wrapper .dt-scroll-head thead').find('th')
+            .map((index, elem) => {
+                let tags = $(elem).data('tags');
+                return [(tags !== undefined ? tags.split(' ') : [''])].map((tags) => {
+                    return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+                });
+            }).toArray();
+
+    const table_7309ad485b0a41aab05e94e85f75af10 = document.getElementById('table_7309ad485b0a41aab05e94e85f75af10_wrapper');
+    setWidth('7309ad485b0a41aab05e94e85f75af10');
+
+    // Table filtering feature (clear and redraw table on user filtering interaction with the table filtering template)
+    table_7309ad485b0a41aab05e94e85f75af10.addEventListener('filter_event', function(event) {
+        table.clear();
+        table.rows.add(const_data_7309ad485b0a41aab05e94e85f75af10);
+        table.columns().visible(true);
+
+        // Map the data-tag to all table rows as table.clear() removes all row elements, including data-tag and data-id attributes,
+        // and adding row data back after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+        // (*For column filtering)
+        table.rows().nodes().each((row, index)=>{
+            // initial table contains all rows/columns, no needs to worry about setting the wrong data-tag/data-id to each row
+            $(row).attr("data-tags",rows_id_dict['7309ad485b0a41aab05e94e85f75af10'][index][index+1]);
+            $(row).attr("data-id",index+1);
+        });
+
+        $('#table_7309ad485b0a41aab05e94e85f75af10').parents('.dt-scroll').css('width', '');
+
+        event.detail.forEach((filterDetail, key) => {
+            let hideList = key === 'tag';
+
+            // The returned filterDetail contains both objects and a template_guid (string datatype) => See ~django\data\models.py.
+            // Thus, filtering the string data type as the .forEach(...) method only works for array object and is not a string method.
+            if(typeof filterDetail === 'object'){
+                filterDetail.forEach((filterTags, key) => {
+                    let columnFilter = false;
+
+                    column_tags_7309ad485b0a41aab05e94e85f75af10.every((rowTags) => {
+                        return rowTags.every((tag) => {
+
+                            // filterTags can be an object of min/max val, for example {max:2.0, min:1.2}, using .includes(...) method would fail
+                            filterTags.includes === undefined ? filterTags = Object.values(filterTags) : null;
+
+                            if (filterTags.includes(tag)) {
+                                columnFilter = true;
+                                return false;
+
+                            }else if(key.includes('col')){
+                                // Tags might have substring "col", thus create another condition
+                                // to check if the filtering key contains "col" given NO matched tag
+                                columnFilter = true;
+                                return false;
+                            }
+                            return true;
+                        });
+                    });
+                    // Executing filtering (by table columns)
+                    if (columnFilter) {
+                        column_tags_7309ad485b0a41aab05e94e85f75af10.forEach((columnTags, index) => {
+
+                            // Ignore the first column, which is an empty cell
+                            if (index === 0) {
+                                return;
+                            }
+
+                            let foundTags = columnTags.filter((tag) => filterTags.includes(tag));
+                            let foundTagsLen = foundTags.length;
+
+                            if (foundTagsLen > 0 === hideList) {
+                                 // Logic for filtering columns by data-tag
+                                table.column(index).visible(false);
+                            }else{
+                                 // Logic for filtering columns by column index range {min: filterTags[0], max: filterTags[1]}
+                                 // (*columns index starts from 1, ignore the first column, an empty cell, see line 95-97 above)
+                                index < filterTags[0] || index > filterTags[1] ? table.column(index).visible(false) : null;
+                            }
+
+                        });
+                    } else {
+                        // Executing filtering (by table rows)
+
+                        // Define an array to store the original index of displayed row.
+                        let filteredRowId = [];
+
+                        // Using table.rows(...) to select the rows based on the filtering callback function (can access both row data and nodes)
+                        let filteredRowData = table.rows((index, data, nodes)=>{
+
+                            let rowIndex = Number($(nodes).data("id"));
+                            let hidden = false;
+                            let foundTags = row_tags_7309ad485b0a41aab05e94e85f75af10[rowIndex-1].filter((rowTag) => filterTags.includes(rowTag));
+
+                            // Logic for filtering rows by data-tag(s) OR by row index range {min: filterTags[0], max: filterTags[1]}
+                            if (foundTags.length > 0 === hideList || (rowIndex < filterTags[0] || rowIndex > filterTags[1])) {
+                                hidden = true;
+                            }else{
+                                // Store the original row index of the displayed row into displayRowIndex upon filtering before table.clear()
+                                filteredRowId.push(index);
+                            }
+                            return !hidden;
+
+                        }).data();
+
+                        table.clear();
+                        table.rows.add(filteredRowData);
+
+                        // Map the data-tag to all table rows as table.clear() removes all row elements, including all tag attributes,
+                        // and adding back the rowData after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+                        // (*For row filtering)
+
+                        table.rows().nodes().each((row, index)=>{
+                            // Using displayRowIndex to reference the accurate data-tag / data-id per filtered row, using pure
+                            // "index" here to set up the data-tag/id is inaccurate as filtering rows will reset the row order
+                            // (i.e. if the original 1st row being filtered out, the original 2nd row will move up and become the new 1st row)
+                            $(row).attr("data-tags",rows_id_dict['7309ad485b0a41aab05e94e85f75af10'][filteredRowId[index]][filteredRowId[index]+1]);
+                            $(row).attr("data-id",filteredRowId[index]+1);
+                        });
+                    }
+                });
+            }
+        });
+        table.draw();
+
+        setWidth('7309ad485b0a41aab05e94e85f75af10');
+    });
+});
+
+</script>
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="9c75c20f-7873-11f1-88de-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="toc">
+        <br><h3>Table of Contents</h3><section class="adr-container" id="9c75c20f-7873-11f1-88de-83bb7ab7bf33" >
+</section>
+<nav id='TOC_item_list_51'></nav>
+            </div>
+        
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="9d77b9b5-7873-11f1-9b54-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_1"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#9d77b9b5-7873-11f1-9b54-83bb7ab7bf33_52">
+                </span>
+            
+                <adr-panel id="9d77b9b5-7873-11f1-9b54-83bb7ab7bf33_52" data-panel-type='collapse panel' data-guid=9d77b9b5-7873-11f1-9b54-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='9d77b9b5-7873-11f1-9b54-83bb7ab7bf33_52_header' class='adr-panel-header'><h2>System Information</h2></header>
+                            <section id="9d77b9b5-7873-11f1-9b54-83bb7ab7bf33_52_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+                    <adr-data-item id="data_item_f39233a8532a4298b95b41933bc31f95" data-item-type="table"  
+                        container="row" 
+                                        data-render-type='None' data-webgl='false'
+                                    >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <table id="table_f39233a8532a4298b95b41933bc31f95" class="table table-hover table-bordered nowrap table-sm table-fit-head table-fit-body display" >
+ <br>
+ <thead style="visibility: collapse;">
+  <tr>
+   <th></th>
+   <th></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr data-id="1">
+   <th>Application</th>
+   <td  data-order="Fluent">Fluent</td>
+  </tr>
+  <tr data-id="2">
+   <th>Settings</th>
+   <td  data-order="2d, double precision, pressure-based, SST k-omega">2d, double precision, pressure-based, SST k-omega</td>
+  </tr>
+  <tr data-id="3">
+   <th>Version</th>
+   <td  data-order="25.2.0-10204">25.2.0-10204</td>
+  </tr>
+  <tr data-id="4">
+   <th>Source Revision</th>
+   <td  data-order="5eecd5d865">5eecd5d865</td>
+  </tr>
+  <tr data-id="5">
+   <th>Build Time</th>
+   <td  data-order="Jun 16 2025 10:44:41 EDT">Jun 16 2025 10:44:41 EDT</td>
+  </tr>
+  <tr data-id="6">
+   <th>CPU</th>
+   <td  data-order="AMD Ryzen 7 6800H with Radeon Graphics">AMD Ryzen 7 6800H with Radeon Graphics</td>
+  </tr>
+  <tr data-id="7">
+   <th>OS</th>
+   <td  data-order="Windows">Windows</td>
+  </tr>
+ </tbody>
+</table>
+<script>
+    function setWidth(uuid) {
+    let tableSelector = `#table_${uuid}`;
+    // let width = $(tableSelector).css('width');
+    $(tableSelector).parents('.dt-scroll').css('width', '100%');
+}
+
+$(document).ready(function () {
+    // String parse from server side will contain single quote which is not parsable using JSON method
+    // thus replace the single quotes with double quotes
+    let options = JSON.parse('{"columnDefs":[{"className":"text-center","targets":0,"cellType":"th"},{"className":"text-center","targets":1,"cellType":"td"}],"info":false,"orderClasses":false,"searching":false,"ordering":false,"order":[],"scrollX":true,"paging":false,"deferRender":false}'.replace(/'/g, '"'));
+    let table = $('#table_f39233a8532a4298b95b41933bc31f95').DataTable(options);
+
+    // dictionary for data row's unique id & data-tag look up (generated from ~django\data\models.py)
+    const rows_id_dict = {
+        
+            // String parse from server side will contain single quote which is not parsable using JSON method
+            // thus replace the single quotes with double quotes
+            "f39233a8532a4298b95b41933bc31f95" : JSON.parse("[{'1': ''}, {'2': ''}, {'3': ''}, {'4': ''}, {'5': ''}, {'6': ''}, {'7': ''}]".replace(/'/g, '"'))
+        
+    };
+
+    const const_data_f39233a8532a4298b95b41933bc31f95 = table.rows().data();
+    const row_tags_f39233a8532a4298b95b41933bc31f95 = $.map(table.rows().nodes(), (item, key) => {
+        let tags = $(item).data('tags');
+
+        // Transforms the data-tag string to an array separating by space
+        let split = [(tags !== undefined ? tags.split(' ') : [''])];
+        return split.map((tags) => {
+            return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+        });
+    });
+    const column_tags_f39233a8532a4298b95b41933bc31f95 = $('#table_f39233a8532a4298b95b41933bc31f95_wrapper .dt-scroll-head thead').find('th')
+            .map((index, elem) => {
+                let tags = $(elem).data('tags');
+                return [(tags !== undefined ? tags.split(' ') : [''])].map((tags) => {
+                    return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+                });
+            }).toArray();
+
+    const table_f39233a8532a4298b95b41933bc31f95 = document.getElementById('table_f39233a8532a4298b95b41933bc31f95_wrapper');
+    setWidth('f39233a8532a4298b95b41933bc31f95');
+
+    // Table filtering feature (clear and redraw table on user filtering interaction with the table filtering template)
+    table_f39233a8532a4298b95b41933bc31f95.addEventListener('filter_event', function(event) {
+        table.clear();
+        table.rows.add(const_data_f39233a8532a4298b95b41933bc31f95);
+        table.columns().visible(true);
+
+        // Map the data-tag to all table rows as table.clear() removes all row elements, including data-tag and data-id attributes,
+        // and adding row data back after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+        // (*For column filtering)
+        table.rows().nodes().each((row, index)=>{
+            // initial table contains all rows/columns, no needs to worry about setting the wrong data-tag/data-id to each row
+            $(row).attr("data-tags",rows_id_dict['f39233a8532a4298b95b41933bc31f95'][index][index+1]);
+            $(row).attr("data-id",index+1);
+        });
+
+        $('#table_f39233a8532a4298b95b41933bc31f95').parents('.dt-scroll').css('width', '');
+
+        event.detail.forEach((filterDetail, key) => {
+            let hideList = key === 'tag';
+
+            // The returned filterDetail contains both objects and a template_guid (string datatype) => See ~django\data\models.py.
+            // Thus, filtering the string data type as the .forEach(...) method only works for array object and is not a string method.
+            if(typeof filterDetail === 'object'){
+                filterDetail.forEach((filterTags, key) => {
+                    let columnFilter = false;
+
+                    column_tags_f39233a8532a4298b95b41933bc31f95.every((rowTags) => {
+                        return rowTags.every((tag) => {
+
+                            // filterTags can be an object of min/max val, for example {max:2.0, min:1.2}, using .includes(...) method would fail
+                            filterTags.includes === undefined ? filterTags = Object.values(filterTags) : null;
+
+                            if (filterTags.includes(tag)) {
+                                columnFilter = true;
+                                return false;
+
+                            }else if(key.includes('col')){
+                                // Tags might have substring "col", thus create another condition
+                                // to check if the filtering key contains "col" given NO matched tag
+                                columnFilter = true;
+                                return false;
+                            }
+                            return true;
+                        });
+                    });
+                    // Executing filtering (by table columns)
+                    if (columnFilter) {
+                        column_tags_f39233a8532a4298b95b41933bc31f95.forEach((columnTags, index) => {
+
+                            // Ignore the first column, which is an empty cell
+                            if (index === 0) {
+                                return;
+                            }
+
+                            let foundTags = columnTags.filter((tag) => filterTags.includes(tag));
+                            let foundTagsLen = foundTags.length;
+
+                            if (foundTagsLen > 0 === hideList) {
+                                 // Logic for filtering columns by data-tag
+                                table.column(index).visible(false);
+                            }else{
+                                 // Logic for filtering columns by column index range {min: filterTags[0], max: filterTags[1]}
+                                 // (*columns index starts from 1, ignore the first column, an empty cell, see line 95-97 above)
+                                index < filterTags[0] || index > filterTags[1] ? table.column(index).visible(false) : null;
+                            }
+
+                        });
+                    } else {
+                        // Executing filtering (by table rows)
+
+                        // Define an array to store the original index of displayed row.
+                        let filteredRowId = [];
+
+                        // Using table.rows(...) to select the rows based on the filtering callback function (can access both row data and nodes)
+                        let filteredRowData = table.rows((index, data, nodes)=>{
+
+                            let rowIndex = Number($(nodes).data("id"));
+                            let hidden = false;
+                            let foundTags = row_tags_f39233a8532a4298b95b41933bc31f95[rowIndex-1].filter((rowTag) => filterTags.includes(rowTag));
+
+                            // Logic for filtering rows by data-tag(s) OR by row index range {min: filterTags[0], max: filterTags[1]}
+                            if (foundTags.length > 0 === hideList || (rowIndex < filterTags[0] || rowIndex > filterTags[1])) {
+                                hidden = true;
+                            }else{
+                                // Store the original row index of the displayed row into displayRowIndex upon filtering before table.clear()
+                                filteredRowId.push(index);
+                            }
+                            return !hidden;
+
+                        }).data();
+
+                        table.clear();
+                        table.rows.add(filteredRowData);
+
+                        // Map the data-tag to all table rows as table.clear() removes all row elements, including all tag attributes,
+                        // and adding back the rowData after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+                        // (*For row filtering)
+
+                        table.rows().nodes().each((row, index)=>{
+                            // Using displayRowIndex to reference the accurate data-tag / data-id per filtered row, using pure
+                            // "index" here to set up the data-tag/id is inaccurate as filtering rows will reset the row order
+                            // (i.e. if the original 1st row being filtered out, the original 2nd row will move up and become the new 1st row)
+                            $(row).attr("data-tags",rows_id_dict['f39233a8532a4298b95b41933bc31f95'][filteredRowId[index]][filteredRowId[index]+1]);
+                            $(row).attr("data-id",filteredRowId[index]+1);
+                        });
+                    }
+                });
+            }
+        });
+        table.draw();
+
+        setWidth('f39233a8532a4298b95b41933bc31f95');
+    });
+});
+
+</script>
+                </adr-data-item>
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="9ebfdb73-7873-11f1-baca-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_2"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#9ebfdb73-7873-11f1-baca-83bb7ab7bf33_53">
+                </span>
+            
+                <adr-panel id="9ebfdb73-7873-11f1-baca-83bb7ab7bf33_53" data-panel-type='collapse panel' data-guid=9ebfdb73-7873-11f1-baca-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='9ebfdb73-7873-11f1-baca-83bb7ab7bf33_53_header' class='adr-panel-header'><h2>Geometry and Mesh</h2></header>
+                            <section id="9ebfdb73-7873-11f1-baca-83bb7ab7bf33_53_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+            <div  nexus_template="a0116591-7873-11f1-98ed-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <a id="TOC_item_tgt_3"></a><br><h2>Mesh Size</h2><section class="adr-container" id="a0116591-7873-11f1-98ed-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_906be57fdfb64ac4a812456ac0c6fb31" data-item-type="table"  
+                        container="row" 
+                                        data-render-type='None' data-webgl='false'
+                                    >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <table id="table_906be57fdfb64ac4a812456ac0c6fb31" class="table table-hover table-bordered nowrap table-sm table-fit-head table-fit-body display" >
+ <br>
+ <thead>
+  <tr>
+   <th>Cells</th>
+   <th>Faces</th>
+   <th>Nodes</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr data-id="1">
+   <td  data-order="36476">36476</td>
+   <td  data-order="59115">59115</td>
+   <td  data-order="22612">22612</td>
+  </tr>
+ </tbody>
+</table>
+<script>
+    function setWidth(uuid) {
+    let tableSelector = `#table_${uuid}`;
+    // let width = $(tableSelector).css('width');
+    $(tableSelector).parents('.dt-scroll').css('width', '100%');
+}
+
+$(document).ready(function () {
+    // String parse from server side will contain single quote which is not parsable using JSON method
+    // thus replace the single quotes with double quotes
+    let options = JSON.parse('{"columnDefs":[{"className":"text-center","targets":0,"cellType":"td"},{"className":"text-center","targets":1,"cellType":"td"},{"className":"text-center","targets":2,"cellType":"td"}],"info":false,"orderClasses":false,"searching":false,"order":[],"scrollX":true,"paging":false,"deferRender":false}'.replace(/'/g, '"'));
+    let table = $('#table_906be57fdfb64ac4a812456ac0c6fb31').DataTable(options);
+
+    // dictionary for data row's unique id & data-tag look up (generated from ~django\data\models.py)
+    const rows_id_dict = {
+        
+            // String parse from server side will contain single quote which is not parsable using JSON method
+            // thus replace the single quotes with double quotes
+            "906be57fdfb64ac4a812456ac0c6fb31" : JSON.parse("[{'1': ''}]".replace(/'/g, '"'))
+        
+    };
+
+    const const_data_906be57fdfb64ac4a812456ac0c6fb31 = table.rows().data();
+    const row_tags_906be57fdfb64ac4a812456ac0c6fb31 = $.map(table.rows().nodes(), (item, key) => {
+        let tags = $(item).data('tags');
+
+        // Transforms the data-tag string to an array separating by space
+        let split = [(tags !== undefined ? tags.split(' ') : [''])];
+        return split.map((tags) => {
+            return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+        });
+    });
+    const column_tags_906be57fdfb64ac4a812456ac0c6fb31 = $('#table_906be57fdfb64ac4a812456ac0c6fb31_wrapper .dt-scroll-head thead').find('th')
+            .map((index, elem) => {
+                let tags = $(elem).data('tags');
+                return [(tags !== undefined ? tags.split(' ') : [''])].map((tags) => {
+                    return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+                });
+            }).toArray();
+
+    const table_906be57fdfb64ac4a812456ac0c6fb31 = document.getElementById('table_906be57fdfb64ac4a812456ac0c6fb31_wrapper');
+    setWidth('906be57fdfb64ac4a812456ac0c6fb31');
+
+    // Table filtering feature (clear and redraw table on user filtering interaction with the table filtering template)
+    table_906be57fdfb64ac4a812456ac0c6fb31.addEventListener('filter_event', function(event) {
+        table.clear();
+        table.rows.add(const_data_906be57fdfb64ac4a812456ac0c6fb31);
+        table.columns().visible(true);
+
+        // Map the data-tag to all table rows as table.clear() removes all row elements, including data-tag and data-id attributes,
+        // and adding row data back after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+        // (*For column filtering)
+        table.rows().nodes().each((row, index)=>{
+            // initial table contains all rows/columns, no needs to worry about setting the wrong data-tag/data-id to each row
+            $(row).attr("data-tags",rows_id_dict['906be57fdfb64ac4a812456ac0c6fb31'][index][index+1]);
+            $(row).attr("data-id",index+1);
+        });
+
+        $('#table_906be57fdfb64ac4a812456ac0c6fb31').parents('.dt-scroll').css('width', '');
+
+        event.detail.forEach((filterDetail, key) => {
+            let hideList = key === 'tag';
+
+            // The returned filterDetail contains both objects and a template_guid (string datatype) => See ~django\data\models.py.
+            // Thus, filtering the string data type as the .forEach(...) method only works for array object and is not a string method.
+            if(typeof filterDetail === 'object'){
+                filterDetail.forEach((filterTags, key) => {
+                    let columnFilter = false;
+
+                    column_tags_906be57fdfb64ac4a812456ac0c6fb31.every((rowTags) => {
+                        return rowTags.every((tag) => {
+
+                            // filterTags can be an object of min/max val, for example {max:2.0, min:1.2}, using .includes(...) method would fail
+                            filterTags.includes === undefined ? filterTags = Object.values(filterTags) : null;
+
+                            if (filterTags.includes(tag)) {
+                                columnFilter = true;
+                                return false;
+
+                            }else if(key.includes('col')){
+                                // Tags might have substring "col", thus create another condition
+                                // to check if the filtering key contains "col" given NO matched tag
+                                columnFilter = true;
+                                return false;
+                            }
+                            return true;
+                        });
+                    });
+                    // Executing filtering (by table columns)
+                    if (columnFilter) {
+                        column_tags_906be57fdfb64ac4a812456ac0c6fb31.forEach((columnTags, index) => {
+
+                            // Ignore the first column, which is an empty cell
+                            if (index === 0) {
+                                return;
+                            }
+
+                            let foundTags = columnTags.filter((tag) => filterTags.includes(tag));
+                            let foundTagsLen = foundTags.length;
+
+                            if (foundTagsLen > 0 === hideList) {
+                                 // Logic for filtering columns by data-tag
+                                table.column(index).visible(false);
+                            }else{
+                                 // Logic for filtering columns by column index range {min: filterTags[0], max: filterTags[1]}
+                                 // (*columns index starts from 1, ignore the first column, an empty cell, see line 95-97 above)
+                                index < filterTags[0] || index > filterTags[1] ? table.column(index).visible(false) : null;
+                            }
+
+                        });
+                    } else {
+                        // Executing filtering (by table rows)
+
+                        // Define an array to store the original index of displayed row.
+                        let filteredRowId = [];
+
+                        // Using table.rows(...) to select the rows based on the filtering callback function (can access both row data and nodes)
+                        let filteredRowData = table.rows((index, data, nodes)=>{
+
+                            let rowIndex = Number($(nodes).data("id"));
+                            let hidden = false;
+                            let foundTags = row_tags_906be57fdfb64ac4a812456ac0c6fb31[rowIndex-1].filter((rowTag) => filterTags.includes(rowTag));
+
+                            // Logic for filtering rows by data-tag(s) OR by row index range {min: filterTags[0], max: filterTags[1]}
+                            if (foundTags.length > 0 === hideList || (rowIndex < filterTags[0] || rowIndex > filterTags[1])) {
+                                hidden = true;
+                            }else{
+                                // Store the original row index of the displayed row into displayRowIndex upon filtering before table.clear()
+                                filteredRowId.push(index);
+                            }
+                            return !hidden;
+
+                        }).data();
+
+                        table.clear();
+                        table.rows.add(filteredRowData);
+
+                        // Map the data-tag to all table rows as table.clear() removes all row elements, including all tag attributes,
+                        // and adding back the rowData after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+                        // (*For row filtering)
+
+                        table.rows().nodes().each((row, index)=>{
+                            // Using displayRowIndex to reference the accurate data-tag / data-id per filtered row, using pure
+                            // "index" here to set up the data-tag/id is inaccurate as filtering rows will reset the row order
+                            // (i.e. if the original 1st row being filtered out, the original 2nd row will move up and become the new 1st row)
+                            $(row).attr("data-tags",rows_id_dict['906be57fdfb64ac4a812456ac0c6fb31'][filteredRowId[index]][filteredRowId[index]+1]);
+                            $(row).attr("data-id",filteredRowId[index]+1);
+                        });
+                    }
+                });
+            }
+        });
+        table.draw();
+
+        setWidth('906be57fdfb64ac4a812456ac0c6fb31');
+    });
+});
+
+</script>
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="a15ae242-7873-11f1-9118-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <a id="TOC_item_tgt_4"></a><br><h2>Mesh Quality</h2><section class="adr-container" id="a15ae242-7873-11f1-9118-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_a82247239a0d493bbfe697850a95146a" data-item-type="table"  
+                        container="row" 
+                                        data-render-type='None' data-webgl='false'
+                                    >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <table id="table_a82247239a0d493bbfe697850a95146a" class="table table-hover table-bordered nowrap table-sm table-fit-head table-fit-body display" >
+ <br>
+ <thead>
+  <tr>
+   <th>Name</th>
+   <th>Type</th>
+   <th>Min Orthogonal Quality</th>
+   <th>Max Aspect Ratio</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr data-id="1">
+   <td  data-order="surface">surface</td>
+   <td  data-order="Mixed Cell">Mixed Cell</td>
+   <td  data-order="0.085059045">0.085059045</td>
+   <td  data-order="43.171374">43.171374</td>
+  </tr>
+ </tbody>
+</table>
+<script>
+    function setWidth(uuid) {
+    let tableSelector = `#table_${uuid}`;
+    // let width = $(tableSelector).css('width');
+    $(tableSelector).parents('.dt-scroll').css('width', '100%');
+}
+
+$(document).ready(function () {
+    // String parse from server side will contain single quote which is not parsable using JSON method
+    // thus replace the single quotes with double quotes
+    let options = JSON.parse('{"columnDefs":[{"className":"text-center","targets":0,"cellType":"td"},{"className":"text-center","targets":1,"cellType":"td"},{"className":"text-center","targets":2,"cellType":"td"},{"className":"text-center","targets":3,"cellType":"td"}],"info":false,"orderClasses":false,"searching":false,"order":[],"scrollX":true,"paging":false,"deferRender":false}'.replace(/'/g, '"'));
+    let table = $('#table_a82247239a0d493bbfe697850a95146a').DataTable(options);
+
+    // dictionary for data row's unique id & data-tag look up (generated from ~django\data\models.py)
+    const rows_id_dict = {
+        
+            // String parse from server side will contain single quote which is not parsable using JSON method
+            // thus replace the single quotes with double quotes
+            "a82247239a0d493bbfe697850a95146a" : JSON.parse("[{'1': ''}]".replace(/'/g, '"'))
+        
+    };
+
+    const const_data_a82247239a0d493bbfe697850a95146a = table.rows().data();
+    const row_tags_a82247239a0d493bbfe697850a95146a = $.map(table.rows().nodes(), (item, key) => {
+        let tags = $(item).data('tags');
+
+        // Transforms the data-tag string to an array separating by space
+        let split = [(tags !== undefined ? tags.split(' ') : [''])];
+        return split.map((tags) => {
+            return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+        });
+    });
+    const column_tags_a82247239a0d493bbfe697850a95146a = $('#table_a82247239a0d493bbfe697850a95146a_wrapper .dt-scroll-head thead').find('th')
+            .map((index, elem) => {
+                let tags = $(elem).data('tags');
+                return [(tags !== undefined ? tags.split(' ') : [''])].map((tags) => {
+                    return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+                });
+            }).toArray();
+
+    const table_a82247239a0d493bbfe697850a95146a = document.getElementById('table_a82247239a0d493bbfe697850a95146a_wrapper');
+    setWidth('a82247239a0d493bbfe697850a95146a');
+
+    // Table filtering feature (clear and redraw table on user filtering interaction with the table filtering template)
+    table_a82247239a0d493bbfe697850a95146a.addEventListener('filter_event', function(event) {
+        table.clear();
+        table.rows.add(const_data_a82247239a0d493bbfe697850a95146a);
+        table.columns().visible(true);
+
+        // Map the data-tag to all table rows as table.clear() removes all row elements, including data-tag and data-id attributes,
+        // and adding row data back after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+        // (*For column filtering)
+        table.rows().nodes().each((row, index)=>{
+            // initial table contains all rows/columns, no needs to worry about setting the wrong data-tag/data-id to each row
+            $(row).attr("data-tags",rows_id_dict['a82247239a0d493bbfe697850a95146a'][index][index+1]);
+            $(row).attr("data-id",index+1);
+        });
+
+        $('#table_a82247239a0d493bbfe697850a95146a').parents('.dt-scroll').css('width', '');
+
+        event.detail.forEach((filterDetail, key) => {
+            let hideList = key === 'tag';
+
+            // The returned filterDetail contains both objects and a template_guid (string datatype) => See ~django\data\models.py.
+            // Thus, filtering the string data type as the .forEach(...) method only works for array object and is not a string method.
+            if(typeof filterDetail === 'object'){
+                filterDetail.forEach((filterTags, key) => {
+                    let columnFilter = false;
+
+                    column_tags_a82247239a0d493bbfe697850a95146a.every((rowTags) => {
+                        return rowTags.every((tag) => {
+
+                            // filterTags can be an object of min/max val, for example {max:2.0, min:1.2}, using .includes(...) method would fail
+                            filterTags.includes === undefined ? filterTags = Object.values(filterTags) : null;
+
+                            if (filterTags.includes(tag)) {
+                                columnFilter = true;
+                                return false;
+
+                            }else if(key.includes('col')){
+                                // Tags might have substring "col", thus create another condition
+                                // to check if the filtering key contains "col" given NO matched tag
+                                columnFilter = true;
+                                return false;
+                            }
+                            return true;
+                        });
+                    });
+                    // Executing filtering (by table columns)
+                    if (columnFilter) {
+                        column_tags_a82247239a0d493bbfe697850a95146a.forEach((columnTags, index) => {
+
+                            // Ignore the first column, which is an empty cell
+                            if (index === 0) {
+                                return;
+                            }
+
+                            let foundTags = columnTags.filter((tag) => filterTags.includes(tag));
+                            let foundTagsLen = foundTags.length;
+
+                            if (foundTagsLen > 0 === hideList) {
+                                 // Logic for filtering columns by data-tag
+                                table.column(index).visible(false);
+                            }else{
+                                 // Logic for filtering columns by column index range {min: filterTags[0], max: filterTags[1]}
+                                 // (*columns index starts from 1, ignore the first column, an empty cell, see line 95-97 above)
+                                index < filterTags[0] || index > filterTags[1] ? table.column(index).visible(false) : null;
+                            }
+
+                        });
+                    } else {
+                        // Executing filtering (by table rows)
+
+                        // Define an array to store the original index of displayed row.
+                        let filteredRowId = [];
+
+                        // Using table.rows(...) to select the rows based on the filtering callback function (can access both row data and nodes)
+                        let filteredRowData = table.rows((index, data, nodes)=>{
+
+                            let rowIndex = Number($(nodes).data("id"));
+                            let hidden = false;
+                            let foundTags = row_tags_a82247239a0d493bbfe697850a95146a[rowIndex-1].filter((rowTag) => filterTags.includes(rowTag));
+
+                            // Logic for filtering rows by data-tag(s) OR by row index range {min: filterTags[0], max: filterTags[1]}
+                            if (foundTags.length > 0 === hideList || (rowIndex < filterTags[0] || rowIndex > filterTags[1])) {
+                                hidden = true;
+                            }else{
+                                // Store the original row index of the displayed row into displayRowIndex upon filtering before table.clear()
+                                filteredRowId.push(index);
+                            }
+                            return !hidden;
+
+                        }).data();
+
+                        table.clear();
+                        table.rows.add(filteredRowData);
+
+                        // Map the data-tag to all table rows as table.clear() removes all row elements, including all tag attributes,
+                        // and adding back the rowData after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+                        // (*For row filtering)
+
+                        table.rows().nodes().each((row, index)=>{
+                            // Using displayRowIndex to reference the accurate data-tag / data-id per filtered row, using pure
+                            // "index" here to set up the data-tag/id is inaccurate as filtering rows will reset the row order
+                            // (i.e. if the original 1st row being filtered out, the original 2nd row will move up and become the new 1st row)
+                            $(row).attr("data-tags",rows_id_dict['a82247239a0d493bbfe697850a95146a'][filteredRowId[index]][filteredRowId[index]+1]);
+                            $(row).attr("data-id",filteredRowId[index]+1);
+                        });
+                    }
+                });
+            }
+        });
+        table.draw();
+
+        setWidth('a82247239a0d493bbfe697850a95146a');
+    });
+});
+
+</script>
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="a2a36aa4-7873-11f1-b321-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <a id="TOC_item_tgt_5"></a><br><h2>Orthogonal Quality</h2><section class="adr-container" id="a2a36aa4-7873-11f1-b321-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_3ab64ed5081b4e0eb2f6fb0aa53b7561" data-item-type="image"  
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/937303ed-7873-11f1-82c3-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item></section>
+
+            </div>
+        
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="a3f91597-7873-11f1-85ab-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_6"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#a3f91597-7873-11f1-85ab-83bb7ab7bf33_54">
+                </span>
+            
+                <adr-panel id="a3f91597-7873-11f1-85ab-83bb7ab7bf33_54" data-panel-type='collapse panel' data-guid=a3f91597-7873-11f1-85ab-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='a3f91597-7873-11f1-85ab-83bb7ab7bf33_54_header' class='adr-panel-header'><h2>Simulation Setup</h2></header>
+                            <section id="a3f91597-7873-11f1-85ab-83bb7ab7bf33_54_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+            <div  nexus_template="a541a926-7873-11f1-bc7f-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_7"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#a541a926-7873-11f1-bc7f-83bb7ab7bf33_55">
+                </span>
+            
+                <adr-panel id="a541a926-7873-11f1-bc7f-83bb7ab7bf33_55" data-panel-type='collapse panel' data-guid=a541a926-7873-11f1-bc7f-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='a541a926-7873-11f1-bc7f-83bb7ab7bf33_55_header' class='adr-panel-header'><h2>Physics</h2></header>
+                            <section id="a541a926-7873-11f1-bc7f-83bb7ab7bf33_55_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+            <div  nexus_template="a68c3588-7873-11f1-a4ef-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <a id="TOC_item_tgt_8"></a><br><h2>Models</h2><section class="adr-container" id="a68c3588-7873-11f1-a4ef-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_67bfb51b594244c395268f353412cdc6" data-item-type="table"  
+                        container="row" 
+                                        data-render-type='None' data-webgl='false'
+                                    >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <table id="table_67bfb51b594244c395268f353412cdc6" class="table table-hover table-bordered nowrap table-sm table-fit-head table-fit-body display" >
+ <br>
+ <thead>
+  <tr>
+   <th>Model</th>
+   <th>Settings</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr data-id="1">
+   <td  data-order="Space">Space</td>
+   <td  data-order="2D">2D</td>
+  </tr>
+  <tr data-id="2">
+   <td  data-order="Time">Time</td>
+   <td  data-order="Steady">Steady</td>
+  </tr>
+  <tr data-id="3">
+   <td  data-order="Viscous">Viscous</td>
+   <td  data-order="SST k-omega turbulence model">SST k-omega turbulence model</td>
+  </tr>
+ </tbody>
+</table>
+<script>
+    function setWidth(uuid) {
+    let tableSelector = `#table_${uuid}`;
+    // let width = $(tableSelector).css('width');
+    $(tableSelector).parents('.dt-scroll').css('width', '100%');
+}
+
+$(document).ready(function () {
+    // String parse from server side will contain single quote which is not parsable using JSON method
+    // thus replace the single quotes with double quotes
+    let options = JSON.parse('{"columnDefs":[{"className":"text-center","targets":0,"cellType":"td"},{"className":"text-center","targets":1,"cellType":"td"}],"info":false,"orderClasses":false,"searching":false,"order":[],"scrollX":true,"paging":false,"deferRender":false}'.replace(/'/g, '"'));
+    let table = $('#table_67bfb51b594244c395268f353412cdc6').DataTable(options);
+
+    // dictionary for data row's unique id & data-tag look up (generated from ~django\data\models.py)
+    const rows_id_dict = {
+        
+            // String parse from server side will contain single quote which is not parsable using JSON method
+            // thus replace the single quotes with double quotes
+            "67bfb51b594244c395268f353412cdc6" : JSON.parse("[{'1': ''}, {'2': ''}, {'3': ''}]".replace(/'/g, '"'))
+        
+    };
+
+    const const_data_67bfb51b594244c395268f353412cdc6 = table.rows().data();
+    const row_tags_67bfb51b594244c395268f353412cdc6 = $.map(table.rows().nodes(), (item, key) => {
+        let tags = $(item).data('tags');
+
+        // Transforms the data-tag string to an array separating by space
+        let split = [(tags !== undefined ? tags.split(' ') : [''])];
+        return split.map((tags) => {
+            return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+        });
+    });
+    const column_tags_67bfb51b594244c395268f353412cdc6 = $('#table_67bfb51b594244c395268f353412cdc6_wrapper .dt-scroll-head thead').find('th')
+            .map((index, elem) => {
+                let tags = $(elem).data('tags');
+                return [(tags !== undefined ? tags.split(' ') : [''])].map((tags) => {
+                    return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+                });
+            }).toArray();
+
+    const table_67bfb51b594244c395268f353412cdc6 = document.getElementById('table_67bfb51b594244c395268f353412cdc6_wrapper');
+    setWidth('67bfb51b594244c395268f353412cdc6');
+
+    // Table filtering feature (clear and redraw table on user filtering interaction with the table filtering template)
+    table_67bfb51b594244c395268f353412cdc6.addEventListener('filter_event', function(event) {
+        table.clear();
+        table.rows.add(const_data_67bfb51b594244c395268f353412cdc6);
+        table.columns().visible(true);
+
+        // Map the data-tag to all table rows as table.clear() removes all row elements, including data-tag and data-id attributes,
+        // and adding row data back after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+        // (*For column filtering)
+        table.rows().nodes().each((row, index)=>{
+            // initial table contains all rows/columns, no needs to worry about setting the wrong data-tag/data-id to each row
+            $(row).attr("data-tags",rows_id_dict['67bfb51b594244c395268f353412cdc6'][index][index+1]);
+            $(row).attr("data-id",index+1);
+        });
+
+        $('#table_67bfb51b594244c395268f353412cdc6').parents('.dt-scroll').css('width', '');
+
+        event.detail.forEach((filterDetail, key) => {
+            let hideList = key === 'tag';
+
+            // The returned filterDetail contains both objects and a template_guid (string datatype) => See ~django\data\models.py.
+            // Thus, filtering the string data type as the .forEach(...) method only works for array object and is not a string method.
+            if(typeof filterDetail === 'object'){
+                filterDetail.forEach((filterTags, key) => {
+                    let columnFilter = false;
+
+                    column_tags_67bfb51b594244c395268f353412cdc6.every((rowTags) => {
+                        return rowTags.every((tag) => {
+
+                            // filterTags can be an object of min/max val, for example {max:2.0, min:1.2}, using .includes(...) method would fail
+                            filterTags.includes === undefined ? filterTags = Object.values(filterTags) : null;
+
+                            if (filterTags.includes(tag)) {
+                                columnFilter = true;
+                                return false;
+
+                            }else if(key.includes('col')){
+                                // Tags might have substring "col", thus create another condition
+                                // to check if the filtering key contains "col" given NO matched tag
+                                columnFilter = true;
+                                return false;
+                            }
+                            return true;
+                        });
+                    });
+                    // Executing filtering (by table columns)
+                    if (columnFilter) {
+                        column_tags_67bfb51b594244c395268f353412cdc6.forEach((columnTags, index) => {
+
+                            // Ignore the first column, which is an empty cell
+                            if (index === 0) {
+                                return;
+                            }
+
+                            let foundTags = columnTags.filter((tag) => filterTags.includes(tag));
+                            let foundTagsLen = foundTags.length;
+
+                            if (foundTagsLen > 0 === hideList) {
+                                 // Logic for filtering columns by data-tag
+                                table.column(index).visible(false);
+                            }else{
+                                 // Logic for filtering columns by column index range {min: filterTags[0], max: filterTags[1]}
+                                 // (*columns index starts from 1, ignore the first column, an empty cell, see line 95-97 above)
+                                index < filterTags[0] || index > filterTags[1] ? table.column(index).visible(false) : null;
+                            }
+
+                        });
+                    } else {
+                        // Executing filtering (by table rows)
+
+                        // Define an array to store the original index of displayed row.
+                        let filteredRowId = [];
+
+                        // Using table.rows(...) to select the rows based on the filtering callback function (can access both row data and nodes)
+                        let filteredRowData = table.rows((index, data, nodes)=>{
+
+                            let rowIndex = Number($(nodes).data("id"));
+                            let hidden = false;
+                            let foundTags = row_tags_67bfb51b594244c395268f353412cdc6[rowIndex-1].filter((rowTag) => filterTags.includes(rowTag));
+
+                            // Logic for filtering rows by data-tag(s) OR by row index range {min: filterTags[0], max: filterTags[1]}
+                            if (foundTags.length > 0 === hideList || (rowIndex < filterTags[0] || rowIndex > filterTags[1])) {
+                                hidden = true;
+                            }else{
+                                // Store the original row index of the displayed row into displayRowIndex upon filtering before table.clear()
+                                filteredRowId.push(index);
+                            }
+                            return !hidden;
+
+                        }).data();
+
+                        table.clear();
+                        table.rows.add(filteredRowData);
+
+                        // Map the data-tag to all table rows as table.clear() removes all row elements, including all tag attributes,
+                        // and adding back the rowData after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+                        // (*For row filtering)
+
+                        table.rows().nodes().each((row, index)=>{
+                            // Using displayRowIndex to reference the accurate data-tag / data-id per filtered row, using pure
+                            // "index" here to set up the data-tag/id is inaccurate as filtering rows will reset the row order
+                            // (i.e. if the original 1st row being filtered out, the original 2nd row will move up and become the new 1st row)
+                            $(row).attr("data-tags",rows_id_dict['67bfb51b594244c395268f353412cdc6'][filteredRowId[index]][filteredRowId[index]+1]);
+                            $(row).attr("data-id",filteredRowId[index]+1);
+                        });
+                    }
+                });
+            }
+        });
+        table.draw();
+
+        setWidth('67bfb51b594244c395268f353412cdc6');
+    });
+});
+
+</script>
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="a7da93b6-7873-11f1-b726-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <a id="TOC_item_tgt_9"></a><br><h2>Material Properties</h2><section class="adr-container" id="a7da93b6-7873-11f1-b726-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_cb6ca2d5943f408ab08044cfc1b56de1" data-item-type="tree"  
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <div class="card-header mb-2">
+  <span class="btn-group" role="group">
+      <button type="button" class="tree-expand-all btn btn-outline-secondary btn-sm px-1" 
+          data-target-tree="treeroot_cb6ca2d5943f408ab08044cfc1b56de1"><i class="adr-icon adr-plus"></i>
+      <button type="button" class="tree-collapse-all btn btn-outline-secondary btn-sm px-1" 
+          data-target-tree="treeroot_cb6ca2d5943f408ab08044cfc1b56de1"><i class="adr-icon adr-minus"></i>
+  </span>
+</div>
+<div style="display:block;overflow-x:auto;white-space:nowrap;"><table id='treeroot_cb6ca2d5943f408ab08044cfc1b56de1' class='table tree table-bordered table-sm tree-fit table-striped' style='margin:0;padding:0;'>
+<tr id='treenode_cb6ca2d5943f408ab08044cfc1b56de1-1' data-parent='0' data-tree='treeroot_cb6ca2d5943f408ab08044cfc1b56de1' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_cb6ca2d5943f408ab08044cfc1b56de1-1" style='vertical-align:bottom;'></span>Fluid</td><td ></td></tr>
+<tr id='treenode_cb6ca2d5943f408ab08044cfc1b56de1-2' data-parent='treenode_cb6ca2d5943f408ab08044cfc1b56de1-1' data-tree='treeroot_cb6ca2d5943f408ab08044cfc1b56de1' class='tree-row tree-parent tree-collapsed' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_cb6ca2d5943f408ab08044cfc1b56de1-2" style='vertical-align:bottom;'></span>air</td><td ></td></tr>
+<tr id='treenode_cb6ca2d5943f408ab08044cfc1b56de1-3' data-parent='treenode_cb6ca2d5943f408ab08044cfc1b56de1-2' data-tree='treeroot_cb6ca2d5943f408ab08044cfc1b56de1' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Density</td><td >1.225 kg/m^3</td></tr>
+<tr id='treenode_cb6ca2d5943f408ab08044cfc1b56de1-4' data-parent='treenode_cb6ca2d5943f408ab08044cfc1b56de1-2' data-tree='treeroot_cb6ca2d5943f408ab08044cfc1b56de1' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Viscosity</td><td >1.7894e-05 kg/(m s)</td></tr>
+<tr id='treenode_cb6ca2d5943f408ab08044cfc1b56de1-5' data-parent='0' data-tree='treeroot_cb6ca2d5943f408ab08044cfc1b56de1' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_cb6ca2d5943f408ab08044cfc1b56de1-5" style='vertical-align:bottom;'></span>Solid</td><td ></td></tr>
+<tr id='treenode_cb6ca2d5943f408ab08044cfc1b56de1-6' data-parent='treenode_cb6ca2d5943f408ab08044cfc1b56de1-5' data-tree='treeroot_cb6ca2d5943f408ab08044cfc1b56de1' class='tree-row tree-parent tree-collapsed' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_cb6ca2d5943f408ab08044cfc1b56de1-6" style='vertical-align:bottom;'></span>aluminum</td><td ></td></tr>
+<tr id='treenode_cb6ca2d5943f408ab08044cfc1b56de1-7' data-parent='treenode_cb6ca2d5943f408ab08044cfc1b56de1-6' data-tree='treeroot_cb6ca2d5943f408ab08044cfc1b56de1' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Density</td><td >2719 kg/m^3</td></tr>
+</table>
+</div>
+
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="a92cf4a9-7873-11f1-9f92-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <a id="TOC_item_tgt_10"></a><br><h2><a class="nexus-anchor" style="position:relative;top:-0.5em;" id="CellZones"></a>Cell Zone Conditions</h2><section class="adr-container" id="a92cf4a9-7873-11f1-9f92-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_10f891f47e944d26be989a8e83586cee" data-item-type="tree"  
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <div class="card-header mb-2">
+  <span class="btn-group" role="group">
+      <button type="button" class="tree-expand-all btn btn-outline-secondary btn-sm px-1" 
+          data-target-tree="treeroot_10f891f47e944d26be989a8e83586cee"><i class="adr-icon adr-plus"></i>
+      <button type="button" class="tree-collapse-all btn btn-outline-secondary btn-sm px-1" 
+          data-target-tree="treeroot_10f891f47e944d26be989a8e83586cee"><i class="adr-icon adr-minus"></i>
+  </span>
+</div>
+<div style="display:block;overflow-x:auto;white-space:nowrap;"><table id='treeroot_10f891f47e944d26be989a8e83586cee' class='table tree table-bordered table-sm tree-fit table-striped' style='margin:0;padding:0;'>
+<tr id='treenode_10f891f47e944d26be989a8e83586cee-1' data-parent='0' data-tree='treeroot_10f891f47e944d26be989a8e83586cee' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_10f891f47e944d26be989a8e83586cee-1" style='vertical-align:bottom;'></span>Fluid</td><td ></td></tr>
+<tr id='treenode_10f891f47e944d26be989a8e83586cee-2' data-parent='treenode_10f891f47e944d26be989a8e83586cee-1' data-tree='treeroot_10f891f47e944d26be989a8e83586cee' class='tree-row tree-parent tree-collapsed' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_10f891f47e944d26be989a8e83586cee-2" style='vertical-align:bottom;'></span>surface</td><td ></td></tr>
+<tr id='treenode_10f891f47e944d26be989a8e83586cee-3' data-parent='treenode_10f891f47e944d26be989a8e83586cee-2' data-tree='treeroot_10f891f47e944d26be989a8e83586cee' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Material Name</td><td >air</td></tr>
+<tr id='treenode_10f891f47e944d26be989a8e83586cee-4' data-parent='treenode_10f891f47e944d26be989a8e83586cee-2' data-tree='treeroot_10f891f47e944d26be989a8e83586cee' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Specify source terms?</td><td >no</td></tr>
+<tr id='treenode_10f891f47e944d26be989a8e83586cee-5' data-parent='treenode_10f891f47e944d26be989a8e83586cee-2' data-tree='treeroot_10f891f47e944d26be989a8e83586cee' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Specify fixed values?</td><td >no</td></tr>
+<tr id='treenode_10f891f47e944d26be989a8e83586cee-6' data-parent='treenode_10f891f47e944d26be989a8e83586cee-2' data-tree='treeroot_10f891f47e944d26be989a8e83586cee' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Frame Motion?</td><td >no</td></tr>
+<tr id='treenode_10f891f47e944d26be989a8e83586cee-7' data-parent='treenode_10f891f47e944d26be989a8e83586cee-2' data-tree='treeroot_10f891f47e944d26be989a8e83586cee' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Laminar zone?</td><td >no</td></tr>
+<tr id='treenode_10f891f47e944d26be989a8e83586cee-8' data-parent='treenode_10f891f47e944d26be989a8e83586cee-2' data-tree='treeroot_10f891f47e944d26be989a8e83586cee' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Porous zone?</td><td >no</td></tr>
+</table>
+</div>
+
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="aa76cb85-7873-11f1-aa01-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <a id="TOC_item_tgt_11"></a><br><h2><a class="nexus-anchor" style="position:relative;top:-0.5em;" id="BoundaryZones"></a>Boundary Conditions</h2><section class="adr-container" id="aa76cb85-7873-11f1-aa01-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_9eda50fd8b524660acba2e410a6ceb5f" data-item-type="tree"  
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <div class="card-header mb-2">
+  <span class="btn-group" role="group">
+      <button type="button" class="tree-expand-all btn btn-outline-secondary btn-sm px-1" 
+          data-target-tree="treeroot_9eda50fd8b524660acba2e410a6ceb5f"><i class="adr-icon adr-plus"></i>
+      <button type="button" class="tree-collapse-all btn btn-outline-secondary btn-sm px-1" 
+          data-target-tree="treeroot_9eda50fd8b524660acba2e410a6ceb5f"><i class="adr-icon adr-minus"></i>
+  </span>
+</div>
+<div style="display:block;overflow-x:auto;white-space:nowrap;"><table id='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='table tree table-bordered table-sm tree-fit table-striped' style='margin:0;padding:0;'>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-1' data-parent='0' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_9eda50fd8b524660acba2e410a6ceb5f-1" style='vertical-align:bottom;'></span>Inlet</td><td ></td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-2' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-1' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-parent tree-collapsed' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_9eda50fd8b524660acba2e410a6ceb5f-2" style='vertical-align:bottom;'></span>inlet</td><td ></td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-3' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-2' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Velocity Specification Method</td><td >Components</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-4' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-2' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Reference Frame</td><td >Absolute</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-5' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-2' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Supersonic/Initial Gauge Pressure [Pa]</td><td >0</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-6' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-2' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>X-Velocity [m/s]</td><td >-30</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-7' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-2' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Y-Velocity [m/s]</td><td >-30</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-8' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-2' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Turbulence Specification Method</td><td >Intensity and Viscosity Ratio</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-9' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-2' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Turbulent Intensity [%]</td><td >5</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-10' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-2' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Turbulent Viscosity Ratio</td><td >10</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-11' data-parent='0' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_9eda50fd8b524660acba2e410a6ceb5f-11" style='vertical-align:bottom;'></span>Outlet</td><td ></td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-11' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-parent tree-collapsed' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_9eda50fd8b524660acba2e410a6ceb5f-12" style='vertical-align:bottom;'></span>outlet</td><td ></td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-13' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Backflow Reference Frame</td><td >Absolute</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-14' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Gauge Pressure [Pa]</td><td >0</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-15' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Pressure Profile Multiplier</td><td >1</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-16' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Backflow Direction Specification Method</td><td >Normal to Boundary</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-17' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Turbulence Specification Method</td><td >Intensity and Viscosity Ratio</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-18' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Backflow Turbulent Intensity [%]</td><td >5</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-19' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Backflow Turbulent Viscosity Ratio</td><td >10</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-20' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Backflow Pressure Specification</td><td >Total Pressure</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-21' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Build artificial walls to prevent reverse flow?</td><td >no</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-22' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Average Pressure Specification?</td><td >no</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-23' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-12' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Specify targeted mass flow rate</td><td >no</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-24' data-parent='0' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_9eda50fd8b524660acba2e410a6ceb5f-24" style='vertical-align:bottom;'></span>Wall</td><td ></td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-25' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-24' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-parent tree-collapsed' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_9eda50fd8b524660acba2e410a6ceb5f-25" style='vertical-align:bottom;'></span>part-boundary</td><td ></td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-26' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-25' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Wall Motion</td><td >Stationary Wall</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-27' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-25' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Shear Boundary Condition</td><td >No Slip</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-28' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-25' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Wall Surface Roughness</td><td >Standard</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-29' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-25' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Wall Roughness Height [m]</td><td >0</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-30' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-25' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Wall Roughness Constant</td><td >0.5</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-31' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-24' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-parent tree-collapsed' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_9eda50fd8b524660acba2e410a6ceb5f-31" style='vertical-align:bottom;'></span>walls</td><td ></td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-32' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-31' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Wall Motion</td><td >Stationary Wall</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-33' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-31' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Shear Boundary Condition</td><td >No Slip</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-34' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-31' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Wall Surface Roughness</td><td >Standard</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-35' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-31' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Wall Roughness Height [m]</td><td >0</td></tr>
+<tr id='treenode_9eda50fd8b524660acba2e410a6ceb5f-36' data-parent='treenode_9eda50fd8b524660acba2e410a6ceb5f-31' data-tree='treeroot_9eda50fd8b524660acba2e410a6ceb5f' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Wall Roughness Constant</td><td >0.5</td></tr>
+</table>
+</div>
+
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="abc0560c-7873-11f1-a431-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <a id="TOC_item_tgt_12"></a><br><h2>Reference Values</h2><section class="adr-container" id="abc0560c-7873-11f1-a431-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_a35bed99c70848198a6314fa3bd24f00" data-item-type="table"  
+                        container="row" 
+                                        data-render-type='None' data-webgl='false'
+                                    >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <table id="table_a35bed99c70848198a6314fa3bd24f00" class="table table-hover table-bordered nowrap table-sm table-fit-head table-fit-body display" >
+ <br>
+ <thead style="visibility: collapse;">
+  <tr>
+   <th></th>
+   <th></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr data-id="1">
+   <th>Area</th>
+   <td  data-order="1 m^2">1 m^2</td>
+  </tr>
+  <tr data-id="2">
+   <th>Density</th>
+   <td  data-order="1.225 kg/m^3">1.225 kg/m^3</td>
+  </tr>
+  <tr data-id="3">
+   <th>Depth</th>
+   <td  data-order="1 m">1 m</td>
+  </tr>
+  <tr data-id="4">
+   <th>Enthalpy</th>
+   <td  data-order="0 J/kg">0 J/kg</td>
+  </tr>
+  <tr data-id="5">
+   <th>Length</th>
+   <td  data-order="1 m">1 m</td>
+  </tr>
+  <tr data-id="6">
+   <th>Pressure</th>
+   <td  data-order="0 Pa">0 Pa</td>
+  </tr>
+  <tr data-id="7">
+   <th>Temperature</th>
+   <td  data-order="288.16 K">288.16 K</td>
+  </tr>
+  <tr data-id="8">
+   <th>Velocity</th>
+   <td  data-order="10 m/s">10 m/s</td>
+  </tr>
+  <tr data-id="9">
+   <th>Viscosity</th>
+   <td  data-order="1.7894e-05 kg/(m s)">1.7894e-05 kg/(m s)</td>
+  </tr>
+  <tr data-id="10">
+   <th>Ratio of Specific Heats</th>
+   <td  data-order="1.4">1.4</td>
+  </tr>
+  <tr data-id="11">
+   <th>Yplus for Heat Tran. Coef.</th>
+   <td  data-order="300">300</td>
+  </tr>
+  <tr data-id="12">
+   <th>Reference Zone</th>
+   <td  data-order="surface">surface</td>
+  </tr>
+ </tbody>
+</table>
+<script>
+    function setWidth(uuid) {
+    let tableSelector = `#table_${uuid}`;
+    // let width = $(tableSelector).css('width');
+    $(tableSelector).parents('.dt-scroll').css('width', '100%');
+}
+
+$(document).ready(function () {
+    // String parse from server side will contain single quote which is not parsable using JSON method
+    // thus replace the single quotes with double quotes
+    let options = JSON.parse('{"columnDefs":[{"className":"text-center","targets":0,"cellType":"th"},{"className":"text-center","targets":1,"cellType":"td"}],"info":false,"orderClasses":false,"searching":false,"ordering":false,"order":[],"scrollX":true,"paging":false,"deferRender":false}'.replace(/'/g, '"'));
+    let table = $('#table_a35bed99c70848198a6314fa3bd24f00').DataTable(options);
+
+    // dictionary for data row's unique id & data-tag look up (generated from ~django\data\models.py)
+    const rows_id_dict = {
+        
+            // String parse from server side will contain single quote which is not parsable using JSON method
+            // thus replace the single quotes with double quotes
+            "a35bed99c70848198a6314fa3bd24f00" : JSON.parse("[{'1': ''}, {'2': ''}, {'3': ''}, {'4': ''}, {'5': ''}, {'6': ''}, {'7': ''}, {'8': ''}, {'9': ''}, {'10': ''}, {'11': ''}, {'12': ''}]".replace(/'/g, '"'))
+        
+    };
+
+    const const_data_a35bed99c70848198a6314fa3bd24f00 = table.rows().data();
+    const row_tags_a35bed99c70848198a6314fa3bd24f00 = $.map(table.rows().nodes(), (item, key) => {
+        let tags = $(item).data('tags');
+
+        // Transforms the data-tag string to an array separating by space
+        let split = [(tags !== undefined ? tags.split(' ') : [''])];
+        return split.map((tags) => {
+            return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+        });
+    });
+    const column_tags_a35bed99c70848198a6314fa3bd24f00 = $('#table_a35bed99c70848198a6314fa3bd24f00_wrapper .dt-scroll-head thead').find('th')
+            .map((index, elem) => {
+                let tags = $(elem).data('tags');
+                return [(tags !== undefined ? tags.split(' ') : [''])].map((tags) => {
+                    return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+                });
+            }).toArray();
+
+    const table_a35bed99c70848198a6314fa3bd24f00 = document.getElementById('table_a35bed99c70848198a6314fa3bd24f00_wrapper');
+    setWidth('a35bed99c70848198a6314fa3bd24f00');
+
+    // Table filtering feature (clear and redraw table on user filtering interaction with the table filtering template)
+    table_a35bed99c70848198a6314fa3bd24f00.addEventListener('filter_event', function(event) {
+        table.clear();
+        table.rows.add(const_data_a35bed99c70848198a6314fa3bd24f00);
+        table.columns().visible(true);
+
+        // Map the data-tag to all table rows as table.clear() removes all row elements, including data-tag and data-id attributes,
+        // and adding row data back after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+        // (*For column filtering)
+        table.rows().nodes().each((row, index)=>{
+            // initial table contains all rows/columns, no needs to worry about setting the wrong data-tag/data-id to each row
+            $(row).attr("data-tags",rows_id_dict['a35bed99c70848198a6314fa3bd24f00'][index][index+1]);
+            $(row).attr("data-id",index+1);
+        });
+
+        $('#table_a35bed99c70848198a6314fa3bd24f00').parents('.dt-scroll').css('width', '');
+
+        event.detail.forEach((filterDetail, key) => {
+            let hideList = key === 'tag';
+
+            // The returned filterDetail contains both objects and a template_guid (string datatype) => See ~django\data\models.py.
+            // Thus, filtering the string data type as the .forEach(...) method only works for array object and is not a string method.
+            if(typeof filterDetail === 'object'){
+                filterDetail.forEach((filterTags, key) => {
+                    let columnFilter = false;
+
+                    column_tags_a35bed99c70848198a6314fa3bd24f00.every((rowTags) => {
+                        return rowTags.every((tag) => {
+
+                            // filterTags can be an object of min/max val, for example {max:2.0, min:1.2}, using .includes(...) method would fail
+                            filterTags.includes === undefined ? filterTags = Object.values(filterTags) : null;
+
+                            if (filterTags.includes(tag)) {
+                                columnFilter = true;
+                                return false;
+
+                            }else if(key.includes('col')){
+                                // Tags might have substring "col", thus create another condition
+                                // to check if the filtering key contains "col" given NO matched tag
+                                columnFilter = true;
+                                return false;
+                            }
+                            return true;
+                        });
+                    });
+                    // Executing filtering (by table columns)
+                    if (columnFilter) {
+                        column_tags_a35bed99c70848198a6314fa3bd24f00.forEach((columnTags, index) => {
+
+                            // Ignore the first column, which is an empty cell
+                            if (index === 0) {
+                                return;
+                            }
+
+                            let foundTags = columnTags.filter((tag) => filterTags.includes(tag));
+                            let foundTagsLen = foundTags.length;
+
+                            if (foundTagsLen > 0 === hideList) {
+                                 // Logic for filtering columns by data-tag
+                                table.column(index).visible(false);
+                            }else{
+                                 // Logic for filtering columns by column index range {min: filterTags[0], max: filterTags[1]}
+                                 // (*columns index starts from 1, ignore the first column, an empty cell, see line 95-97 above)
+                                index < filterTags[0] || index > filterTags[1] ? table.column(index).visible(false) : null;
+                            }
+
+                        });
+                    } else {
+                        // Executing filtering (by table rows)
+
+                        // Define an array to store the original index of displayed row.
+                        let filteredRowId = [];
+
+                        // Using table.rows(...) to select the rows based on the filtering callback function (can access both row data and nodes)
+                        let filteredRowData = table.rows((index, data, nodes)=>{
+
+                            let rowIndex = Number($(nodes).data("id"));
+                            let hidden = false;
+                            let foundTags = row_tags_a35bed99c70848198a6314fa3bd24f00[rowIndex-1].filter((rowTag) => filterTags.includes(rowTag));
+
+                            // Logic for filtering rows by data-tag(s) OR by row index range {min: filterTags[0], max: filterTags[1]}
+                            if (foundTags.length > 0 === hideList || (rowIndex < filterTags[0] || rowIndex > filterTags[1])) {
+                                hidden = true;
+                            }else{
+                                // Store the original row index of the displayed row into displayRowIndex upon filtering before table.clear()
+                                filteredRowId.push(index);
+                            }
+                            return !hidden;
+
+                        }).data();
+
+                        table.clear();
+                        table.rows.add(filteredRowData);
+
+                        // Map the data-tag to all table rows as table.clear() removes all row elements, including all tag attributes,
+                        // and adding back the rowData after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+                        // (*For row filtering)
+
+                        table.rows().nodes().each((row, index)=>{
+                            // Using displayRowIndex to reference the accurate data-tag / data-id per filtered row, using pure
+                            // "index" here to set up the data-tag/id is inaccurate as filtering rows will reset the row order
+                            // (i.e. if the original 1st row being filtered out, the original 2nd row will move up and become the new 1st row)
+                            $(row).attr("data-tags",rows_id_dict['a35bed99c70848198a6314fa3bd24f00'][filteredRowId[index]][filteredRowId[index]+1]);
+                            $(row).attr("data-id",filteredRowId[index]+1);
+                        });
+                    }
+                });
+            }
+        });
+        table.draw();
+
+        setWidth('a35bed99c70848198a6314fa3bd24f00');
+    });
+});
+
+</script>
+                </adr-data-item></section>
+
+            </div>
+        
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="ad09e986-7873-11f1-aebf-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="basic">
+        <a id="TOC_item_tgt_13"></a><br><h2>Solver Settings</h2><section class="adr-container" id="ad09e986-7873-11f1-aebf-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_4fbb7ee4ab0e473cb8f8b7d46a9cd812" data-item-type="tree"  
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <div class="card-header mb-2">
+  <span class="btn-group" role="group">
+      <button type="button" class="tree-expand-all btn btn-outline-secondary btn-sm px-1" 
+          data-target-tree="treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812"><i class="adr-icon adr-plus"></i>
+      <button type="button" class="tree-collapse-all btn btn-outline-secondary btn-sm px-1" 
+          data-target-tree="treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812"><i class="adr-icon adr-minus"></i>
+  </span>
+</div>
+<div style="display:block;overflow-x:auto;white-space:nowrap;"><table id='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='table tree table-bordered table-sm tree-fit table-striped' style='margin:0;padding:0;'>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-1' data-parent='0' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-1" style='vertical-align:bottom;'></span>Equations</td><td ></td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-2' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-1' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Flow</td><td >True</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-3' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-1' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Turbulence</td><td >True</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-4' data-parent='0' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-4" style='vertical-align:bottom;'></span>Numerics</td><td ></td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-5' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-4' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Absolute Velocity Formulation</td><td >True</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-6' data-parent='0' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-6" style='vertical-align:bottom;'></span>Pseudo Time Explicit Relaxation Factors</td><td ></td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-7' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-6' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Density</td><td >1</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-8' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-6' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Body Forces</td><td >1</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-9' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-6' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Turbulent Kinetic Energy</td><td >0.75</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-10' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-6' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Specific Dissipation Rate</td><td >0.75</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-11' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-6' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Turbulent Viscosity</td><td >1</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-12' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-6' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Explicit Momentum</td><td >0.5</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-13' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-6' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Explicit Pressure</td><td >0.5</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-14' data-parent='0' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-14" style='vertical-align:bottom;'></span>Pressure-Velocity Coupling</td><td ></td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-15' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-14' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Type</td><td >Coupled</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-16' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-14' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Pseudo Time Method (Global Time Step)</td><td >True</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-17' data-parent='0' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-17" style='vertical-align:bottom;'></span>Discretization Scheme</td><td ></td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-18' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-17' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Pressure</td><td >Second Order</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-19' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-17' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Momentum</td><td >Second Order Upwind</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-20' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-17' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Turbulent Kinetic Energy</td><td >Second Order Upwind</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-21' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-17' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Specific Dissipation Rate</td><td >Second Order Upwind</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-22' data-parent='0' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-parent tree-collapsed' style=''>
+<td><span class='treegrid-indent me-1 sub-tree-toggle adr-icon adr-plus me-1' data-target-node="treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-22" style='vertical-align:bottom;'></span>Solution Limits</td><td ></td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-23' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-22' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Minimum Absolute Pressure [Pa]</td><td >1</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-24' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-22' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Maximum Absolute Pressure [Pa]</td><td >5e+10</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-25' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-22' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Minimum Static Temperature [K]</td><td >1</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-26' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-22' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Maximum Static Temperature [K]</td><td >5000</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-27' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-22' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Minimum Turb. Kinetic Energy [m^2/s^2]</td><td >1e-14</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-28' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-22' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Minimum Spec. Dissipation Rate [s^-1]</td><td >1e-20</td></tr>
+<tr id='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-29' data-parent='treenode_4fbb7ee4ab0e473cb8f8b7d46a9cd812-22' data-tree='treeroot_4fbb7ee4ab0e473cb8f8b7d46a9cd812' class='tree-row tree-leaf ' style='display: none;'>
+<td><span class="treegrid-indent"></span><span class='treegrid-indent me-1 '  style='vertical-align:bottom;'></span>Maximum Turb. Viscosity Ratio</td><td >100000</td></tr>
+</table>
+</div>
+
+                </adr-data-item></section>
+
+            </div>
+        
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="ae598768-7873-11f1-952e-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_14"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#ae598768-7873-11f1-952e-83bb7ab7bf33_56">
+                </span>
+            
+                <adr-panel id="ae598768-7873-11f1-952e-83bb7ab7bf33_56" data-panel-type='collapse panel' data-guid=ae598768-7873-11f1-952e-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='ae598768-7873-11f1-952e-83bb7ab7bf33_56_header' class='adr-panel-header'><h2>Run Information</h2></header>
+                            <section id="ae598768-7873-11f1-952e-83bb7ab7bf33_56_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+                    <adr-data-item id="data_item_6a3193fb1fe14e5099a8b35eb454e8e9" data-item-type="table"  
+                        container="row" 
+                                        data-render-type='None' data-webgl='false'
+                                    >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <table id="table_6a3193fb1fe14e5099a8b35eb454e8e9" class="table table-hover table-bordered nowrap table-sm table-fit-head table-fit-body display" >
+ <br>
+ <thead style="visibility: collapse;">
+  <tr>
+   <th></th>
+   <th></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr data-id="1">
+   <th>Number of Machines</th>
+   <td  data-order="1">1</td>
+  </tr>
+  <tr data-id="2">
+   <th>Number of Cores</th>
+   <td  data-order="4">4</td>
+  </tr>
+  <tr data-id="3">
+   <th>Case Read</th>
+   <td  data-order="8.763 seconds">8.763 seconds</td>
+  </tr>
+  <tr data-id="4">
+   <th>Iteration</th>
+   <td  data-order="3.58 seconds">3.58 seconds</td>
+  </tr>
+  <tr data-id="5">
+   <th>AMG</th>
+   <td  data-order="2.305 seconds">2.305 seconds</td>
+  </tr>
+  <tr data-id="6">
+   <th>Virtual Current Memory</th>
+   <td  data-order="1.40772 GB">1.40772 GB</td>
+  </tr>
+  <tr data-id="7">
+   <th>Virtual Peak Memory</th>
+   <td  data-order="1.61416 GB">1.61416 GB</td>
+  </tr>
+  <tr data-id="8">
+   <th>Memory Per M Cell</th>
+   <td  data-order="20.9894">20.9894</td>
+  </tr>
+ </tbody>
+</table>
+<script>
+    function setWidth(uuid) {
+    let tableSelector = `#table_${uuid}`;
+    // let width = $(tableSelector).css('width');
+    $(tableSelector).parents('.dt-scroll').css('width', '100%');
+}
+
+$(document).ready(function () {
+    // String parse from server side will contain single quote which is not parsable using JSON method
+    // thus replace the single quotes with double quotes
+    let options = JSON.parse('{"columnDefs":[{"className":"text-center","targets":0,"cellType":"th"},{"className":"text-center","targets":1,"cellType":"td"}],"info":false,"orderClasses":false,"searching":false,"ordering":false,"order":[],"scrollX":true,"paging":false,"deferRender":false}'.replace(/'/g, '"'));
+    let table = $('#table_6a3193fb1fe14e5099a8b35eb454e8e9').DataTable(options);
+
+    // dictionary for data row's unique id & data-tag look up (generated from ~django\data\models.py)
+    const rows_id_dict = {
+        
+            // String parse from server side will contain single quote which is not parsable using JSON method
+            // thus replace the single quotes with double quotes
+            "6a3193fb1fe14e5099a8b35eb454e8e9" : JSON.parse("[{'1': ''}, {'2': ''}, {'3': ''}, {'4': ''}, {'5': ''}, {'6': ''}, {'7': ''}, {'8': ''}]".replace(/'/g, '"'))
+        
+    };
+
+    const const_data_6a3193fb1fe14e5099a8b35eb454e8e9 = table.rows().data();
+    const row_tags_6a3193fb1fe14e5099a8b35eb454e8e9 = $.map(table.rows().nodes(), (item, key) => {
+        let tags = $(item).data('tags');
+
+        // Transforms the data-tag string to an array separating by space
+        let split = [(tags !== undefined ? tags.split(' ') : [''])];
+        return split.map((tags) => {
+            return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+        });
+    });
+    const column_tags_6a3193fb1fe14e5099a8b35eb454e8e9 = $('#table_6a3193fb1fe14e5099a8b35eb454e8e9_wrapper .dt-scroll-head thead').find('th')
+            .map((index, elem) => {
+                let tags = $(elem).data('tags');
+                return [(tags !== undefined ? tags.split(' ') : [''])].map((tags) => {
+                    return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+                });
+            }).toArray();
+
+    const table_6a3193fb1fe14e5099a8b35eb454e8e9 = document.getElementById('table_6a3193fb1fe14e5099a8b35eb454e8e9_wrapper');
+    setWidth('6a3193fb1fe14e5099a8b35eb454e8e9');
+
+    // Table filtering feature (clear and redraw table on user filtering interaction with the table filtering template)
+    table_6a3193fb1fe14e5099a8b35eb454e8e9.addEventListener('filter_event', function(event) {
+        table.clear();
+        table.rows.add(const_data_6a3193fb1fe14e5099a8b35eb454e8e9);
+        table.columns().visible(true);
+
+        // Map the data-tag to all table rows as table.clear() removes all row elements, including data-tag and data-id attributes,
+        // and adding row data back after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+        // (*For column filtering)
+        table.rows().nodes().each((row, index)=>{
+            // initial table contains all rows/columns, no needs to worry about setting the wrong data-tag/data-id to each row
+            $(row).attr("data-tags",rows_id_dict['6a3193fb1fe14e5099a8b35eb454e8e9'][index][index+1]);
+            $(row).attr("data-id",index+1);
+        });
+
+        $('#table_6a3193fb1fe14e5099a8b35eb454e8e9').parents('.dt-scroll').css('width', '');
+
+        event.detail.forEach((filterDetail, key) => {
+            let hideList = key === 'tag';
+
+            // The returned filterDetail contains both objects and a template_guid (string datatype) => See ~django\data\models.py.
+            // Thus, filtering the string data type as the .forEach(...) method only works for array object and is not a string method.
+            if(typeof filterDetail === 'object'){
+                filterDetail.forEach((filterTags, key) => {
+                    let columnFilter = false;
+
+                    column_tags_6a3193fb1fe14e5099a8b35eb454e8e9.every((rowTags) => {
+                        return rowTags.every((tag) => {
+
+                            // filterTags can be an object of min/max val, for example {max:2.0, min:1.2}, using .includes(...) method would fail
+                            filterTags.includes === undefined ? filterTags = Object.values(filterTags) : null;
+
+                            if (filterTags.includes(tag)) {
+                                columnFilter = true;
+                                return false;
+
+                            }else if(key.includes('col')){
+                                // Tags might have substring "col", thus create another condition
+                                // to check if the filtering key contains "col" given NO matched tag
+                                columnFilter = true;
+                                return false;
+                            }
+                            return true;
+                        });
+                    });
+                    // Executing filtering (by table columns)
+                    if (columnFilter) {
+                        column_tags_6a3193fb1fe14e5099a8b35eb454e8e9.forEach((columnTags, index) => {
+
+                            // Ignore the first column, which is an empty cell
+                            if (index === 0) {
+                                return;
+                            }
+
+                            let foundTags = columnTags.filter((tag) => filterTags.includes(tag));
+                            let foundTagsLen = foundTags.length;
+
+                            if (foundTagsLen > 0 === hideList) {
+                                 // Logic for filtering columns by data-tag
+                                table.column(index).visible(false);
+                            }else{
+                                 // Logic for filtering columns by column index range {min: filterTags[0], max: filterTags[1]}
+                                 // (*columns index starts from 1, ignore the first column, an empty cell, see line 95-97 above)
+                                index < filterTags[0] || index > filterTags[1] ? table.column(index).visible(false) : null;
+                            }
+
+                        });
+                    } else {
+                        // Executing filtering (by table rows)
+
+                        // Define an array to store the original index of displayed row.
+                        let filteredRowId = [];
+
+                        // Using table.rows(...) to select the rows based on the filtering callback function (can access both row data and nodes)
+                        let filteredRowData = table.rows((index, data, nodes)=>{
+
+                            let rowIndex = Number($(nodes).data("id"));
+                            let hidden = false;
+                            let foundTags = row_tags_6a3193fb1fe14e5099a8b35eb454e8e9[rowIndex-1].filter((rowTag) => filterTags.includes(rowTag));
+
+                            // Logic for filtering rows by data-tag(s) OR by row index range {min: filterTags[0], max: filterTags[1]}
+                            if (foundTags.length > 0 === hideList || (rowIndex < filterTags[0] || rowIndex > filterTags[1])) {
+                                hidden = true;
+                            }else{
+                                // Store the original row index of the displayed row into displayRowIndex upon filtering before table.clear()
+                                filteredRowId.push(index);
+                            }
+                            return !hidden;
+
+                        }).data();
+
+                        table.clear();
+                        table.rows.add(filteredRowData);
+
+                        // Map the data-tag to all table rows as table.clear() removes all row elements, including all tag attributes,
+                        // and adding back the rowData after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+                        // (*For row filtering)
+
+                        table.rows().nodes().each((row, index)=>{
+                            // Using displayRowIndex to reference the accurate data-tag / data-id per filtered row, using pure
+                            // "index" here to set up the data-tag/id is inaccurate as filtering rows will reset the row order
+                            // (i.e. if the original 1st row being filtered out, the original 2nd row will move up and become the new 1st row)
+                            $(row).attr("data-tags",rows_id_dict['6a3193fb1fe14e5099a8b35eb454e8e9'][filteredRowId[index]][filteredRowId[index]+1]);
+                            $(row).attr("data-id",filteredRowId[index]+1);
+                        });
+                    }
+                });
+            }
+        });
+        table.draw();
+
+        setWidth('6a3193fb1fe14e5099a8b35eb454e8e9');
+    });
+});
+
+</script>
+                </adr-data-item>
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="afa1bf82-7873-11f1-aeb3-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_15"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#afa1bf82-7873-11f1-aeb3-83bb7ab7bf33_57">
+                </span>
+            
+                <adr-panel id="afa1bf82-7873-11f1-aeb3-83bb7ab7bf33_57" data-panel-type='collapse panel' data-guid=afa1bf82-7873-11f1-aeb3-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='afa1bf82-7873-11f1-aeb3-83bb7ab7bf33_57_header' class='adr-panel-header'><h2>Solution Status</h2><br /><br /><h4>Iterations: 58</h4></header>
+                            <section id="afa1bf82-7873-11f1-aeb3-83bb7ab7bf33_57_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+                    <adr-data-item id="data_item_fa4ad2f615f2437aa5985bb845d0d0d5" data-item-type="table"  
+                        container="row" 
+                                        data-render-type='None' data-webgl='false'
+                                    >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        <table id="table_fa4ad2f615f2437aa5985bb845d0d0d5" class="table table-hover table-bordered nowrap table-sm table-fit-head table-fit-body display" >
+ <br>
+ <thead>
+  <tr>
+   <th></th>
+   <th>Value</th>
+   <th>Absolute Criteria</th>
+   <th>Convergence Status</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr data-id="1">
+   <th>continuity</th>
+   <td  data-order="0.0004872403">0.0004872403</td>
+   <td  data-order="0.001">0.001</td>
+   <td  data-order="Converged">Converged</td>
+  </tr>
+  <tr data-id="2">
+   <th>x-velocity</th>
+   <td  data-order="1.451376e-05">1.451376e-05</td>
+   <td  data-order="0.001">0.001</td>
+   <td  data-order="Converged">Converged</td>
+  </tr>
+  <tr data-id="3">
+   <th>y-velocity</th>
+   <td  data-order="1.971207e-06">1.971207e-06</td>
+   <td  data-order="0.001">0.001</td>
+   <td  data-order="Converged">Converged</td>
+  </tr>
+  <tr data-id="4">
+   <th>k</th>
+   <td  data-order="0.0009787">0.0009787</td>
+   <td  data-order="0.001">0.001</td>
+   <td  data-order="Converged">Converged</td>
+  </tr>
+  <tr data-id="5">
+   <th>omega</th>
+   <td  data-order="0.0009750085">0.0009750085</td>
+   <td  data-order="0.001">0.001</td>
+   <td  data-order="Converged">Converged</td>
+  </tr>
+ </tbody>
+</table>
+<script>
+    function setWidth(uuid) {
+    let tableSelector = `#table_${uuid}`;
+    // let width = $(tableSelector).css('width');
+    $(tableSelector).parents('.dt-scroll').css('width', '100%');
+}
+
+$(document).ready(function () {
+    // String parse from server side will contain single quote which is not parsable using JSON method
+    // thus replace the single quotes with double quotes
+    let options = JSON.parse('{"columnDefs":[{"className":"text-center","targets":0,"cellType":"th"},{"className":"text-center","targets":1,"cellType":"td"},{"className":"text-center","targets":2,"cellType":"td"},{"className":"text-center","targets":3,"cellType":"td"}],"info":false,"orderClasses":false,"searching":false,"order":[],"scrollX":true,"paging":false,"deferRender":false}'.replace(/'/g, '"'));
+    let table = $('#table_fa4ad2f615f2437aa5985bb845d0d0d5').DataTable(options);
+
+    // dictionary for data row's unique id & data-tag look up (generated from ~django\data\models.py)
+    const rows_id_dict = {
+        
+            // String parse from server side will contain single quote which is not parsable using JSON method
+            // thus replace the single quotes with double quotes
+            "fa4ad2f615f2437aa5985bb845d0d0d5" : JSON.parse("[{'1': ''}, {'2': ''}, {'3': ''}, {'4': ''}, {'5': ''}]".replace(/'/g, '"'))
+        
+    };
+
+    const const_data_fa4ad2f615f2437aa5985bb845d0d0d5 = table.rows().data();
+    const row_tags_fa4ad2f615f2437aa5985bb845d0d0d5 = $.map(table.rows().nodes(), (item, key) => {
+        let tags = $(item).data('tags');
+
+        // Transforms the data-tag string to an array separating by space
+        let split = [(tags !== undefined ? tags.split(' ') : [''])];
+        return split.map((tags) => {
+            return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+        });
+    });
+    const column_tags_fa4ad2f615f2437aa5985bb845d0d0d5 = $('#table_fa4ad2f615f2437aa5985bb845d0d0d5_wrapper .dt-scroll-head thead').find('th')
+            .map((index, elem) => {
+                let tags = $(elem).data('tags');
+                return [(tags !== undefined ? tags.split(' ') : [''])].map((tags) => {
+                    return tags.map((tag) => tag.substring(tag.indexOf('=') + 1));
+                });
+            }).toArray();
+
+    const table_fa4ad2f615f2437aa5985bb845d0d0d5 = document.getElementById('table_fa4ad2f615f2437aa5985bb845d0d0d5_wrapper');
+    setWidth('fa4ad2f615f2437aa5985bb845d0d0d5');
+
+    // Table filtering feature (clear and redraw table on user filtering interaction with the table filtering template)
+    table_fa4ad2f615f2437aa5985bb845d0d0d5.addEventListener('filter_event', function(event) {
+        table.clear();
+        table.rows.add(const_data_fa4ad2f615f2437aa5985bb845d0d0d5);
+        table.columns().visible(true);
+
+        // Map the data-tag to all table rows as table.clear() removes all row elements, including data-tag and data-id attributes,
+        // and adding row data back after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+        // (*For column filtering)
+        table.rows().nodes().each((row, index)=>{
+            // initial table contains all rows/columns, no needs to worry about setting the wrong data-tag/data-id to each row
+            $(row).attr("data-tags",rows_id_dict['fa4ad2f615f2437aa5985bb845d0d0d5'][index][index+1]);
+            $(row).attr("data-id",index+1);
+        });
+
+        $('#table_fa4ad2f615f2437aa5985bb845d0d0d5').parents('.dt-scroll').css('width', '');
+
+        event.detail.forEach((filterDetail, key) => {
+            let hideList = key === 'tag';
+
+            // The returned filterDetail contains both objects and a template_guid (string datatype) => See ~django\data\models.py.
+            // Thus, filtering the string data type as the .forEach(...) method only works for array object and is not a string method.
+            if(typeof filterDetail === 'object'){
+                filterDetail.forEach((filterTags, key) => {
+                    let columnFilter = false;
+
+                    column_tags_fa4ad2f615f2437aa5985bb845d0d0d5.every((rowTags) => {
+                        return rowTags.every((tag) => {
+
+                            // filterTags can be an object of min/max val, for example {max:2.0, min:1.2}, using .includes(...) method would fail
+                            filterTags.includes === undefined ? filterTags = Object.values(filterTags) : null;
+
+                            if (filterTags.includes(tag)) {
+                                columnFilter = true;
+                                return false;
+
+                            }else if(key.includes('col')){
+                                // Tags might have substring "col", thus create another condition
+                                // to check if the filtering key contains "col" given NO matched tag
+                                columnFilter = true;
+                                return false;
+                            }
+                            return true;
+                        });
+                    });
+                    // Executing filtering (by table columns)
+                    if (columnFilter) {
+                        column_tags_fa4ad2f615f2437aa5985bb845d0d0d5.forEach((columnTags, index) => {
+
+                            // Ignore the first column, which is an empty cell
+                            if (index === 0) {
+                                return;
+                            }
+
+                            let foundTags = columnTags.filter((tag) => filterTags.includes(tag));
+                            let foundTagsLen = foundTags.length;
+
+                            if (foundTagsLen > 0 === hideList) {
+                                 // Logic for filtering columns by data-tag
+                                table.column(index).visible(false);
+                            }else{
+                                 // Logic for filtering columns by column index range {min: filterTags[0], max: filterTags[1]}
+                                 // (*columns index starts from 1, ignore the first column, an empty cell, see line 95-97 above)
+                                index < filterTags[0] || index > filterTags[1] ? table.column(index).visible(false) : null;
+                            }
+
+                        });
+                    } else {
+                        // Executing filtering (by table rows)
+
+                        // Define an array to store the original index of displayed row.
+                        let filteredRowId = [];
+
+                        // Using table.rows(...) to select the rows based on the filtering callback function (can access both row data and nodes)
+                        let filteredRowData = table.rows((index, data, nodes)=>{
+
+                            let rowIndex = Number($(nodes).data("id"));
+                            let hidden = false;
+                            let foundTags = row_tags_fa4ad2f615f2437aa5985bb845d0d0d5[rowIndex-1].filter((rowTag) => filterTags.includes(rowTag));
+
+                            // Logic for filtering rows by data-tag(s) OR by row index range {min: filterTags[0], max: filterTags[1]}
+                            if (foundTags.length > 0 === hideList || (rowIndex < filterTags[0] || rowIndex > filterTags[1])) {
+                                hidden = true;
+                            }else{
+                                // Store the original row index of the displayed row into displayRowIndex upon filtering before table.clear()
+                                filteredRowId.push(index);
+                            }
+                            return !hidden;
+
+                        }).data();
+
+                        table.clear();
+                        table.rows.add(filteredRowData);
+
+                        // Map the data-tag to all table rows as table.clear() removes all row elements, including all tag attributes,
+                        // and adding back the rowData after the filtering does not contain the "data-tag" & "data-id" attribute by default.
+                        // (*For row filtering)
+
+                        table.rows().nodes().each((row, index)=>{
+                            // Using displayRowIndex to reference the accurate data-tag / data-id per filtered row, using pure
+                            // "index" here to set up the data-tag/id is inaccurate as filtering rows will reset the row order
+                            // (i.e. if the original 1st row being filtered out, the original 2nd row will move up and become the new 1st row)
+                            $(row).attr("data-tags",rows_id_dict['fa4ad2f615f2437aa5985bb845d0d0d5'][filteredRowId[index]][filteredRowId[index]+1]);
+                            $(row).attr("data-id",filteredRowId[index]+1);
+                        });
+                    }
+                });
+            }
+        });
+        table.draw();
+
+        setWidth('fa4ad2f615f2437aa5985bb845d0d0d5');
+    });
+});
+
+</script>
+                </adr-data-item>
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="b3787424-7873-11f1-9662-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_16"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#b3787424-7873-11f1-9662-83bb7ab7bf33_58">
+                </span>
+            
+                <adr-panel id="b3787424-7873-11f1-9662-83bb7ab7bf33_58" data-panel-type='collapse panel' data-guid=b3787424-7873-11f1-9662-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='b3787424-7873-11f1-9662-83bb7ab7bf33_58_header' class='adr-panel-header'><h2>Plots</h2></header>
+                            <section id="b3787424-7873-11f1-9662-83bb7ab7bf33_58_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+            <div  nexus_template="b48d33e1-7873-11f1-aef1-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="tabs">
+        
+                <adr-tabs id="adr_tab_template_59" data-guid="b48d33e1-7873-11f1-aef1-83bb7ab7bf33">
+                    <template shadowrootmode="open">
+                        
+                        
+                        <nav class="adr-tabs-nav" data-tabs="adr_tab_template_59">
+                            <ul>
+            
+                    <li class="adr-tabs-nav-item">
+                        <a class="link active"
+                            role="tab link" aria-selected="true" aria-controls="adr_tab_template_59_60">
+                            Residuals
+                        </a>
+                    </li>
+                
+                    </ul>
+                </nav>
+                <section class="adr-tabs-body">
+            
+                <section class="adr-tabs-content active" id="adr_tab_template_59_60" role="adr-tabs-content" aria-selected="true">
+                    <slot name ="adr_tab_template_59_60"></slot>
+                </section>
+            
+                    </section>
+                    <script>
+                        // dispatch resize event for hitting tabs inside <nav>...</nav>
+                        $('.adr-tabs-nav-item>a').on('adr-tab-active-end', function(e) {
+                           window.dispatchEvent(new Event('resize')); 
+                        })
+                    </script>
+                </template>
+                
+            <div  nexus_template="b590cc90-7873-11f1-ae9d-83bb7ab7bf33" slot='adr_tab_template_59_60' aria-label="report layout container" data-layout-type="basic">
+        <br><h2>Residuals</h2><section class="adr-container" id="b590cc90-7873-11f1-ae9d-83bb7ab7bf33" >
+
+                <adr-data-item id="data_item_20e0311efa6b4882955e7e6655b999e9" data-item-type="table"  
+                    
+                                        data-render-type='line' data-webgl='false'
+                                    >
+                    <template shadowrootmode="open">
+                        <section class="adr-data-item-container">
+                            <slot></slot>
+                        </section>
+                    </template>
+                    
+            <section class="nexus-plot" id="plot_20e0311efa6b4882955e7e6655b999e9" ></section>
+        <script>
+ var data_0 = {
+ tags: {
+  },
+  x: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0],
+  y: [1.0, 1.0, 1.0, 0.48598274, 0.31724332, 0.21792029, 0.15338278, 0.10924002, 0.077556481, 0.056169659, 0.040641108, 0.029625729, 0.021758965, 0.016224211, 0.012343958, 0.0096907993, 0.0077775412, 0.0063846819, 0.0053890753, 0.0046690572, 0.0040667767, 0.0036009515, 0.0031907802, 0.0029122506, 0.0026041915, 0.0023319664, 0.0020863961, 0.0019237443, 0.0017862917, 0.0016552084, 0.0015257662, 0.0014156482, 0.0012594745, 0.0012043018, 0.001107777, 0.00098520404, 0.0008891285, 0.00082013088, 0.00077339499, 0.00085340873, 0.00078290402, 0.00066303017, 0.00059770861, 0.00056279813, 0.00054750035, 0.00048782337, 0.00046604844, 0.00042812839, 0.00041651528, 0.00040170653, 0.00038169202, 0.00033935438, 0.00051604097, 0.00050047288, 0.00053611258, 0.00056035481, 0.00053538622, 0.0004872403],
+  name: 'continuity',  text: ['(1, 1.000000e+00)', '(2, 1.000000e+00)', '(3, 1.000000e+00)', '(4, 4.859827e-01)', '(5, 3.172433e-01)', '(6, 2.179203e-01)', '(7, 1.533828e-01)', '(8, 1.092400e-01)', '(9, 7.755648e-02)', '(10, 5.616966e-02)', '(11, 4.064111e-02)', '(12, 2.962573e-02)', '(13, 2.175897e-02)', '(14, 1.622421e-02)', '(15, 1.234396e-02)', '(16, 9.690799e-03)', '(17, 7.777541e-03)', '(18, 6.384682e-03)', '(19, 5.389075e-03)', '(20, 4.669057e-03)', '(21, 4.066777e-03)', '(22, 3.600951e-03)', '(23, 3.190780e-03)', '(24, 2.912251e-03)', '(25, 2.604191e-03)', '(26, 2.331966e-03)', '(27, 2.086396e-03)', '(28, 1.923744e-03)', '(29, 1.786292e-03)', '(30, 1.655208e-03)', '(31, 1.525766e-03)', '(32, 1.415648e-03)', '(33, 1.259474e-03)', '(34, 1.204302e-03)', '(35, 1.107777e-03)', '(36, 9.852040e-04)', '(37, 8.891285e-04)', '(38, 8.201309e-04)', '(39, 7.733950e-04)', '(40, 8.534087e-04)', '(41, 7.829040e-04)', '(42, 6.630302e-04)', '(43, 5.977086e-04)', '(44, 5.627981e-04)', '(45, 5.475004e-04)', '(46, 4.878234e-04)', '(47, 4.660484e-04)', '(48, 4.281284e-04)', '(49, 4.165153e-04)', '(50, 4.017065e-04)', '(51, 3.816920e-04)', '(52, 3.393544e-04)', '(53, 5.160410e-04)', '(54, 5.004729e-04)', '(55, 5.361126e-04)', '(56, 5.603548e-04)', '(57, 5.353862e-04)', '(58, 4.872403e-04)'],
+  hoverinfo: 'text',
+  type: 'scatter',
+  showlegend: true,
+  mode: 'lines',
+  marker: { 
+opacity: 1.0,
+symbol: 'none',
+ },
+  line: {
+dash: 'solid',
+ },
+ };
+ var data_1 = {
+ tags: {
+  },
+  x: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0],
+  y: [0.00052481734, 0.0075402076, 0.0042963718, 0.002445039, 0.001774524, 0.0013990418, 0.0011974689, 0.0010645436, 0.00095516917, 0.00092153512, 0.00087203941, 0.00082867822, 0.0007866571, 0.00073730135, 0.00068439837, 0.00063084343, 0.00058246648, 0.00054039282, 0.00050895364, 0.00048216341, 0.00045368606, 0.00042513609, 0.00039608948, 0.00037901723, 0.00035901756, 0.00033451604, 0.00030745176, 0.00027920368, 0.00025191309, 0.00022807411, 0.0002029549, 0.00018318914, 0.00017125199, 0.00016371244, 0.00015605853, 0.00014821337, 0.00014160367, 0.00013549683, 0.00012849474, 0.00011971742, 0.00011081167, 0.00010058979, 9.0965954e-05, 8.1736431e-05, 7.3522988e-05, 6.5359487e-05, 5.7492667e-05, 4.8804666e-05, 4.1220263e-05, 3.5357928e-05, 3.1135085e-05, 3.2639269e-05, 2.8664095e-05, 2.2632879e-05, 1.9762777e-05, 1.7635134e-05, 1.5757768e-05, 1.451376e-05],
+  name: 'x-velocity',  text: ['(1, 5.248173e-04)', '(2, 7.540208e-03)', '(3, 4.296372e-03)', '(4, 2.445039e-03)', '(5, 1.774524e-03)', '(6, 1.399042e-03)', '(7, 1.197469e-03)', '(8, 1.064544e-03)', '(9, 9.551692e-04)', '(10, 9.215351e-04)', '(11, 8.720394e-04)', '(12, 8.286782e-04)', '(13, 7.866571e-04)', '(14, 7.373014e-04)', '(15, 6.843984e-04)', '(16, 6.308434e-04)', '(17, 5.824665e-04)', '(18, 5.403928e-04)', '(19, 5.089536e-04)', '(20, 4.821634e-04)', '(21, 4.536861e-04)', '(22, 4.251361e-04)', '(23, 3.960895e-04)', '(24, 3.790172e-04)', '(25, 3.590176e-04)', '(26, 3.345160e-04)', '(27, 3.074518e-04)', '(28, 2.792037e-04)', '(29, 2.519131e-04)', '(30, 2.280741e-04)', '(31, 2.029549e-04)', '(32, 1.831891e-04)', '(33, 1.712520e-04)', '(34, 1.637124e-04)', '(35, 1.560585e-04)', '(36, 1.482134e-04)', '(37, 1.416037e-04)', '(38, 1.354968e-04)', '(39, 1.284947e-04)', '(40, 1.197174e-04)', '(41, 1.108117e-04)', '(42, 1.005898e-04)', '(43, 9.096595e-05)', '(44, 8.173643e-05)', '(45, 7.352299e-05)', '(46, 6.535949e-05)', '(47, 5.749267e-05)', '(48, 4.880467e-05)', '(49, 4.122026e-05)', '(50, 3.535793e-05)', '(51, 3.113508e-05)', '(52, 3.263927e-05)', '(53, 2.866409e-05)', '(54, 2.263288e-05)', '(55, 1.976278e-05)', '(56, 1.763513e-05)', '(57, 1.575777e-05)', '(58, 1.451376e-05)'],
+  hoverinfo: 'text',
+  type: 'scatter',
+  showlegend: true,
+  mode: 'lines',
+  marker: { 
+opacity: 1.0,
+symbol: 'none',
+ },
+  line: {
+dash: 'solid',
+ },
+ };
+ var data_2 = {
+ tags: {
+  },
+  x: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0],
+  y: [0.00082218327, 0.0093356763, 0.0044894193, 0.0021223313, 0.0012290915, 0.00075383921, 0.00051816654, 0.00039683395, 0.00029628635, 0.00024635853, 0.0002030824, 0.0001710208, 0.00014599402, 0.00012756142, 0.00011321428, 0.00010220959, 9.382155e-05, 8.6084766e-05, 8.0223251e-05, 7.5621056e-05, 7.1837447e-05, 6.6891111e-05, 6.1342313e-05, 5.6347264e-05, 5.163489e-05, 4.6336223e-05, 4.2243909e-05, 3.8630544e-05, 3.5312667e-05, 3.228933e-05, 2.9038923e-05, 2.5878318e-05, 2.2875489e-05, 2.0120483e-05, 1.7816923e-05, 1.5718098e-05, 1.3966001e-05, 1.22327e-05, 1.079067e-05, 9.5581914e-06, 8.7304926e-06, 7.7137051e-06, 6.9828023e-06, 6.3509705e-06, 5.7163941e-06, 5.3266743e-06, 4.6964959e-06, 4.3506838e-06, 3.9129595e-06, 3.4828897e-06, 3.2537248e-06, 3.0534378e-06, 3.6434101e-06, 3.1377101e-06, 2.7178109e-06, 2.4391903e-06, 2.1853047e-06, 1.971207e-06],
+  name: 'y-velocity',  text: ['(1, 8.221833e-04)', '(2, 9.335676e-03)', '(3, 4.489419e-03)', '(4, 2.122331e-03)', '(5, 1.229092e-03)', '(6, 7.538392e-04)', '(7, 5.181665e-04)', '(8, 3.968340e-04)', '(9, 2.962863e-04)', '(10, 2.463585e-04)', '(11, 2.030824e-04)', '(12, 1.710208e-04)', '(13, 1.459940e-04)', '(14, 1.275614e-04)', '(15, 1.132143e-04)', '(16, 1.022096e-04)', '(17, 9.382155e-05)', '(18, 8.608477e-05)', '(19, 8.022325e-05)', '(20, 7.562106e-05)', '(21, 7.183745e-05)', '(22, 6.689111e-05)', '(23, 6.134231e-05)', '(24, 5.634726e-05)', '(25, 5.163489e-05)', '(26, 4.633622e-05)', '(27, 4.224391e-05)', '(28, 3.863054e-05)', '(29, 3.531267e-05)', '(30, 3.228933e-05)', '(31, 2.903892e-05)', '(32, 2.587832e-05)', '(33, 2.287549e-05)', '(34, 2.012048e-05)', '(35, 1.781692e-05)', '(36, 1.571810e-05)', '(37, 1.396600e-05)', '(38, 1.223270e-05)', '(39, 1.079067e-05)', '(40, 9.558191e-06)', '(41, 8.730493e-06)', '(42, 7.713705e-06)', '(43, 6.982802e-06)', '(44, 6.350970e-06)', '(45, 5.716394e-06)', '(46, 5.326674e-06)', '(47, 4.696496e-06)', '(48, 4.350684e-06)', '(49, 3.912959e-06)', '(50, 3.482890e-06)', '(51, 3.253725e-06)', '(52, 3.053438e-06)', '(53, 3.643410e-06)', '(54, 3.137710e-06)', '(55, 2.717811e-06)', '(56, 2.439190e-06)', '(57, 2.185305e-06)', '(58, 1.971207e-06)'],
+  hoverinfo: 'text',
+  type: 'scatter',
+  showlegend: true,
+  mode: 'lines',
+  marker: { 
+opacity: 1.0,
+symbol: 'none',
+ },
+  line: {
+dash: 'solid',
+ },
+ };
+ var data_3 = {
+ tags: {
+  },
+  x: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0],
+  y: [0.2008837, 0.73975078, 0.42156284, 0.36169182, 0.24243711, 0.13808209, 0.078503148, 0.049215907, 0.037097694, 0.031521621, 0.028178549, 0.025941388, 0.024451739, 0.022760783, 0.021179726, 0.019758869, 0.018452673, 0.017250946, 0.016462834, 0.015545336, 0.014025197, 0.012987885, 0.012488304, 0.011860013, 0.012436264, 0.011573681, 0.010884511, 0.0097372457, 0.0084556812, 0.0080279273, 0.007366229, 0.0066003071, 0.0059956677, 0.0055140457, 0.0053373145, 0.0058585438, 0.0083359123, 0.015529255, 0.026797739, 0.024925431, 0.021649153, 0.056444302, 0.041448033, 0.048700944, 0.013422964, 0.013629417, 0.020738451, 0.0051702045, 0.013442007, 0.022650399, 0.010771134, 0.12822177, 0.028347072, 0.0055798775, 0.0020994866, 0.00098944538, 0.0013688199, 0.00097869997],
+  name: 'k',  text: ['(1, 2.008837e-01)', '(2, 7.397508e-01)', '(3, 4.215628e-01)', '(4, 3.616918e-01)', '(5, 2.424371e-01)', '(6, 1.380821e-01)', '(7, 7.850315e-02)', '(8, 4.921591e-02)', '(9, 3.709769e-02)', '(10, 3.152162e-02)', '(11, 2.817855e-02)', '(12, 2.594139e-02)', '(13, 2.445174e-02)', '(14, 2.276078e-02)', '(15, 2.117973e-02)', '(16, 1.975887e-02)', '(17, 1.845267e-02)', '(18, 1.725095e-02)', '(19, 1.646283e-02)', '(20, 1.554534e-02)', '(21, 1.402520e-02)', '(22, 1.298788e-02)', '(23, 1.248830e-02)', '(24, 1.186001e-02)', '(25, 1.243626e-02)', '(26, 1.157368e-02)', '(27, 1.088451e-02)', '(28, 9.737246e-03)', '(29, 8.455681e-03)', '(30, 8.027927e-03)', '(31, 7.366229e-03)', '(32, 6.600307e-03)', '(33, 5.995668e-03)', '(34, 5.514046e-03)', '(35, 5.337314e-03)', '(36, 5.858544e-03)', '(37, 8.335912e-03)', '(38, 1.552926e-02)', '(39, 2.679774e-02)', '(40, 2.492543e-02)', '(41, 2.164915e-02)', '(42, 5.644430e-02)', '(43, 4.144803e-02)', '(44, 4.870094e-02)', '(45, 1.342296e-02)', '(46, 1.362942e-02)', '(47, 2.073845e-02)', '(48, 5.170205e-03)', '(49, 1.344201e-02)', '(50, 2.265040e-02)', '(51, 1.077113e-02)', '(52, 1.282218e-01)', '(53, 2.834707e-02)', '(54, 5.579878e-03)', '(55, 2.099487e-03)', '(56, 9.894454e-04)', '(57, 1.368820e-03)', '(58, 9.787000e-04)'],
+  hoverinfo: 'text',
+  type: 'scatter',
+  showlegend: true,
+  mode: 'lines',
+  marker: { 
+opacity: 1.0,
+symbol: 'none',
+ },
+  line: {
+dash: 'solid',
+ },
+ };
+ var data_4 = {
+ tags: {
+  },
+  x: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0],
+  y: [0.54083849, 0.66118818, 0.30782316, 0.3085763, 0.27069138, 0.20942768, 0.15234942, 0.10134973, 0.066060154, 0.043640904, 0.03045373, 0.022475687, 0.018061517, 0.015527202, 0.013871504, 0.012792615, 0.011718251, 0.010795865, 0.010028281, 0.0091293874, 0.0080075282, 0.0074452364, 0.0074792015, 0.00720828, 0.0074618129, 0.0070642414, 0.0066228549, 0.0060468118, 0.0055335893, 0.0054799644, 0.0051216711, 0.0047582541, 0.0045112815, 0.0043534301, 0.0045070339, 0.0054244585, 0.0078096458, 0.012019377, 0.014363758, 0.0090014764, 0.0055569607, 0.015639604, 0.0086261722, 0.0080988076, 0.0099581954, 0.0094258471, 0.010648872, 0.0062484628, 0.0035041623, 0.0017957633, 0.0029603149, 0.020418352, 0.011547431, 0.0056062021, 0.0030936349, 0.0016141282, 0.0013883476, 0.00097500847],
+  name: 'omega',  text: ['(1, 5.408385e-01)', '(2, 6.611882e-01)', '(3, 3.078232e-01)', '(4, 3.085763e-01)', '(5, 2.706914e-01)', '(6, 2.094277e-01)', '(7, 1.523494e-01)', '(8, 1.013497e-01)', '(9, 6.606015e-02)', '(10, 4.364090e-02)', '(11, 3.045373e-02)', '(12, 2.247569e-02)', '(13, 1.806152e-02)', '(14, 1.552720e-02)', '(15, 1.387150e-02)', '(16, 1.279262e-02)', '(17, 1.171825e-02)', '(18, 1.079586e-02)', '(19, 1.002828e-02)', '(20, 9.129387e-03)', '(21, 8.007528e-03)', '(22, 7.445236e-03)', '(23, 7.479202e-03)', '(24, 7.208280e-03)', '(25, 7.461813e-03)', '(26, 7.064241e-03)', '(27, 6.622855e-03)', '(28, 6.046812e-03)', '(29, 5.533589e-03)', '(30, 5.479964e-03)', '(31, 5.121671e-03)', '(32, 4.758254e-03)', '(33, 4.511282e-03)', '(34, 4.353430e-03)', '(35, 4.507034e-03)', '(36, 5.424458e-03)', '(37, 7.809646e-03)', '(38, 1.201938e-02)', '(39, 1.436376e-02)', '(40, 9.001476e-03)', '(41, 5.556961e-03)', '(42, 1.563960e-02)', '(43, 8.626172e-03)', '(44, 8.098808e-03)', '(45, 9.958195e-03)', '(46, 9.425847e-03)', '(47, 1.064887e-02)', '(48, 6.248463e-03)', '(49, 3.504162e-03)', '(50, 1.795763e-03)', '(51, 2.960315e-03)', '(52, 2.041835e-02)', '(53, 1.154743e-02)', '(54, 5.606202e-03)', '(55, 3.093635e-03)', '(56, 1.614128e-03)', '(57, 1.388348e-03)', '(58, 9.750085e-04)'],
+  hoverinfo: 'text',
+  type: 'scatter',
+  showlegend: true,
+  mode: 'lines',
+  marker: { 
+opacity: 1.0,
+symbol: 'none',
+ },
+  line: {
+dash: 'solid',
+ },
+ };
+let data_20e0311efa6b4882955e7e6655b999e9 = [data_0,data_1,data_2,data_3,data_4,];
+let const_data_20e0311efa6b4882955e7e6655b999e9 = JSON.parse(JSON.stringify(data_20e0311efa6b4882955e7e6655b999e9));
+ let layout_20e0311efa6b4882955e7e6655b999e9 = {
+   font: {color: "#2a3f5f"},
+   paper_bgcolor: "white",
+   plot_bgcolor: "white",
+   title: 'Residuals',
+margin: { },
+   xaxis: {
+     zeroline: true,
+     gridcolor: "#e9edf5",
+     zerolinecolor: "#e9edf5",
+     mirror: true, showline: true,
+     linecolor: "#e9edf5",
+     title: 'Iterations',
+     tickformat: '.0f',
+     autorange: true, 
+   },
+   yaxis: {
+     zeroline: true,
+     gridcolor: "#e9edf5",
+     zerolinecolor: "#e9edf5",
+     mirror: true, showline: true,
+     linecolor: "#e9edf5",
+     title: 'Residuals',
+     tickformat: '.2e',
+     autorange: true, 
+     type: 'log',
+   },
+     hovermode: 'closest',
+  showlegend: true,
+   legend: {
+   },
+ };
+ let options_20e0311efa6b4882955e7e6655b999e9 = {
+    showLink: false,
+    displaylogo: false,
+    responsive: true,
+    modeBarButtonsToRemove: ['sendDataToCloud', 'select2d', 'lasso2d'],
+    modeBarButtonsToAdd: ['toggleSpikelines', 'v1hovermode'],
+ };
+ let pobj_20e0311efa6b4882955e7e6655b999e9 = document.getElementById('plot_20e0311efa6b4882955e7e6655b999e9');
+
+            
+            
+            Plotly.newPlot( pobj_20e0311efa6b4882955e7e6655b999e9, data_20e0311efa6b4882955e7e6655b999e9, 
+                layout_20e0311efa6b4882955e7e6655b999e9, options_20e0311efa6b4882955e7e6655b999e9).then(gd=>{
+                return gd
+            })
+        
+            pobj_20e0311efa6b4882955e7e6655b999e9.addEventListener('filter_event', function(event) {
+                for (let [key, value] of Object.entries(const_data_20e0311efa6b4882955e7e6655b999e9)) {
+                    data_20e0311efa6b4882955e7e6655b999e9[key] = JSON.parse(JSON.stringify(value));
+                }
+                event.detail.forEach((filterDetail, key) => {
+                    let tempData;
+                    switch (key) {
+                        
+                        case 'plot_range_x':
+                            filterDetail.forEach((rangeObject, key) => {
+                                tempData = JSON.parse(JSON.stringify(data_20e0311efa6b4882955e7e6655b999e9));
+                                tempData.forEach((trace, index) => {
+                                    let min = rangeObject.min;
+                                    let max = rangeObject.max;
+                                    data_20e0311efa6b4882955e7e6655b999e9[index]['x'] = trace['x'].filter((value) =>
+                                        value >= min && value <= max);
+                                    
+                                            data_20e0311efa6b4882955e7e6655b999e9[index]['y'] = trace['y'].filter((value, index) =>
+                                            trace['x'][index] >= min && trace['x'][index] <= max)
+                                        
+                                });
+                            });
+                            break;
+                            
+                        case 'plot_range_y':
+                            
+                                    filterDetail.forEach((rangeObject, key) => { 
+                                        tempData = JSON.parse(JSON.stringify(data_20e0311efa6b4882955e7e6655b999e9)) 
+                                        tempData.forEach((trace, index) => {
+                                            let min = rangeObject.min;
+                                            let max = rangeObject.max;
+                                            data_20e0311efa6b4882955e7e6655b999e9[index]['y'] = trace['y'].filter((value) =>
+                                                value >= min && value <= max);
+                                            data_20e0311efa6b4882955e7e6655b999e9[index]['x'] = trace['x'].filter((value, index) =>
+                                                trace['y'][index] >= min && trace['y'][index] <= max);
+                                        });
+                                    });
+                                
+                            
+                            break;
+                        
+                        case 'tag':
+                            filterDetail.forEach((hiddenTags, key) => {
+                                if (hiddenTags.min !== undefined) {
+                                    data_20e0311efa6b4882955e7e6655b999e9.forEach((trace, index) => {
+                                        if (trace.tags[key] < hiddenTags.min || trace.tags[key] > hiddenTags.max) {
+                                            trace.visible = 'hidden';
+                                            data_20e0311efa6b4882955e7e6655b999e9[index]['x'] = [];
+                                            
+                                                    data_20e0311efa6b4882955e7e6655b999e9[index]['y'] = []
+                                                 
+                                        }
+                                    })
+                                } else if (key === 'Other tags') {
+                                    hiddenTags.forEach((hiddenTag) => {
+                                        data_20e0311efa6b4882955e7e6655b999e9.forEach((trace, index) => {
+                                            if (trace.visible !== 'hidden' && trace.tags[hiddenTag] === 'True') {
+                                                trace.visible = 'hidden';
+                                                data_20e0311efa6b4882955e7e6655b999e9[index]['x'] = [];
+                                                
+                                                        data_20e0311efa6b4882955e7e6655b999e9[index]['y'] = []
+                                                     
+                                            }
+                                        });
+                                    });
+                                } else {
+                                    data_20e0311efa6b4882955e7e6655b999e9.forEach((trace, index) => {
+                                        Object.entries(trace.tags).forEach(([tagKey,tagValue]) => {
+                                            if (tagValue === 'True') {
+                                                trace.tags[tagKey] = tagKey;
+                                            }
+                                        })
+                                        if (hiddenTags.includes(trace.tags[key])) {
+                                            trace.visible = 'hidden';
+                                            data_20e0311efa6b4882955e7e6655b999e9[index]['x'] = [];
+                                            
+                                                    data_20e0311efa6b4882955e7e6655b999e9[index]['y'] = []
+                                                    
+                                        }
+                                    })
+                                }
+                            })
+                            break;
+                        
+                        case 'single-tag':
+                            filterDetail.forEach((tags, key) => {
+                                if (tags.length) {
+                                    let shownTag = tags[0];
+                                    data_20e0311efa6b4882955e7e6655b999e9.forEach((trace, index) => {
+                                        let tagIsDefined = trace.tags[key] !== undefined;
+                                        if (!(tagIsDefined && trace.tags[key].includes(shownTag) || trace.tags[shownTag] === 'True')) {
+                                            trace.visible = 'hidden';
+                                            data_20e0311efa6b4882955e7e6655b999e9[index]['x'] = [];
+                                            
+                                                    data_20e0311efa6b4882955e7e6655b999e9[index]['y'] = []
+                                                
+                                        }
+                                    })
+                                }
+                            })
+                            break;  
+                    }
+                });
+                    
+                let filteredData = data_20e0311efa6b4882955e7e6655b999e9.filter(data => data['x'].length>0
+                    
+                            && (data['y'].length>0)
+                        ).map(filteredData => filteredData['name']);    
+                event.filteredData = filteredData;
+                Plotly.redraw(pobj_20e0311efa6b4882955e7e6655b999e9);
+            });
+            $(document).ready(function() {
+                let container = document.getElementById('data_item_20e0311efa6b4882955e7e6655b999e9');
+                let ctxTheme = document.documentElement.getAttribute('data-bs-theme') || 'light';
+                // store data to <adr-data-item /> for client-side render changes on light/dark mode toggle
+                container._plotDefaultTheme = 'light';
+                container._plotTheme = {'light': {'layout': {'font': {'color': '#2a3f5f'}, 'paper_bgcolor': 'white', 'plot_bgcolor': 'white', 'xaxis': {'gridcolor': '#e9edf5', 'linecolor': '#e9edf5', 'zerolinecolor': '#e9edf5', 'spikecolor': '#737373', 'spikesides': 'true', 'spikethickness': '1.5'}, 'yaxis': {'gridcolor': '#e9edf5', 'linecolor': '#e9edf5', 'zerolinecolor': '#e9edf5', 'spikecolor': '#737373', 'spikesides': 'true', 'spikethickness': '1.5'}, 'zaxis': {'gridcolor': '#e9edf5', 'linecolor': '#e9edf5', 'zerolinecolor': '#e9edf5', 'spikecolor': '#737373', 'spikesides': 'true', 'spikethickness': '1.5'}}}, 'dark': {'layout': {'font': {'color': '#eee'}, 'paper_bgcolor': '#2a2a2a', 'plot_bgcolor': '#2a2a2a', 'xaxis': {'gridcolor': '#444', 'linecolor': '#d0d0d0', 'zerolinecolor': '#bababa', 'spikecolor': '#6ea8fe', 'spikesides': 'true', 'spikethickness': '1.5'}, 'yaxis': {'gridcolor': '#444', 'linecolor': '#d0d0d0', 'zerolinecolor': '#bababa', 'spikecolor': '#6ea8fe', 'spikesides': 'true', 'spikethickness': '1.5'}, 'zaxis': {'gridcolor': '#444', 'linecolor': '#d0d0d0', 'zerolinecolor': '#bababa', 'spikecolor': '#6ea8fe', 'spikesides': 'true', 'spikethickness': '1.5'}}}};
+                container._plotData = data_20e0311efa6b4882955e7e6655b999e9;
+                container._plotLayout = layout_20e0311efa6b4882955e7e6655b999e9;
+                container._plotOptions = options_20e0311efa6b4882955e7e6655b999e9;
+                container._plotId = 'plot_20e0311efa6b4882955e7e6655b999e9';
+                
+                Promise.all([ Plotly.Plots.resize(pobj_20e0311efa6b4882955e7e6655b999e9) ]).then(gd=>{
+                    let loaderContainer = container.querySelector('.adr-spinner-loader-container');
+                    // if any host app's light/dark mode NOT match with ADR ctx color mode
+                    // then keep showing the loader after <adr-data-item /> finish rerendering
+                    if(ctxTheme === 'light'){
+                        loaderContainer.style.display = 'none';
+                    }
+                    pobj_20e0311efa6b4882955e7e6655b999e9.classList.add('loaded');
+                });
+            });
+        </script>
+        
+                
+                        <section class="adr-spinner-loader-container">
+                            <div class="adr-spinner-loader-icon">
+                                <div id="plot_20e0311efa6b4882955e7e6655b999e9_loader" 
+                                    class="adr-spinner-loader" role="status">
+                                  <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                        </section>
+                    </adr-data-item></section>
+
+            </div>
+        
+            </adr-tabs>
+        
+            </div>
+        
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="b92d2dbe-7873-11f1-b3af-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_17"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#b92d2dbe-7873-11f1-b3af-83bb7ab7bf33_61">
+                </span>
+            
+                <adr-panel id="b92d2dbe-7873-11f1-b3af-83bb7ab7bf33_61" data-panel-type='collapse panel' data-guid=b92d2dbe-7873-11f1-b3af-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='b92d2dbe-7873-11f1-b3af-83bb7ab7bf33_61_header' class='adr-panel-header'><h2>Contours</h2></header>
+                            <section id="b92d2dbe-7873-11f1-b3af-83bb7ab7bf33_61_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+            <div  nexus_template="ba3c6b68-7873-11f1-8965-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="tabs">
+        
+                <adr-tabs id="adr_tab_template_62" data-guid="ba3c6b68-7873-11f1-8965-83bb7ab7bf33">
+                    <template shadowrootmode="open">
+                        
+                        
+                        <nav class="adr-tabs-nav" data-tabs="adr_tab_template_62">
+                            <ul>
+            
+                    <li class="adr-tabs-nav-item">
+                        <a class="link active"
+                            role="tab link" aria-selected="true" aria-controls="adr_tab_template_62_63">
+                            contour-2
+                        </a>
+                    </li>
+                
+                    <li class="adr-tabs-nav-item">
+                        <a class="link "
+                            role="tab link" aria-selected="false" aria-controls="adr_tab_template_62_64">
+                            contour-1
+                        </a>
+                    </li>
+                
+                    </ul>
+                </nav>
+                <section class="adr-tabs-body">
+            
+                <section class="adr-tabs-content active" id="adr_tab_template_62_63" role="adr-tabs-content" aria-selected="true">
+                    <slot name ="adr_tab_template_62_63"></slot>
+                </section>
+            
+                <section class="adr-tabs-content" id="adr_tab_template_62_64" role="adr-tabs-content" aria-selected="false">
+                    <slot name ="adr_tab_template_62_64"></slot>
+                </section>
+            
+                    </section>
+                    <script>
+                        // dispatch resize event for hitting tabs inside <nav>...</nav>
+                        $('.adr-tabs-nav-item>a').on('adr-tab-active-end', function(e) {
+                           window.dispatchEvent(new Event('resize')); 
+                        })
+                    </script>
+                </template>
+                
+            <div  nexus_template="bb3ce05f-7873-11f1-9e57-83bb7ab7bf33" slot='adr_tab_template_62_63' aria-label="report layout container" data-layout-type="basic">
+        <br><h2>contour-2</h2><section class="adr-container" id="bb3ce05f-7873-11f1-9e57-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_9cb2f35ffbab4d5cacbd5eebeeb0dbb2" data-item-type="image"  
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/9496596e-7873-11f1-b16d-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item></section>
+
+            </div>
+        
+            <div  nexus_template="bc8f9c39-7873-11f1-b06b-83bb7ab7bf33" slot='adr_tab_template_62_64' aria-label="report layout container" data-layout-type="basic">
+        <br><h2>contour-1</h2><section class="adr-container" id="bc8f9c39-7873-11f1-b06b-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_0a4fa4b1cea3438f8c8d72812a3eee65" data-item-type="image"  
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/95a224c5-7873-11f1-b5e7-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item></section>
+
+            </div>
+        
+            </adr-tabs>
+        
+            </div>
+        
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="bfddf092-7873-11f1-a48e-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_18"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#bfddf092-7873-11f1-a48e-83bb7ab7bf33_65">
+                </span>
+            
+                <adr-panel id="bfddf092-7873-11f1-a48e-83bb7ab7bf33_65" data-panel-type='collapse panel' data-guid=bfddf092-7873-11f1-a48e-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='bfddf092-7873-11f1-a48e-83bb7ab7bf33_65_header' class='adr-panel-header'><h2>Pathlines</h2></header>
+                            <section id="bfddf092-7873-11f1-a48e-83bb7ab7bf33_65_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+            <div  nexus_template="c0f3b93c-7873-11f1-b7f2-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="tabs">
+        
+                <adr-tabs id="adr_tab_template_66" data-guid="c0f3b93c-7873-11f1-b7f2-83bb7ab7bf33">
+                    <template shadowrootmode="open">
+                        
+                        
+                        <nav class="adr-tabs-nav" data-tabs="adr_tab_template_66">
+                            <ul>
+            
+                    <li class="adr-tabs-nav-item">
+                        <a class="link active"
+                            role="tab link" aria-selected="true" aria-controls="adr_tab_template_66_67">
+                            pathlines-1
+                        </a>
+                    </li>
+                
+                    </ul>
+                </nav>
+                <section class="adr-tabs-body">
+            
+                <section class="adr-tabs-content active" id="adr_tab_template_66_67" role="adr-tabs-content" aria-selected="true">
+                    <slot name ="adr_tab_template_66_67"></slot>
+                </section>
+            
+                    </section>
+                    <script>
+                        // dispatch resize event for hitting tabs inside <nav>...</nav>
+                        $('.adr-tabs-nav-item>a').on('adr-tab-active-end', function(e) {
+                           window.dispatchEvent(new Event('resize')); 
+                        })
+                    </script>
+                </template>
+                
+            <div  nexus_template="c1f67219-7873-11f1-923b-83bb7ab7bf33" slot='adr_tab_template_66_67' aria-label="report layout container" data-layout-type="basic">
+        <br><h2>pathlines-1</h2><section class="adr-container" id="c1f67219-7873-11f1-923b-83bb7ab7bf33" >
+
+                    <adr-data-item id="data_item_64382b53fa91495c874ba65a4278545b" data-item-type="image"  
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/979ba230-7873-11f1-af86-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item></section>
+
+            </div>
+        
+            </adr-tabs>
+        
+            </div>
+        
+            </adr-panel>
+        
+            </div>
+        
+            <div  nexus_template="cb6fc6da-7873-11f1-8fdd-83bb7ab7bf33" style=" page-break-inside: avoid;"  aria-label="report layout container" data-layout-type="panel">
+        <a id="TOC_item_tgt_19"></a><br>
+                <span class="panel-expander adr-icon adr-minus" 
+                    data-target-panel="#cb6fc6da-7873-11f1-8fdd-83bb7ab7bf33_68">
+                </span>
+            
+                <adr-panel id="cb6fc6da-7873-11f1-8fdd-83bb7ab7bf33_68" data-panel-type='collapse panel' data-guid=cb6fc6da-7873-11f1-8fdd-83bb7ab7bf33>
+                    <template shadowrootmode="open">
+                        <section class="adr-panel" >
+                            <header id='cb6fc6da-7873-11f1-8fdd-83bb7ab7bf33_68_header' class='adr-panel-header'><h2>Scenes</h2></header>
+                            <section id="cb6fc6da-7873-11f1-8fdd-83bb7ab7bf33_68_body" class="adr-panel-body" >
+                                <slot></slot>
+                            </section>
+                        </section>
+                    </template>
+            
+            <div  nexus_template="cc7c9652-7873-11f1-ba36-83bb7ab7bf33"  aria-label="report layout container" data-layout-type="tabs">
+        
+                <adr-tabs id="adr_tab_template_69" data-guid="cc7c9652-7873-11f1-ba36-83bb7ab7bf33">
+                    <template shadowrootmode="open">
+                        
+                        
+                        <nav class="adr-tabs-nav" data-tabs="adr_tab_template_69">
+                            <ul>
+            
+                    <li class="adr-tabs-nav-item">
+                        <a class="link active"
+                            role="tab link" aria-selected="true" aria-controls="adr_tab_template_69_70">
+                            AnsysLogo
+                        </a>
+                    </li>
+                
+                    <li class="adr-tabs-nav-item">
+                        <a class="link "
+                            role="tab link" aria-selected="false" aria-controls="adr_tab_template_69_71">
+                            MeshOrthogonalHistogram
+                        </a>
+                    </li>
+                
+                    <li class="adr-tabs-nav-item">
+                        <a class="link "
+                            role="tab link" aria-selected="false" aria-controls="adr_tab_template_69_72">
+                            contour-2_contour
+                        </a>
+                    </li>
+                
+                    <li class="adr-tabs-nav-item">
+                        <a class="link "
+                            role="tab link" aria-selected="false" aria-controls="adr_tab_template_69_73">
+                            contour-1_contour
+                        </a>
+                    </li>
+                
+                    <li class="adr-tabs-nav-item">
+                        <a class="link "
+                            role="tab link" aria-selected="false" aria-controls="adr_tab_template_69_74">
+                            pathlines-1_pathline
+                        </a>
+                    </li>
+                
+                    </ul>
+                </nav>
+                <section class="adr-tabs-body">
+            
+                <section class="adr-tabs-content active" id="adr_tab_template_69_70" role="adr-tabs-content" aria-selected="true">
+                    <slot name ="adr_tab_template_69_70"></slot>
+                </section>
+            
+                <section class="adr-tabs-content" id="adr_tab_template_69_71" role="adr-tabs-content" aria-selected="false">
+                    <slot name ="adr_tab_template_69_71"></slot>
+                </section>
+            
+                <section class="adr-tabs-content" id="adr_tab_template_69_72" role="adr-tabs-content" aria-selected="false">
+                    <slot name ="adr_tab_template_69_72"></slot>
+                </section>
+            
+                <section class="adr-tabs-content" id="adr_tab_template_69_73" role="adr-tabs-content" aria-selected="false">
+                    <slot name ="adr_tab_template_69_73"></slot>
+                </section>
+            
+                <section class="adr-tabs-content" id="adr_tab_template_69_74" role="adr-tabs-content" aria-selected="false">
+                    <slot name ="adr_tab_template_69_74"></slot>
+                </section>
+            
+                    </section>
+                    <script>
+                        // dispatch resize event for hitting tabs inside <nav>...</nav>
+                        $('.adr-tabs-nav-item>a').on('adr-tab-active-end', function(e) {
+                           window.dispatchEvent(new Event('resize')); 
+                        })
+                    </script>
+                </template>
+                
+                    <adr-data-item id="data_item_d92936f0eaaf40bcae8f9a162e372c27" data-item-type="image" slot='adr_tab_template_69_70' 
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/8d71ec4b-7873-11f1-b05d-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item>
+                    <adr-data-item id="data_item_393e4d129db34dffa5ada1dbae325720" data-item-type="image" slot='adr_tab_template_69_71' 
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/937303ed-7873-11f1-82c3-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item>
+                    <adr-data-item id="data_item_8a1ccda168474153abdb5074fcce046d" data-item-type="image" slot='adr_tab_template_69_72' 
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/9496596e-7873-11f1-b16d-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item>
+                    <adr-data-item id="data_item_0c7f9e2380104db888c2c66d63a88c8b" data-item-type="image" slot='adr_tab_template_69_73' 
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/95a224c5-7873-11f1-b5e7-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item>
+                    <adr-data-item id="data_item_4f36e6d7000d486f947f60ef09475f8a" data-item-type="image" slot='adr_tab_template_69_74' 
+                        container="row" >
+                        <template shadowrootmode="open">
+                            <section class="adr-row justify-content-center">
+                                <section class="adr-col-md-auto">
+                                    <slot></slot>
+                                </section>
+                            </section>
+                        </template>
+                        
+
+    <img src="./media/979ba230-7873-11f1-af86-83bb7ab7bf33_image.png"
+            
+                class="img-fluid" style="margin: 0 auto; display:flex; justify-content:center;" 
+            
+         alt="Image file not found">
+
+                </adr-data-item>
+            </adr-tabs>
+        
+            </div>
+        
+            </adr-panel>
+        
+            </div>
+        </section>
+
+            </div>
+        <style>
+.toc_root {list-style-type: none;}
+.toc_0 {text-indent: 0pt;}
+.toc_1 {text-indent: 15pt;}
+.toc_2 {text-indent: 30pt;}
+.toc_3 {text-indent: 45pt;}
+.toc_4 {text-indent: 60pt;}
+.toc_5 {text-indent: 75pt;}
+.toc_6 {text-indent: 90pt;}
+</style>
+<script type='text/javascript'>
+$(document).ready(function() {
+ var figtmp = '<ul class="toc_root"></ul>';
+ var tabtmp = '<ul class="toc_root"></ul>';
+ var itmtmp = '<ul class="toc_root"><li class="toc_0"><a href="#TOC_item_tgt_1">1 System Information</a></li><li class="toc_0"><a href="#TOC_item_tgt_2">2 Geometry and Mesh</a></li><li class="toc_1"><a href="#TOC_item_tgt_3">2.1 Mesh Size</a></li><li class="toc_1"><a href="#TOC_item_tgt_4">2.2 Mesh Quality</a></li><li class="toc_1"><a href="#TOC_item_tgt_5">2.3 Orthogonal Quality</a></li><li class="toc_0"><a href="#TOC_item_tgt_6">3 Simulation Setup</a></li><li class="toc_1"><a href="#TOC_item_tgt_7">3.1 Physics</a></li><li class="toc_2"><a href="#TOC_item_tgt_8">3.1.1 Models</a></li><li class="toc_2"><a href="#TOC_item_tgt_9">3.1.2 Material Properties</a></li><li class="toc_2"><a href="#TOC_item_tgt_10">3.1.3 Cell Zone Conditions</a></li><li class="toc_2"><a href="#TOC_item_tgt_11">3.1.4 Boundary Conditions</a></li><li class="toc_2"><a href="#TOC_item_tgt_12">3.1.5 Reference Values</a></li><li class="toc_1"><a href="#TOC_item_tgt_13">3.2 Solver Settings</a></li><li class="toc_0"><a href="#TOC_item_tgt_14">4 Run Information</a></li><li class="toc_0"><a href="#TOC_item_tgt_15">5 Solution Status</a></li><li class="toc_0"><a href="#TOC_item_tgt_16">6 Plots</a></li><li class="toc_0"><a href="#TOC_item_tgt_17">7 Contours</a></li><li class="toc_0"><a href="#TOC_item_tgt_18">8 Pathlines</a></li><li class="toc_0"><a href="#TOC_item_tgt_19">9 Scenes</a></li></ul>';
+ document.getElementById('TOC_item_list_51').innerHTML = itmtmp;
+});
+</script>
+
+        </section>
+    </adr-report-root>
+
+
+
+</main>
+
+<a href="#" id="return_to_top"><i class="fas fa-chevron-up fa-2x"></i></a>
+
+<script src="./media/hotkey.min.js"></script>
+<script src="./media/moment.min.js"></script>
+<script src="./media/bootstrap.min.js"></script>
+<script src="./media/bootstrap-select.js"></script>
+<script src="./media/jquery.loading.min.js"></script>
+<script src="./media/noty.min.js"></script>
+<script src="./media/js_cookie.min.js"></script>
+<script>
+    let denyNewTab = false;
+</script>
+<script src="./media/base.js"></script>
+<script src="./media/report_template_components.js"></script>
+
+
+    <script src="./media/bootstrap-slider.min.js"></script>
+    <script src="./media/panzoom.min.js"></script>
+    <script src="./media/report_item.js"></script>
+    <script src="./media/report_display.js"></script>
+
+</body>
+</html>
