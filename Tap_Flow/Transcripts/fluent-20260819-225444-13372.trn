@@ -1,0 +1,134 @@
+Auto-Transcript Start Time:  22:54:44, 19 Aug 2026 India Standard Time 
+Current Directory: "D:\TapCFD"
+
+              Welcome to ANSYS Fluent 2026 R1
+
+              Copyright 2026 Synopsys, Inc. and ANSYS, Inc. All rights reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Feb  2 2026 16:32:00 EST  Build Id: 10262  
+ 
+Connected License Server List:	<Non FlexNet Publisher License Server (FNPLS)>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-GSSGRQ1" (win64).
+Host waiting for connection from Node 0 at 127.0.0.1:53008 
+
+Node 0 connecting to the Host ... connection established.
+GPU Solver enabled
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    CPU Model Name                          
+------------------------------------------------------------------------------------------
+n3    DESKTOP-GSSGRQ1  4/16  Windows-x64  5832   AMD Ryzen 7 6800H with Radeon Graphics  
+n2    DESKTOP-GSSGRQ1  3/16  Windows-x64  12856  AMD Ryzen 7 6800H with Radeon Graphics  
+n1    DESKTOP-GSSGRQ1  2/16  Windows-x64  7812   AMD Ryzen 7 6800H with Radeon Graphics  
+n0*   DESKTOP-GSSGRQ1  1/16  Windows-x64  16296  AMD Ryzen 7 6800H with Radeon Graphics  
+host  DESKTOP-GSSGRQ1        Windows-x64  5936   AMD Ryzen 7 6800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is D:\\TapCFD\\cleanup-fluent-DESKTOP-GSSGRQ1-5936.bat
+
+Graphics driver currently in use: dx11
+
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+Fast-loading "D:\Non-System Softwares\Ansys2026R1\ANSYS Inc\ANSYS Student\v261\fluent\fluent26.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from DESKTOP-GSSGRQ1:"D:/TapCFD/tap_107K.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+      107676 cells,     2 cell zones ...
+          34850 tetrahedral cells,  zone id: 933
+          72826 mixed cells,  zone id: 934
+      241529 faces,     8 face zones ...
+         153630 mixed interior faces,  zone id: 942
+          60361 triangular interior faces,  zone id: 941
+           5583 triangular wall faces,  zone id: 655
+            288 mixed pressure-outlet faces,  zone id: 20
+            300 mixed velocity-inlet faces,  zone id: 19
+           4823 triangular wall faces,  zone id: 18
+           8272 triangular wall faces,  zone id: 17
+           8272 triangular wall faces,  zone id: 1
+       33214 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast, Laplace, model-weighted),
+	distributing mesh
+		pairs....,
+		parts....,
+		faces....,
+		nodes....,
+		shadow nodes....,
+		cells....,
+        bandwidth reduction using Reverse Cuthill-McKee: 18745/611 = 30.6792
+  Reading boundary layer flags ...
+  Done.
+
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	fluid-solid11-shadow
+	interior--fluid
+	interior--solid11
+	solid11:655
+	outlet
+	inlet
+	surface:1
+	fluid-solid11
+	fluid
+	solid11
+     parallel,
+Done.
+
+> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Data...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "tap_107K.dat.h5") "CFF Data Files (*.dat.h5 )")
+
+Reading from DESKTOP-GSSGRQ1:"D:/TapCFD/tap_107K.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Simulation Reports|Report Outline"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Simulation Reports|Report Outline"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Simulation Reports|Report Outline"))
+
+The simulation report 'New...' has been renamed to 'Ansys Fluent Simulation Report'
+
+number tracked = 823, escaped = 815, incomplete = 8
+
+number tracked = 823, escaped = 815, incomplete = 8
+
+Writing "C:/Users/ShubhamR/AppData/Local/Temp/_DESKTOP-GSSGRQ1_13372/scene-1_scene.avz" ...
+Done.
+
+Ansys_Fluent_Simulation_Report.pdf created in D:/TapCFD
+
+Standalone HTML report created in D:/TapCFD
+
+Ansys_Fluent_Simulation_Report.pptx created in D:/TapCFD
+/exit y
+(cx-gui-do cx-activate-item "Question*OK")
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  23:03:11, 19 Aug 2026 India Standard Time 
+Total Transcript Time: 8 Minute 27 Second.

@@ -1,0 +1,855 @@
+Auto-Transcript Start Time:  19:05:33, 18 Aug 2026 India Standard Time 
+Current Directory: "D:\TapCFD"
+
+              Welcome to ANSYS Fluent 2026 R1
+
+              Copyright 2026 Synopsys, Inc. and ANSYS, Inc. All rights reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Feb  2 2026 16:32:00 EST  Build Id: 10262  
+ 
+Connected License Server List:	<Non FlexNet Publisher License Server (FNPLS)>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-GSSGRQ1" (win64).
+Host waiting for connection from Node 0 at 127.0.0.1:64310 
+
+Node 0 connecting to the Host ... connection established.
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    CPU Model Name                          
+------------------------------------------------------------------------------------------
+n3    DESKTOP-GSSGRQ1  4/16  Windows-x64  9808   AMD Ryzen 7 6800H with Radeon Graphics  
+n2    DESKTOP-GSSGRQ1  3/16  Windows-x64  13572  AMD Ryzen 7 6800H with Radeon Graphics  
+n1    DESKTOP-GSSGRQ1  2/16  Windows-x64  13060  AMD Ryzen 7 6800H with Radeon Graphics  
+n0*   DESKTOP-GSSGRQ1  1/16  Windows-x64  9040   AMD Ryzen 7 6800H with Radeon Graphics  
+host  DESKTOP-GSSGRQ1        Windows-x64  11036  AMD Ryzen 7 6800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is D:\\TapCFD\\cleanup-fluent-DESKTOP-GSSGRQ1-11036.bat
+Multicore SMT processors detected. Processor affinity set!
+
+Graphics driver currently in use: dx11
+
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+
+Importing one geom object per program-controlled and one zone per body ...
+    D:\\Non-System Softwares\\Ansys2026R1\\ANSYS Inc\\ANSYS Student\\v261\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by ShubhamR on DESKTOP-GSSGRQ1 winx64 on Tue Aug 18 19:07:21 2026
+    using Python 3.10.19 (remotes/origin/54ee32c922d15cece27c63aab31ba27b8fb8da4e-dirty:54ee32c9, Dec  2 2) [MSC v.1942 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Feb  3 2026 15:07:12
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360/out1787060228.43499810360.tgf'
+    converting file 'tap.dsco' (1 of 1) from Workbench to FLTG using output path 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:/TapCFD/tap.dsco' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    attaching to assembly ...
+    attaching to assembly done in 39.705 [s]
+    processing assembly 'D:\\TapCFD\\tap.dsco' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <IsLegacyLabel>false</IsLegacyLabel>
+          </AssemblyVersionInfo>
+          <Text>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.2_#</Text>
+          <ExplodedBodyText>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.28526_#</ExplodedBodyText>
+          <Id>10000</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <IsLegacyLabel>false</IsLegacyLabel>
+          </AssemblyVersionInfo>
+          <Text>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.2_#</Text>
+          <ExplodedBodyText>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.33556_#</ExplodedBodyText>
+          <Id>10001</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <IsLegacyLabel>false</IsLegacyLabel>
+          </AssemblyVersionInfo>
+          <Text>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.2_#</Text>
+          <ExplodedBodyText>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.33573_#</ExplodedBodyText>
+          <Id>10002</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+      </Table>
+      <AssemblyVersionInfo>
+        <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+        <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+        <IsLegacyLabel>false</IsLegacyLabel>
+      </AssemblyVersionInfo>
+    </IdTable>'
+    length unit = [m]
+    processing part 'tap' with ID 3
+    processing part 'tap' with ID 5
+    processing part 'tap' with ID 7
+    processing named selection 'outlet'
+    processing named selection 'inlet'
+    processing named selection 'surface'
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 3
+                    Component : 4
+                    Body      : 3
+                    Shell     : 3
+                    Face      : 20
+                    Loop      : 38
+                    Edge      : 20
+                    Surface   : 20
+                    Curve     : 20
+                Tessellation summary:
+                    Face facets  : 11960
+                    Edge segments: 2584
+                Bounding box:
+                    (-30, -6, -6) x (23, 20, 5.998135089874268)
+                Assembly component hierarchy:
+                    'D:\\TapCFD\\tap.dsco'
+                      'tap'
+                      'tap'
+                      'tap'
+                NamedCollections:
+                    'outlet'
+                    'inlet'
+                    'surface'
+    
+    
+    exporting FLTG data to file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\out1787060228.43499810360.tgf' ...
+    writing face-based mesh file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\out1787060228.43499810360.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 3
+        Object region: 6
+        Zone         : 8
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 40.153 [s]
+
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360/out1787060228.43499810360.tgf"...
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360/out1787060228.43499810360.tgf"...
+nodes: 7334
+edges: 1233
+faces: 11960
+cells: 0
+analyzing boundary connectivity...done.
+using plugIn session Discovery[4784]
+
+---------------- Import of tap, consisting of 3 parts/objects, complete. 
+ 
+
+---------------- Import complete in  1.06 minutes.
+(newline)
+
+
+Meshing> Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\TaskObject3.msh.h5" ...
+writing 1 node zones
+writing 4 edge zones 
+writing 4 face zones 
+writing node curvature data
+done.
+Importing one mesh object per program-controlled and one zone per body ...
+    D:\\Non-System Softwares\\Ansys2026R1\\ANSYS Inc\\ANSYS Student\\v261\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by ShubhamR on DESKTOP-GSSGRQ1 winx64 on Tue Aug 18 19:08:56 2026
+    using Python 3.10.19 (remotes/origin/54ee32c922d15cece27c63aab31ba27b8fb8da4e-dirty:54ee32c9, Dec  2 2) [MSC v.1942 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Feb  3 2026 15:07:12
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360/out1787060335.81153710360.tgf'
+    converting file 'tap.dsco.pmdb' (1 of 1) from Workbench to FLTG using output path 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\\\tap.dsco.pmdb' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    initializing part manager from file ...
+    processing assembly 'D:\\TapCFD\\tap.dsco' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <IsLegacyLabel>false</IsLegacyLabel>
+          </AssemblyVersionInfo>
+          <Text>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.2_#</Text>
+          <ExplodedBodyText>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.28526_#</ExplodedBodyText>
+          <Id>10000</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <IsLegacyLabel>false</IsLegacyLabel>
+          </AssemblyVersionInfo>
+          <Text>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.2_#</Text>
+          <ExplodedBodyText>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.33556_#</ExplodedBodyText>
+          <Id>10001</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <IsLegacyLabel>false</IsLegacyLabel>
+          </AssemblyVersionInfo>
+          <Text>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.2_#</Text>
+          <ExplodedBodyText>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.33573_#</ExplodedBodyText>
+          <Id>10002</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+      </Table>
+      <AssemblyVersionInfo>
+        <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+        <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+        <IsLegacyLabel>false</IsLegacyLabel>
+      </AssemblyVersionInfo>
+    </IdTable>'
+    length unit = [m]
+    processing part 'tap' with ID 3
+    processing part 'tap' with ID 5
+    processing part 'tap' with ID 7
+    processing named selection 'outlet'
+    processing named selection 'inlet'
+    processing named selection 'surface'
+    processing data ...
+    saving size function background grid to file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\tap.sf' ...
+    writing size function background grid file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\tap.sf' ...
+    Vertices already exist
+    initializing size function background grid done in 1.041 [s]
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg], secondary feature angle = 5 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 3
+                    Component : 4
+                    Body      : 3
+                    Shell     : 3
+                    Face      : 20
+                    Loop      : 38
+                    Edge      : 20
+                    Surface   : 20
+                    Curve     : 20
+                Tessellation summary:
+                    Face facets  : 17700
+                    Edge segments: 845
+                Bounding box:
+                    (-30, -6, -6) x (23, 20, 5.999993801116943)
+                Assembly component hierarchy:
+                    'D:\\TapCFD\\tap.dsco'
+                      'tap'
+                      'tap'
+                      'tap'
+                NamedCollections:
+                    'outlet'
+                    'inlet'
+                    'surface'
+    
+    
+    exporting FLTG data to file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\out1787060335.81153710360.tgf' ...
+    writing face-based mesh file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\out1787060335.81153710360.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 3
+        Object region: 6
+        Zone         : 9
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 2.117 [s]
+
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360/out1787060335.81153710360.tgf"...
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360/out1787060335.81153710360.tgf"...
+nodes: 9371
+edges: 473
+faces: 17700
+cells: 0
+appending mesh...
+done.
+
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\tap.sf"...
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\tap.sf"...
+ANSYS(R) TGLib(TM) 3D, revision 24.1.0
+ Read 19135 vertices
+0 faces marked.
+0 faces marked.
+0 faces marked.
+407 faces marked.
+Deleting import_curvature_0
+Deleting import_proximity_0
+
+---------------- Surface Meshing of tap complete in  0.08 minutes.
+
+---------------- After surface meshing, 3 objects/parts have been detected. Either the Share Topology task should be added, or the Non-Conformal option should be invoked.
+
+---- Warning--- Note that some operations, like auto-remesh, quality improvements and zone separation, will be executed after the Share Topology/Describe Geometry Tasks
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-32.9479 -75.8223 51.7385) '(0 0 0) '(0.0048002 0.156369 0.595892) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-20.9645 -21.4407 -8.28652) '(0 0 0) '(0.0406307 -0.0528356 0.273219) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(41.4673 0.181538 2.5136) '(0 0 0) '(0.294999 -0.0120834 0.211294) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-6.17081 16.7368 5.20038) '(0 0 0) '(-0.0850986 0.168707 -0.647992) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-6.5141 11.9509 -2.69677) '(0 0 0) '(0.0152591 -0.0520248 -0.263683) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-4.60369 8.88451 -4.37394) '(0 0 0) '(0.0220977 -0.0556362 -0.13578) 0 0)
+
+---------------- Describe Geometry task complete in  0.00 minutes.
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\TaskObject5.msh.h5" ...
+writing 2 node zones
+writing 9 edge zones 
+writing 8 face zones 
+writing node curvature data
+done.
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\\tap.sf"...
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\\tap.sf"...
+ Read 19135 vertices
+2 pair(s) found.
+Joining...
+ solid11 and inlet 
+ solid11 and outlet 
+ Warning: Remeshing may alter the final dihedral angle.
+Done.
+0 pair(s) found.
+
+    computing regions...done
+
+---------------- Velocity-inlet zone type was automatically assigned to zones containing the string '*inlet*'.
+
+---------------- Pressure-outlet zone type was automatically assigned to zones containing the string '*outlet*'.
+0 faces marked.
+Deleting import_curvature_0
+Deleting import_proximity_0
+    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\tap.sf"...
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\tap.sf"...
+Done.
+
+
+remeshing...
+
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+
+                  surface                     0          0.012947138       0.37408003       8748
+                  solid11                     0          0.016109268       0.50950016      18678
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+
+                      tap                     0          0.015100651       0.50950016      19154
+
+---------------- Surface Quality improvement complete in :  0.00 minutes. The final maximum surface skewness is  0.51. 
+
+
+---------------- After Surface mesh, the model consists of 1 fluid/solid regions and 1 voids.
+
+---------------- Share Topology of tap complete in  0.06 minutes with a maximum skewness of  0.51. 
+
+
+---------------- Boundary Conditions Updated
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\TaskObject8.msh.h5" ...
+writing 10 node zones
+writing 16 edge zones 
+writing 9 face zones 
+writing node curvature data
+done.
+---------------- Region identification of tap complete in  0.00 minutes. All Regions are displayed. 
+
+---------------- Regions Updated
+
+Created Scoped Prism: smooth-transition_1
+
+---------------- Inflation control added to tap
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\TaskObject11.msh.h5" ...
+writing 10 node zones
+writing 16 edge zones 
+writing 9 face zones 
+writing node curvature data
+done.
+---- Warning--- Only prisms are generated in parallel mode. Tetrahedrons are generated in serial mode.
+
+    updating regions...
+    done.
+checking object "tap"...
+    skipping validating regions of mesh object "tap"...done.
+auto meshing object tap...
+
+processing scoped prisms...
+    starting orientation...
+done.
+    setting prism growth...done.
+done.
+Identifying Topology...
+
+Generating Prisms...
+
+Generating Pyramids...
+
+Generating initial mesh...
+delete dead zones.
+
+Refining mesh...
+
+Merging Domains...
+done.
+
+                     name       id cells (quality < 0.05)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+                    fluid      934                      0       0.22227342      72826
+                  solid11      933                      0       0.12993988      34850
+
+                     name       id cells (quality < 0.05)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+          Overall Summary     none                      0       0.12993988     107676
+
+Total Number of Cell Zones : 2
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- Volume mesh creation completed in :  0.07 minutes
+
+---------------- 107676 cells were created in :  0.09 minutes
+
+---------------- The mesh has a minimum Orthogonal Quality of:  0.13 
+
+---------------- The volume meshing of tap is complete.
+
+(cx-use-window-id 51)
+selected 16 zone(s).
+zone id: 17, name: fluid-solid11, type: wall, count: 8272
+zone id: 655, name: solid11:655, type: wall, count: 5583
+zone id: 934, name: fluid, type: fluid, count: 72826
+zone id: 933, name: solid11, type: solid, count: 34850
+zone id: 17, name: fluid-solid11, type: wall, count: 8272
+zone id: 655, name: solid11:655, type: wall, count: 5583
+zone id: 934, name: fluid, type: fluid, count: 72826
+zone id: 933, name: solid11, type: solid, count: 34850
+zone id: 17, name: fluid-solid11, type: wall, count: 8272
+zone id: 655, name: solid11:655, type: wall, count: 5583
+zone id: 934, name: fluid, type: fluid, count: 72826
+zone id: 933, name: solid11, type: solid, count: 34850
+zone id: 17, name: fluid-solid11, type: wall, count: 8272
+zone id: 655, name: solid11:655, type: wall, count: 5583
+zone id: 934, name: fluid, type: fluid, count: 72826
+zone id: 933, name: solid11, type: solid, count: 34850
+(cx-gui-do cx-activate-item "ToolBar*Pointer*rotate")
+(cx-use-window-id 51)
+zone not found.
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 5)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame4*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Display Grid*Frame1*Frame3(Faces)*Table1*Frame4*List1(Face Zones)" '( 0 1 2 3 4 5 6))
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame4*List1(Face Zones)")
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-toggle-button2 "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Clipping Planes)*CheckButton6(Draw Cell Layer)" #t)
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Clipping Planes)*CheckButton6(Draw Cell Layer)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(12.8201 -94.7783 15.6639) '(0 0 0) '(-0.0867453 0.0870999 0.598627) 0 0)
+(cx-use-window-id 51)
+zone id: 933, name: solid11, type: solid, count: 34850
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0 0 0) '(0 0 0) '(0 0 0) 0 0)
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "tap_107K.msh.h5") "CFF Mesh Files (*.msh.h5 )")
+Writing "D:/TapCFD/tap_107K.msh.h5" ...
+writing 9 node zones
+writing 12 edge zones 
+writing 7 face zones 
+writing 2 cell zones 
+writing boundary layer flags
+writing node curvature data
+done.Copying the required intermediate mesh files into D:\\TapCFD\\tap_107K_workflow_files
+Done.
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\TaskObject3.msh.h5" ...
+3D mesh
+nodes: 7334
+edges: 1233
+faces: 11960 
+cells: 0 
+reading 1 node zones
+reading 4 edge zones
+reading 4 face zones
+
+Read Mesh Summary:
+	nodes : 1 zone (1 boundary, 0 interior)
+	      : 7334 entities (7334 boundary, 0 interior)
+	edges : 4 zones (4 boundary, 0 interior)
+	      : 1233 entities (1233 boundary, 0 interior)
+	faces : 4 zones (4 boundary, 0 interior)
+	      : 11960 entities (11960 boundary, 0 interior)
+	cells : 0 zones (0 boundary, 0 interior)
+	      : 0 entities (0 boundary, 0 interior)
+analyzing boundary connectivity...done.
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\TaskObject3.msh.h5" ...
+writing 1 node zones
+writing 4 edge zones 
+writing 4 face zones 
+writing node curvature data
+done.
+Importing one mesh object per program-controlled and one zone per body ...
+    D:\\Non-System Softwares\\Ansys2026R1\\ANSYS Inc\\ANSYS Student\\v261\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by ShubhamR on DESKTOP-GSSGRQ1 winx64 on Tue Aug 18 19:12:46 2026
+    using Python 3.10.19 (remotes/origin/54ee32c922d15cece27c63aab31ba27b8fb8da4e-dirty:54ee32c9, Dec  2 2) [MSC v.1942 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Feb  3 2026 15:07:12
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360/out1787060565.82068810360.tgf'
+    converting file 'tap.dsco.pmdb' (1 of 1) from Workbench to FLTG using output path 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\\\tap.dsco.pmdb' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    initializing part manager from file ...
+    processing assembly 'D:\\TapCFD\\tap.dsco' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <IsLegacyLabel>false</IsLegacyLabel>
+          </AssemblyVersionInfo>
+          <Text>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.2_#</Text>
+          <ExplodedBodyText>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.28526_#</ExplodedBodyText>
+          <Id>10000</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <IsLegacyLabel>false</IsLegacyLabel>
+          </AssemblyVersionInfo>
+          <Text>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.2_#</Text>
+          <ExplodedBodyText>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.33556_#</ExplodedBodyText>
+          <Id>10001</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <IsLegacyLabel>false</IsLegacyLabel>
+          </AssemblyVersionInfo>
+          <Text>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.2_#</Text>
+          <ExplodedBodyText>~sE253066f2-cf5b-4f77-a169-9015d0325e2c.33573_#</ExplodedBodyText>
+          <Id>10002</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+      </Table>
+      <AssemblyVersionInfo>
+        <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+        <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+        <IsLegacyLabel>false</IsLegacyLabel>
+      </AssemblyVersionInfo>
+    </IdTable>'
+    length unit = [m]
+    processing part 'tap' with ID 3
+    processing part 'tap' with ID 5
+    processing part 'tap' with ID 7
+    processing named selection 'outlet'
+    processing named selection 'inlet'
+    processing named selection 'surface'
+    processing data ...
+    saving size function background grid to file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\tap.sf' ...
+    writing size function background grid file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\tap.sf' ...
+    Vertices already exist
+    initializing size function background grid done in 0.852 [s]
+    tessellating 20 faces done in 1.126 [s]
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg], secondary feature angle = 5 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 3
+                    Component : 4
+                    Body      : 3
+                    Shell     : 3
+                    Face      : 20
+                    Loop      : 38
+                    Edge      : 20
+                    Surface   : 20
+                    Curve     : 20
+                Tessellation summary:
+                    Face facets  : 42714
+                    Edge segments: 1296
+                Bounding box:
+                    (-30, -6, -6) x (23, 20, 6)
+                Assembly component hierarchy:
+                    'D:\\TapCFD\\tap.dsco'
+                      'tap'
+                      'tap'
+                      'tap'
+                NamedCollections:
+                    'outlet'
+                    'inlet'
+                    'surface'
+    
+    
+    exporting FLTG data to file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\out1787060565.82068810360.tgf' ...
+    writing face-based mesh file 'D:\\TapCFD\\FM_DESKTOP-GSSGRQ1_10360\\out1787060565.82068810360.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 3
+        Object region: 6
+        Zone         : 9
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 2.232 [s]
+
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360/out1787060565.82068810360.tgf"...
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360/out1787060565.82068810360.tgf"...
+nodes: 22160
+edges: 731
+faces: 42714
+cells: 0
+appending mesh...
+done.
+
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\tap.sf"...
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\tap.sf"...
+ Read 19175 vertices
+0 faces marked.
+0 faces marked.
+0 faces marked.
+638 faces marked.
+Deleting import_curvature_0
+Deleting import_proximity_0
+
+---------------- Surface Meshing of tap complete in  0.08 minutes.
+
+---------------- After surface meshing, 3 objects/parts have been detected. Either the Share Topology task should be added, or the Non-Conformal option should be invoked.
+
+---- Warning--- Note that some operations, like auto-remesh, quality improvements and zone separation, will be executed after the Share Topology/Describe Geometry Tasks
+(newline)
+
+
+Meshing> 
+---------------- Describe Geometry task complete in  0.00 minutes.
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\TaskObject5.msh.h5" ...
+writing 2 node zones
+writing 9 edge zones 
+writing 8 face zones 
+writing node curvature data
+done.
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\\tap.sf"...
+Reading "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\\tap.sf"...
+ Read 19175 vertices
+2 pair(s) found.
+Joining...
+ solid11 and inlet 
+ solid11 and outlet 
+ Warning: Remeshing may alter the final dihedral angle.
+Done.
+0 pair(s) found.
+
+    computing regions...done
+
+---------------- Velocity-inlet zone type was automatically assigned to zones containing the string '*inlet*'.
+
+---------------- Pressure-outlet zone type was automatically assigned to zones containing the string '*outlet*'.
+0 faces marked.
+Deleting import_curvature_0
+Deleting import_proximity_0
+    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\tap.sf"...
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\tap.sf"...
+Done.
+
+
+remeshing...
+
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+
+                  surface                     0          0.011482696       0.40957862      19948
+                  solid11                     0          0.010358976       0.41159496      41804
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+
+                      tap                     0          0.010721976       0.41159496      42728
+
+---------------- Surface Quality improvement complete in :  0.00 minutes. The final maximum surface skewness is  0.41. 
+
+
+---------------- After Surface mesh, the model consists of 1 fluid/solid regions and 1 voids.
+
+---------------- Share Topology of tap complete in  0.07 minutes with a maximum skewness of  0.41. 
+
+
+---------------- Boundary Conditions Updated
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\TaskObject8.msh.h5" ...
+writing 10 node zones
+writing 16 edge zones 
+writing 9 face zones 
+writing node curvature data
+done.
+---------------- Region identification of tap complete in  0.00 minutes. All Regions are displayed. 
+
+---------------- Regions Updated
+
+Created Scoped Prism: smooth-transition_1
+
+---------------- Inflation control added to tap
+Writing "D:\TapCFD\FM_DESKTOP-GSSGRQ1_10360\TaskObject11.msh.h5" ...
+writing 10 node zones
+writing 16 edge zones 
+writing 9 face zones 
+writing node curvature data
+done.
+---- Warning--- Only prisms are generated in parallel mode. Tetrahedrons are generated in serial mode.
+
+    updating regions...
+    done.
+checking object "tap"...
+    skipping validating regions of mesh object "tap"...done.
+auto meshing object tap...
+
+processing scoped prisms...
+    starting orientation...
+done.
+    setting prism growth...done.
+done.
+Identifying Topology...
+
+Generating Prisms...
+
+Generating Pyramids...
+
+Generating initial mesh...
+delete dead zones.
+
+Refining mesh...
+
+Merging Domains...
+done.
+
+                     name       id cells (quality < 0.05)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+                    fluid     1226                      0       0.20841827     184122
+                  solid11     1225                      0       0.17854982     111373
+
+                     name       id cells (quality < 0.05)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+          Overall Summary     none                      0       0.17854982     295495
+
+Total Number of Cell Zones : 2
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- Volume mesh creation completed in :  0.11 minutes
+
+---------------- 295495 cells were created in :  0.11 minutes
+
+---------------- The mesh has a minimum Orthogonal Quality of:  0.18 
+
+---------------- The volume meshing of tap is complete.
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-6.05602 -118.78 70.7207) '(0 0 0) '(0.352613 0.281967 0.503887) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-11.1479 3.14026 5.11905) '(0 0 0) '(0.0276431 0.00291765 -0.0442233) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(12.2444 26.9891 -11.2347) '(0 0 0) '(-0.0140202 -0.0237937 -0.17113) 0 0)
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "tap_295K.msh.h5") "CFF Mesh Files (*.msh.h5 )")
+Writing "D:/TapCFD/tap_295K.msh.h5" ...
+writing 9 node zones
+writing 12 edge zones 
+writing 7 face zones 
+writing 2 cell zones 
+writing boundary layer flags
+writing node curvature data
+done.Copying the required intermediate mesh files into D:\\TapCFD\\tap_295K_workflow_files
+Done.
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  19:15:06, 18 Aug 2026 India Standard Time 
+Total Transcript Time: 9 Minute 33 Second.
